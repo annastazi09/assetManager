@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/min/jquery-3.1.1.min.js" defer></script>
     <script src="js/min/clipboard.min.js" defer></script>
-    <script src="js/script.js" defer> </script>
-    <script src="js/webcomponents-lite.js" defer></script>
-    <script src="js/material-input.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body class="general_wrapper">
     <!-- menu left begins-->
@@ -58,7 +56,10 @@
             <div class="bttn clickable btn_dash">Edit</div>
           </div>
           <div class="block_content">
-            <material-input type="text" value="Ambisafe" label="Company name"></material-input>
+            <div class="group">
+              <input type="text" value="Ambisafe">
+              <label>Company name</label>
+            </div>
             <div class="panel_bttn">
               <div class="bttn_edit clickable"></div>
               <div class="bttn_cancel clickable"></div>
@@ -70,20 +71,23 @@
             <div class="bttn clickable btn_dash">Edit</div>
           </div>
           <div class="block_content">
-            <material-input type="text" value="1" label="Signature required"></material-input>
+            <div class="group">
+              <input type="text" value="1">
+              <label>Signature required</label>
+            </div>
             <div class="panel_bttn">
               <div class="bttn_edit clickable"></div>
               <div class="bttn_cancel clickable"></div>
             </div>
           </div>
         </div>
-        <div class="block_checkbox">
-          <input type="checkbox" name="sensitive_info" id="sensitive_info" value="sensitive_info">
-          <label for="sensitive_info">Hide sensitive information from emails</label>
+        <div class="Checkbox" style="margin-bottom:40px;">
+          <input type="checkbox">
+          <div class="Checkbox-visible"></div><span class="checkbox-title">Hide sensitive information from emails</span>
         </div>
         <div class="block_owners">
           <div class="block_panel">
-            <p class="title">Owners</p><a class="bttn clickable save_btn" href="">Save		</a>
+            <p class="title">Owners</p><a class="bttn clickable save_btn" href="">Save</a>
           </div>
           <div class="block_content">
             <div class="single_owner" style="width:250px;">

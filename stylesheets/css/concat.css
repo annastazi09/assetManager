@@ -327,36 +327,6 @@ body {
     border-bottom: solid 1px #ccc;
     box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1); }
 
-input {
-  height: 30px;
-  color: #222;
-  text-indent: 2px;
-  font-size: 12px;
-  font-family: Ubuntu-Light;
-  width: 253px;
-  border-bottom: 1px solid #acacac;
-  /* Firefox 19+ */ }
-  input::-webkit-input-placeholder {
-    font-family: Ubuntu-Light;
-    font-size: 16px;
-    color: #222;
-    opacity: 0.3; }
-  input::-moz-placeholder {
-    font-family: Ubuntu-Light;
-    font-size: 16px;
-    color: #222;
-    opacity: 0.3; }
-  input:-moz-placeholder {
-    font-family: Ubuntu-Light;
-    font-size: 16px;
-    color: #222;
-    opacity: 0.3; }
-  input::placeholder {
-    font-family: Ubuntu-Light;
-    font-size: 16px;
-    color: #222;
-    opacity: 0.3; }
-
 @media screen and (max-width: 750px) {
   /* --- --- --- --- --- Common --- --- --- --- --- */
   .main_title.center_title {
@@ -1684,7 +1654,6 @@ main {
           main .operation_content .block_pass .text_explanation {
             margin-right: 0; } }
       main .operation_content .block_pass input.pass {
-        display: inline-block;
         text-overflow: ellipsis;
         max-width: 21%;
         vertical-align: bottom;
@@ -1945,15 +1914,20 @@ main {
         font-size: 16px;
         line-height: 40px;
         color: #989696;
-        padding-top: 20px; }
+        padding-right: 10px;
+        padding-top: 19px; }
         main .support div a:hover {
           color: #2D2D2D; }
-  main .block_asset, main .block_operation {
+  main .block_asset,
+  main .block_operation {
     display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 42px; }
-    main .block_asset .btn_continue, main .block_asset .btn_approve, main .block_operation .btn_continue, main .block_operation .btn_approve {
+    main .block_asset .btn_continue,
+    main .block_asset .btn_approve,
+    main .block_operation .btn_continue,
+    main .block_operation .btn_approve {
       margin: 4px 0px;
       border-radius: 30px;
       width: 160px;
@@ -1965,7 +1939,10 @@ main {
       padding: 10px;
       color: #fff;
       background-color: #57AD7B; }
-      main .block_asset .btn_continue:hover, main .block_asset .btn_approve:hover, main .block_operation .btn_continue:hover, main .block_operation .btn_approve:hover {
+      main .block_asset .btn_continue:hover,
+      main .block_asset .btn_approve:hover,
+      main .block_operation .btn_continue:hover,
+      main .block_operation .btn_approve:hover {
         background-color: #4C976C; }
   main .block_operation {
     margin-top: 25px !important; }
@@ -2045,7 +2022,7 @@ main {
       align-items: center;
       height: 24px; }
     main form.new_asset .single_field {
-      padding: 0 0  4px; }
+      padding: 0 0 4px; }
     main form.new_asset span.input-error-block {
       color: #f92324;
       font-size: 12px; }
@@ -2079,7 +2056,7 @@ main {
       main form.new_asset .bottom_block.non-brd {
         border-top: 0; }
       main form.new_asset .bottom_block .bttn_submit {
-        margin-top: 20px;
+        margin-top: -5px;
         display: block;
         width: 160px;
         font-size: 18px;
@@ -2093,14 +2070,16 @@ main {
     padding: 20px 30px;
     font-family: Ubuntu-Light;
     text-align: center;
-    box-shadow: 2px 2px 5px #888888;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     background: url(../images/note.svg) no-repeat;
-    background-position: 4% 50%; }
+    background-position: 4% 50%;
+    margin-top: -40px; }
   main .input_error {
     color: red;
     font-family: Ubuntu-Light;
     font-size: 14px;
-    padding-left: 10px; }
+    padding-left: 8px;
+    padding-top: 5px; }
   main .mr-top25 {
     margin-top: -25px; }
   main .content_title {
@@ -2110,6 +2089,10 @@ main {
     line-height: 40px;
     text-align: center;
     font-family: Ubuntu-Light, sans-serif; }
+  main .input_block {
+    position: relative;
+    top: 35px;
+    right: 5px; }
   main[data-page='assets'] .top_block {
     position: relative; }
   main[data-page='assets'] .bttn_return {
@@ -2348,7 +2331,8 @@ main {
       bottom: 20px;
       right: 20px; } }
 
-.button-wave, .menus {
+.button-wave,
+.menus {
   position: relative;
   background-color: #FFF0F5;
   border: none;
@@ -2364,7 +2348,8 @@ main {
   overflow: hidden;
   cursor: pointer; }
 
-.button-wave:after, .menus:after {
+.button-wave:after,
+.menus:after {
   content: "";
   background: #DCDCDC;
   display: block;
@@ -2376,7 +2361,8 @@ main {
   opacity: 0;
   transition: all 0.8s; }
 
-.button-wave:active:after, .menus:active:after {
+.button-wave:active:after,
+.menus:active:after {
   padding: 0;
   margin: 0;
   opacity: 1;
@@ -2457,40 +2443,8 @@ main {
 .mr_t-40 {
   margin-top: -40px; }
 
-input[type='checkbox'] {
-  display: none; }
-
-input[type='checkbox'] + label {
-  cursor: pointer;
-  font-size: 18px;
-  line-height: 21px;
-  font-family: Ubuntu-Regular; }
-
-input[type='checkbox'] + label:before {
-  background: #fff;
-  height: 18px;
-  border-radius: 4px;
-  border: 2px solid red;
-  content: ' ';
-  display: inline-block;
-  width: 18px;
-  vertical-align: middle;
-  margin-right: 10px;
-  position: relative;
-  top: -1px; }
-
-input[type='checkbox']:checked + label:before {
-  content: '\2713';
-  color: red;
-  font-size: 18px;
-  text-align: center;
-  line-height: 18px; }
-
-material-input {
-  --material-input-highlight-color: #989696;
-  --material-input-placeholder-color: #B9B9B9;
-  font-family: Ubuntu-Light;
-  font-weight: normal; }
+.mr-r10 {
+  margin-right: 10px; }
 
 .modal {
   display: none;
@@ -2527,3 +2481,141 @@ material-input {
 .assets_modal {
   width: 30% !important;
   left: 40% !important; }
+
+* {
+  box-sizing: border-box !important; }
+
+/* basic stylings ------------------------------------------ */
+.group {
+  position: relative;
+  margin-bottom: 37px;
+  font-family: Ubuntu-Light;
+  margin-top: 20px; }
+
+input {
+  font-size: 18px !important;
+  padding: 10px 10px 10px 5px !important;
+  display: block !important;
+  width: 404px !important;
+  border: none !important;
+  border-bottom: 1px solid #B9B9B9 !important; }
+
+input:focus {
+  outline: none !important; }
+
+/* LABEL ======================================= */
+label {
+  color: #B9B9B9 !important;
+  font-size: 18px !important;
+  font-weight: normal !important;
+  position: absolute !important;
+  pointer-events: none !important;
+  left: 8px !important;
+  top: 4px !important;
+  transition: 0.2s ease all; }
+
+/* active state */
+input:focus ~ label,
+input:valid ~ label {
+  top: -20px !important;
+  font-size: 14px !important;
+  color: #989696 !important; }
+
+/* BOTTOM BARS ================================= */
+.bar {
+  position: relative !important;
+  display: block !important;
+  width: 404px !important; }
+
+.bar:before,
+.bar:after {
+  content: '' !important;
+  height: 1px !important;
+  width: 0 !important;
+  bottom: -1px !important;
+  position: absolute !important;
+  background: #989696 !important;
+  transition: 0.2s ease all !important; }
+
+.bar:before {
+  left: 50% !important; }
+
+.bar:after {
+  right: 50% !important; }
+
+/* active state */
+input:focus ~ .bar:before,
+input:focus ~ .bar:after {
+  width: 50% !important; }
+
+/* HIGHLIGHTER ================================== */
+.highlight {
+  position: absolute !important;
+  height: 60% !important;
+  width: 100px !important;
+  top: 25% !important;
+  left: 0 !important;
+  pointer-events: none !important;
+  opacity: 0.5 !important; }
+
+/* active state */
+input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease !important; }
+
+/* ANIMATIONS ================ */
+@keyframes inputHighlighter {
+  from {
+    background: #989696 !important; }
+  to {
+    width: 0 !important;
+    background: transparent !important; } }
+
+* {
+  box-sizing: border-box; }
+
+.Checkbox {
+  width: 420px;
+  height: 20px;
+  position: relative; }
+  .Checkbox > * {
+    position: absolute; }
+  .Checkbox-visible {
+    border: 1px solid red;
+    width: 18px;
+    height: 18px;
+    margin: 2px;
+    background: #fff;
+    border: 1px solid #dedede;
+    border-radius: 3px; }
+  .Checkbox > input {
+    z-index: 1;
+    opacity: 0;
+    left: 50%;
+    top: 50%;
+    transform: translatex(-50%) translatey(-50%);
+    display: block;
+    cursor: pointer;
+    width: 18px;
+    height: 18px; }
+  .Checkbox > input:checked + .Checkbox-visible {
+    background: red;
+    border-color: red;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxNCAxNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48dGl0bGU+d2hpdGU8L3RpdGxlPjxwYXRoIGQ9J001LjM3OCAxMS4zN0wyIDcuNTlsMS40MzgtMS4yODZMNS4zNzQgOC40N2w1LjE4NS01Ljg0TDEyIDMuOTFsLTYuNjIyIDcuNDYnIGZpbGw9JyNmZmYnLz48L3N2Zz4=); }
+  .Checkbox > input:hover + .Checkbox-visible {
+    border-color: #cccccc;
+    border: 1px solid red; }
+  .Checkbox > input:hover:checked + .Checkbox-visible {
+    border-color: red; }
+  .Checkbox > input:focus + .Checkbox-visible {
+    border-color: red; }
+
+.Checkbox-visible {
+  border: 1px solid red; }
+
+.checkbox-title {
+  margin-left: 30px;
+  font-family: Ubuntu-Regular;
+  font-size: 18px;
+  line-height: 21px; }

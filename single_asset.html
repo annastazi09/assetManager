@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/min/jquery-3.1.1.min.js" defer></script>
     <script src="js/min/clipboard.min.js" defer></script>
-    <script src="js/script.js" defer> </script>
-    <script src="js/webcomponents-lite.js" defer></script>
-    <script src="js/material-input.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body class="general_wrapper">
     <!-- menu left begins-->
@@ -57,13 +55,13 @@
           <div class="flex-row mr_l10">Info</div>
         </div>
         <div class="text_description">
-          <div class="flex-col mr_l10"> 
+          <div class="flex-col mr_l10">
             <div class="flex-row">
-              <div class="asset_info-title">Cold Storage Balance: </div>
+              <div class="asset_info-title">Cold Storage Balance:</div>
               <div class="mr_l20">123456.7890123 AST</div>
             </div>
             <div class="flex-row">
-              <div class="asset_info-title">Cold Storage Balance:  </div>
+              <div class="asset_info-title">Cold Storage Balance:</div>
               <div class="mr_l20" id="code">0x2hf74jvn8gkc3794jg38fht3910ch48r</div>
               <div class="bttn_copy clickable" data-clipboard-target="#code"></div>
             </div>
@@ -73,14 +71,14 @@
           <div class="asset_info-text">
             <div class="asset_info-desc">Symbol</div>
             <div class="asset_info-desc">Base Unit</div>
-            <div class="asset_info-desc"> Supply </div>
+            <div class="asset_info-desc"> Supply</div>
           </div>
         </div>
         <div class="text_description">
           <div class="asset_info-text">
             <div class="asset_info-desc">AIM</div>
             <div class="asset_info-desc">10</div>
-            <div class="asset_info-desc">1,000.0000000000 	</div>
+            <div class="asset_info-desc">1,000.0000000000</div>
           </div>
         </div>
         <div class="block_owners mr-t40">
@@ -120,15 +118,17 @@
       <div class="modal" id="myModal">
         <div class="modal-content assets_modal"><span class="close">&times;</span>
           <h1 class="main_title pd-l15">Send</h1>
-          <div class="single_field invite_input">
-            <material-input type="text" label="To adress"></material-input>
-            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
-            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
+          <div class="group invite_input">
+            <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+            <label>To adress</label>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum</div>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum</div>
           </div>
-          <div class="single_field invite_input">
-            <material-input type="text" label="Amount"></material-input>
-            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
-            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
+          <div class="group invite_input">
+            <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+            <label>Amount</label>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum</div>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum</div>
           </div>
           <div class="panel_bttn block_users mr_t70">
             <button class="btn_send_invite button-wave" type="submit">Continue</button>

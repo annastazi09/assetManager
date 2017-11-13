@@ -8,24 +8,24 @@ main(data-page='assets')
 		div.title.title_border
 			div.flex-row.mr_l10 Info
 		div.text_description
-			div.flex-col.mr_l10 
+			div.flex-col.mr_l10
 				.flex-row
-					div.asset_info-title Cold Storage Balance: 
+					div.asset_info-title Cold Storage Balance:
 					div.mr_l20 123456.7890123 AST
 				.flex-row
-					div.asset_info-title Cold Storage Balance:  
+					div.asset_info-title Cold Storage Balance:
 					div#code.mr_l20 0x2hf74jvn8gkc3794jg38fht3910ch48r
 					div(data-clipboard-target="#code").bttn_copy.clickable
 		div.title.title_border.mr_t40
 			div.asset_info-text
 				div.asset_info-desc Symbol
 				div.asset_info-desc Base Unit
-				div.asset_info-desc  Supply 
+				div.asset_info-desc  Supply
 		div.text_description
 			div.asset_info-text
 				div.asset_info-desc AIM
 				div.asset_info-desc 10
-				div.asset_info-desc 1,000.0000000000 	
+				div.asset_info-desc 1,000.0000000000
 		div.block_owners.mr-t40
 			h5.main_title Owners
 			ul.list_owners
@@ -51,14 +51,22 @@ main(data-page='assets')
 		.modal-content.assets_modal
 			span.close &times;
 			h1.main_title.pd-l15 Send
-			.single_field.invite_input
-				material-input(type='text' label="To adress")
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-			.single_field.invite_input
-				material-input(type='text' label="Amount")
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum 
+			div.group.invite_input
+				input(type="text" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label To adress
+				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
+				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
+			div.group.invite_input
+				input(type="text" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Amount
+				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
+				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
 			div.panel_bttn.block_users.mr_t70
 				button(type='submit').btn_send_invite.button-wave Continue
 

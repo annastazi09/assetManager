@@ -4,28 +4,35 @@ main(data-page='login')
 	header.top_block
 		img.black-logo(src="images/logo-black.svg" alt="logo")
 		h1.centred.flex-col.content_title
-			span.flex-col.mr-top25  Hello, 
-			span.flex-col Log in to access your organization
-	form.new_asset
-		div(style="display:block").sum_error Please enter a correct email and password. Note that both fields may be case-sensitive
-		div.single_field
-			material-input(type='email' label="Email")
-			span(style="display:block").input_error Lorem ipsum
-		div.single_field
-			material-input(type='password' label="Password")
-			span(style="display:block").input_error Lorem ipsum
-		
-		div.bottom_block.non-brd
-			button(type='submit').bttn_submit Log in
-			div.support.flex-col
-				div
-					a(href="#").flex-col#myBtn Forgot your password?
-				div
-					a(href="#").flex-col Contact to Support
-	footer.main_footer 
+			span.flex-col.mr-top25.mr-r10 Hello,
+			span.flex-col.mr-r10 Log in to access your organization
+	form.new_asset(novalidate)
+		div.input_block
+			div(style="display:none").sum_error Please enter a correct email and password. Note that both fields may be case-sensitive
+			div.group
+				input(type="text" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
+			div.group
+				input(type="password" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Password
+			div.bottom_block.non-brd
+				button(type='submit').bttn_submit Log in
+				div.support.flex-col
+					div
+						a(href="#").flex-col#myBtn Forgot your password?
+					div
+						a(href="#").flex-col Contact support
+	footer.main_footer
 		span.copy_text &copy; 2017 Ambisafe Inc. All right reserved
 	#myModal.modal
 		.modal-content.login_modal
 			span.close &times;
 			p.forgot_pass_text Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum
+
 // content ends

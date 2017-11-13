@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box !important;
+}
+
+
+/* basic stylings ------------------------------------------ */
+
+.group {
+    position: relative;
+    margin-bottom: 37px;
+    font-family: Ubuntu-Light;
+    margin-top: 20px;
+}
+
+input {
+    font-size: 18px !important;
+    padding: 10px 10px 10px 5px !important;
+    display: block !important;
+    width: 404px !important;
+    border: none !important;
+    border-bottom: 1px solid #B9B9B9 !important;
+}
+
+input:focus {
+    outline: none !important;
+}
+
+
+/* LABEL ======================================= */
+
+label {
+    color: #B9B9B9 !important;
+    font-size: 18px !important;
+    font-weight: normal !important;
+    position: absolute !important;
+    pointer-events: none !important;
+    left: 8px !important;
+    top: 4px !important;
+    transition: 0.2s ease all;
+}
+
+
+/* active state */
+
+input:focus~label,
+input:valid~label {
+    top: -20px !important;
+    font-size: 14px !important;
+    color: #989696 !important;
+}
+
+
+/* BOTTOM BARS ================================= */
+
+.bar {
+    position: relative !important;
+    display: block !important;
+    width: 404px !important;
+}
+
+.bar:before,
+.bar:after {
+    content: '' !important;
+    height: 1px !important;
+    width: 0 !important;
+    bottom: -1px !important;
+    position: absolute !important;
+    background: #989696 !important;
+    transition: 0.2s ease all !important;
+}
+
+.bar:before {
+    left: 50% !important;
+}
+
+.bar:after {
+    right: 50% !important;
+}
+
+
+/* active state */
+
+input:focus~.bar:before,
+input:focus~.bar:after {
+    width: 50% !important;
+}
+
+
+/* HIGHLIGHTER ================================== */
+
+.highlight {
+    position: absolute !important;
+    height: 60% !important;
+    width: 100px !important;
+    top: 25% !important;
+    left: 0 !important;
+    pointer-events: none !important;
+    opacity: 0.5 !important;
+}
+
+
+/* active state */
+
+input:focus~.highlight {
+    animation: inputHighlighter 0.3s ease !important;
+}
+
+
+/* ANIMATIONS ================ */
+
+@keyframes inputHighlighter {
+    from {
+        background: #989696 !important;
+    }
+    to {
+        width: 0 !important;
+        background: transparent !important;
+    }
+}

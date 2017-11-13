@@ -8,34 +8,38 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/min/jquery-3.1.1.min.js" defer></script>
     <script src="js/min/clipboard.min.js" defer></script>
-    <script src="js/script.js" defer> </script>
-    <script src="js/webcomponents-lite.js" defer></script>
-    <script src="js/material-input.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body class="general_wrapper">
     <!-- content begins-->
     <main data-page="login">
       <header class="top_block"><img class="black-logo" src="images/logo-black.svg" alt="logo">
-        <h1 class="centred flex-col content_title"><span class="flex-col mr-top25"> Hello, </span><span class="flex-col">Asset Manager accounts are independent from Ambisafe website accounts </span></h1>
+        <h1 class="centred flex-col content_title"><span class="flex-col mr-top25"> Hello,</span><span class="flex-col">Asset Manager accounts are independent from Ambisafe website accounts</span></h1>
       </header>
-      <form class="new_asset">
-        <div class="single_field">
-          <material-input type="email" label="Email"></material-input>
+      <form class="new_asset" novalidate>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Email</label>
         </div>
-        <div class="single_field">
-          <material-input type="text" label="First Name"></material-input>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>First Name</label>
         </div>
-        <div class="single_field">
-          <material-input type="text" label="Last Name"></material-input>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Last Name</label>
         </div>
-        <div class="single_field">
-          <material-input type="text" label="Company Name"></material-input>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Company Name</label>
         </div>
-        <div class="single_field">
-          <material-input type="password" label="Password"></material-input>
+        <div class="group">
+          <input type="password" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Password</label>
         </div>
-        <div class="single_field">
-          <material-input type="password" label="Confirm Password"></material-input>
+        <div class="group">
+          <input type="password" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Confirm Password</label>
         </div>
         <div class="bottom_block non-brd">
           <button class="bttn_submit" type="submit">Sign Up</button>

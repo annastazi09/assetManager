@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/min/jquery-3.1.1.min.js" defer></script>
     <script src="js/min/clipboard.min.js" defer></script>
-    <script src="js/script.js" defer> </script>
-    <script src="js/webcomponents-lite.js" defer></script>
-    <script src="js/material-input.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body class="general_wrapper">
     <!-- menu left begins-->
@@ -55,30 +53,36 @@
           <h1 class="main_title">Issue New Asset</h1>
           <!--a(href="assets.html").bttn_return back to list of assets-->
         </header>
-        <div class="mr-b160"> 
-          <form class="flex_block_row100">
+        <div class="mr-b160">
+          <form class="flex_block_row100" novalidate>
             <div class="flex_block_col35">
-              <div class="single_field">
-                <material-input type="text" label="Name"></material-input>
+              <div class="group">
+                <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+                <label>Name</label>
               </div>
-              <div class="single_field">
-                <material-input type="text" label="Symbol"></material-input>
+              <div class="group">
+                <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+                <label>Symbol</label>
               </div>
-              <div class="single_field">
-                <material-input type="text" label="Issue value"></material-input>
+              <div class="group">
+                <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+                <label>Issue value</label>
               </div>
-              <div class="single_field pd_b125"> 
-                <material-input type="text" label="Description"></material-input>
+              <div class="group pd_b125">
+                <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+                <label>Description</label>
               </div>
-              <div class="single_field">
-                <material-input type="text" label="Base unit"></material-input>
+              <div class="group">
+                <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+                <label>Base unit</label>
               </div>
-              <div class="single_field">
-                <material-input type="text" label="ICAP"></material-input>
+              <div class="group">
+                <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+                <label>ICAP</label>
               </div>
-              <div class="block_checkbox mr-t30">
-                <input type="checkbox" name="reissuable" id="reissuable" value="reissuable">
-                <label for="reissuable">It's reissuable</label>
+              <div class="Checkbox mr-t30">
+                <input type="checkbox">
+                <div class="Checkbox-visible"></div><span class="checkbox-title"> It's reissuable</span>
               </div>
               <div class="block_asset">
                 <button class="btn_continue" type="submit">Continue</button>
@@ -88,10 +92,10 @@
               <ul class="new_asset_info">
                 <li>Thats is how users will call your asset.</li>
                 <li class="mr-t40">
-                  <div>It is the currency name abbreviation, like <span class="ff-UbLightBold">"BTC"</span> or <span class="ff-UbLightBold">"Bitcoin"</span>.	</div>
+                  <div>It is the currency name abbreviation, like <span class="ff-UbLightBold">"BTC"</span> or <span class="ff-UbLightBold">"Bitcoin"</span>.</div>
                   <div>Try to keep it short - 4 symbols max and check if it's not taken yet.</div>
                 </li>
-                <li class="mr-t15">The amount of assets issued during creation	</li>
+                <li class="mr-t15">The amount of assets issued during creation</li>
                 <li class="mr-t45">
                   <div>This is a slogan or phrase, which shortly introduces your currency to users.</div>
                   <div>Example: Company HayekGold is ussuing assets each of which represents some amount</div>
@@ -100,7 +104,7 @@
                   <div>So when somebody finds this contract among others on blockchain he easily understands</div>
                   <div>what is it used for. 18000 symbols max.</div>
                 </li>
-                <li class="mr-t35"> 
+                <li class="mr-t35">
                   <div>Number of digits after decimal point.</div>
                   <div>Set to 4 if not sure. Example: It's <span class="ff-UbLightBold">2</span> decimal places for <span class="ff-UbLightBold">USD ($1.00)</span> and <span class="ff-UbLightBold">8</span> for <span class="ff-UbLightBold">Bitcoin (1.00000000 BTC)</span></div>
                 </li>

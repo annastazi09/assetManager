@@ -4,20 +4,47 @@ main(data-page='edit_profile')
     header.top_block
     div.container-shadow.profile_block
         div.main_title Edit profile
-        .single_field
-            material-input(type='text' label="First name")
-        .single_field
-            material-input(type='text' label="Last name")
-        .single_field
-            material-input(type='email' label="Email")
-        .single_field
-            material-input(type='password' label="Old password")
-        .single_field
-            material-input(type='password' label="New password")
-        .single_field
-            material-input(type='password' label="Confirm password")
-        .block_checkbox.mr-t30
-            input(type='checkbox' name='require_email' id='require_email' value='require_email')
-            label(for='require_email') Require email confirmation for each operation
-        
+        div.group
+            input(type="text" required)
+            span.highlight
+            span.bar
+            span(style="display:none").input_error Lorem ipsum
+            label First name
+        div.group
+            input(type="text" required)
+            span.highlight
+            span.bar
+            span(style="display:none").input_error Lorem ipsum
+            label Last name
+        div.group
+            input(type="text" required)
+            span.highlight
+            span.bar
+            span(style="display:none").input_error Lorem ipsum
+            label Email
+        div.group
+            input(type="password" required)
+            span.highlight
+            span.bar
+            span(style="display:none").input_error Lorem ipsum
+            label Old password
+        div.group
+            input(type="password" required)
+            span.highlight
+            span.bar
+            span(style="display:none").input_error Lorem ipsum
+            label New password
+        div.group
+            input(type="password" required)
+            span.highlight
+            span.bar
+            span(style="display:none").input_error Lorem ipsum
+            label Confirm password
+        div.Checkbox
+            input(type="checkbox")
+            div.Checkbox-visible
+            span.checkbox-title Require email confirmation for each operation
+
+
+
 

@@ -5,7 +5,7 @@ main(data-page='users')
 	div.tabs_content.container-shadow
 		div.block_users
 			h1.main_title Team
-			span.btn_invite.button-wave#myBtn Invite new users 
+			span.btn_invite.button-wave#myBtn Invite new users
 		div.tab_users.active
 			div.table_users
 				ul.row_title
@@ -20,7 +20,7 @@ main(data-page='users')
 						li.cell_name
 							span.mob_title Name
 							span= users_name[i]
-						li.cell_active 
+						li.cell_active
 							span.mob_title Status
 							span= users_status[i]
 	#myModal.modal
@@ -28,20 +28,46 @@ main(data-page='users')
 			span.close &times;
 			h1.main_title.pd-l15 Operations History
 			div.ff-UbLightBold.bold_modal_title Use email of user you want to invite
-			div.modal_title You can invite a few users at once
-			.single_field.invite_input
-				material-input(type='email' label="Email")
-			.single_field.invite_input
-				material-input(type='email' label="Email")
-			.single_field.invite_input
-				material-input(type='email' label="Email")
-			.single_field.invite_input
-				material-input(type='email' label="Email")
-			.single_field.invite_input
-				material-input(type='email' label="Email")
+			div.modal_title You can invite a few users at once .invite_input
+			div.group
+				input(type='text' required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
+			div.group
+				input(type='text' required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
+			div.group
+				input(type='text' required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
+			div.group
+				input(type='text' required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
+			div.group
+				input(type='text' required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
+			div.group
+				input(type='text' required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
 			div.panel_bttn.block_users
 				button(type='submit').btn_send_invite.button-wave Send invites
-    
 
-	
+
+
 // content ends

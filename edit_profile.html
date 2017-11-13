@@ -8,9 +8,7 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="js/min/jquery-3.1.1.min.js" defer></script>
     <script src="js/min/clipboard.min.js" defer></script>
-    <script src="js/script.js" defer> </script>
-    <script src="js/webcomponents-lite.js" defer></script>
-    <script src="js/material-input.js" defer></script>
+    <script src="js/script.js" defer></script>
   </head>
   <body class="general_wrapper">
     <!-- menu left begins-->
@@ -53,27 +51,33 @@
       <header class="top_block"></header>
       <div class="container-shadow profile_block">
         <div class="main_title">Edit profile</div>
-        <div class="single_field">
-          <material-input type="text" label="First name"></material-input>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>First name</label>
         </div>
-        <div class="single_field">
-          <material-input type="text" label="Last name"></material-input>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Last name</label>
         </div>
-        <div class="single_field">
-          <material-input type="email" label="Email"></material-input>
+        <div class="group">
+          <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Email</label>
         </div>
-        <div class="single_field">
-          <material-input type="password" label="Old password"></material-input>
+        <div class="group">
+          <input type="password" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Old password</label>
         </div>
-        <div class="single_field">
-          <material-input type="password" label="New password"></material-input>
+        <div class="group">
+          <input type="password" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>New password</label>
         </div>
-        <div class="single_field">
-          <material-input type="password" label="Confirm password"></material-input>
+        <div class="group">
+          <input type="password" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+          <label>Confirm password</label>
         </div>
-        <div class="block_checkbox mr-t30">
-          <input type="checkbox" name="require_email" id="require_email" value="require_email">
-          <label for="require_email">Require email confirmation for each operation</label>
+        <div class="Checkbox">
+          <input type="checkbox">
+          <div class="Checkbox-visible"></div><span class="checkbox-title">Require email confirmation for each operation</span>
         </div>
       </div>
     </main>

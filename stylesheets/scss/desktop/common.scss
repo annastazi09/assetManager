@@ -1,351 +1,335 @@
 	* {
-		box-sizing: border-box;
+	    box-sizing: border-box;
 	}
 	
 	html {
-		font-size: 16px;
+	    font-size: 16px;
 	}
 	
 	body {
-		height: 100%;
-		min-height: 100vh;
-		font-family: $RobR;
-		background-color: $c_bg_light;
+	    height: 100%;
+	    min-height: 100vh;
+	    font-family: $RobR;
+	    background-color: $c_bg_light;
 	}
 	
 	.general_wrapper {
-		position: relative;
+	    position: relative;
 	}
 	
 	.clickable {
-		cursor: pointer;
-		@include bp(tablet) {
-			cursor: default
-		}
+	    cursor: pointer;
+	    @include bp(tablet) {
+	        cursor: default
+	    }
 	}
 	
 	.top_block {
-		@extend %clear;
-		position: relative;
+	    @extend %clear;
+	    position: relative;
 	}
 	
 	.main_title.center_title {
-		text-align: center;
-		
+	    text-align: center;
 	}
 	
 	.main_title.left_title {
-		padding-left: 123.5px * 2 + 46px;
-		margin-bottom: 30px;
-		span {
-			color: $c_font_grey_n
-		}
-		@include bp(tablet) {
-			padding-top: 44px + 40px;
-			margin-bottom: 30px;
-			padding-left: 0;
-			text-align: right;
-		}
-		@include bp(tablet) {
-			padding-top: 0;
-			text-align: center;
-		}
+	    padding-left: 123.5px * 2 + 46px;
+	    margin-bottom: 30px;
+	    span {
+	        color: $c_font_grey_n
+	    }
+	    @include bp(tablet) {
+	        padding-top: 44px + 40px;
+	        margin-bottom: 30px;
+	        padding-left: 0;
+	        text-align: right;
+	    }
+	    @include bp(tablet) {
+	        padding-top: 0;
+	        text-align: center;
+	    }
 	}
 	
 	.bttn_return {
-		@extend %bttn_light;
-		//@include icon;
-		height: 44px;
-		border-radius: 40px;
-		font-family: $RobB;
-		font-size: 10px;
-		line-height: 40px;
-		position: absolute;
-		min-width: 204px;
-		top: 50%;
-		left: 0;
-		margin-top: -22px;
-		//padding-right: 20px;
-		//i {
-		//	display: inline-block;
-		//	color: #aaa;
-		//	//margin-top: 10px;
-		//	margin-right: 5px;
-		//	font-size: 15px;
-		//}
-//		&:before {
-//			background-image: url(../images/icon_arrow_left.png);
-//			left: 23px;
-//			top: 50%;
-//			margin-top: -12.5px;
-//			background-position: left center;
-//		}
-		@include bp(tablet) {
-			left: 32px;
-			right: auto;
-			top: -5px;
-			margin-top: 0;
-			font-size: 0;
-			width: 40px;
-			padding-left: 0;
-			padding-right: 0;
-			min-width: 0;
-			height: 30px;
-			&:before {
-				left: 50%;
-				transform: translateX(-50%);
-			}
-		}
+	    @extend %bttn_light; //@include icon;
+	    height: 44px;
+	    border-radius: 40px;
+	    font-family: $RobB;
+	    font-size: 10px;
+	    line-height: 40px;
+	    position: absolute;
+	    min-width: 204px;
+	    top: 50%;
+	    left: 0;
+	    margin-top: -22px; //padding-right: 20px;
+	    //i {
+	    //	display: inline-block;
+	    //	color: #aaa;
+	    //	//margin-top: 10px;
+	    //	margin-right: 5px;
+	    //	font-size: 15px;
+	    //}
+	    //		&:before {
+	    //			background-image: url(../images/icon_arrow_left.png);
+	    //			left: 23px;
+	    //			top: 50%;
+	    //			margin-top: -12.5px;
+	    //			background-position: left center;
+	    //		}
+	    @include bp(tablet) {
+	        left: 32px;
+	        right: auto;
+	        top: -5px;
+	        margin-top: 0;
+	        font-size: 0;
+	        width: 40px;
+	        padding-left: 0;
+	        padding-right: 0;
+	        min-width: 0;
+	        height: 30px;
+	        &:before {
+	            left: 50%;
+	            transform: translateX(-50%);
+	        }
+	    }
 	}
 	
 	.row_title {
-		position: relative;
-		font-family: Ubuntu-Light;
-		font-size: 18px;
-		color: #989696;
-		height: $table_title_h;
-		display: table-row;
-		border-collapse: collapse;
-		li {
-			padding-top: 5px;
-			vertical-align: middle;
-			border-bottom: 2px solid $c_bd_table;
-		}
+	    position: relative;
+	    font-family: Ubuntu-Light;
+	    font-size: 18px;
+	    color: #989696;
+	    height: $table_title_h;
+	    display: table-row;
+	    border-collapse: collapse;
+	    li {
+	        padding-top: 5px;
+	        vertical-align: middle;
+	        border-bottom: 2px solid $c_bd_table;
+	    }
 	}
 	
 	.row_content {
-		@extend %table_row;
-		font-family: Ubuntu-Regular;
-		font-size: 18px;
-		>li,
-		>div {
-			border-bottom: 1px solid $c_bd_table;
-			height: $row_height;
-			padding-top: 1px;
-			vertical-align: middle;
-			word-wrap: break-word;
-		}
+	    @extend %table_row;
+	    font-family: Ubuntu-Regular;
+	    font-size: 18px;
+	    >li,
+	    >div {
+	        border-bottom: 1px solid $c_bd_table;
+	        height: $row_height;
+	        padding-top: 1px;
+	        vertical-align: middle;
+	        word-wrap: break-word;
+	    }
 	}
 	
 	.row_title,
 	.row_content {
-		>li,
-		>div {
-			display: table-cell;
-			padding-left: 14px;
-			padding-right: 14px;
-			font-size: 18px;
-			vertical-align: middle;
-			@include bp(mobile) {
-				display: block;
-			}
-		}
+	    >li,
+	    >div {
+	        display: table-cell;
+	        padding-left: 14px;
+	        padding-right: 14px;
+	        font-size: 18px;
+	        vertical-align: middle;
+	        @include bp(mobile) {
+	            display: block;
+	        }
+	    }
 	}
 	
 	.mob_title {
-		display: none;
+	    display: none;
 	}
-	
-
 	
 	.popup_info {
-		display: none;
-		position: absolute;
-		top: -12px;
-		left: 20px;
-		width: 183px;
-		height: auto;
-		line-height: 12px;
-		max-height: 200px;
-		padding: 6px;
-		font-family: $RobR;
-		font-size: 10px;
-		color: $c_font_dark;
-		border-radius: 4px;
-		background-color: $c_bg_light;
-		box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-		border: solid 1px $c_bd_st;
-		text-align: left;
-		opacity: 0;
-		z-index: 1;
-		@include trans(opacity, st);
-		&.active {
-			opacity: 1;
-		}
-		&:before {
-			content: '';
-			background-color: $c_bg_light;
-			width: 10px;
-			height: 10px;
-			transform: rotate(45deg);
-			position: absolute;
-			top: 12px;
-			left: -6px;
-			border-left: solid 1px $c_bd_st;
-			border-bottom: solid 1px $c_bd_st;
-			box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
-		}
-	}
-	
-	input {
-		height: $input_h;
-		color: $c_font_dark;
-		text-indent: 2px;
-		font-size: 12px;
-		font-family: Ubuntu-Light;
-		width: $input_w;
-		border-bottom: 1px solid $c_bd_input;
-		@include ph($RobR, 14px, $c_font_dark) {
-			opacity: 0.3;
-		}
-	}
-	
+	    display: none;
+	    position: absolute;
+	    top: -12px;
+	    left: 20px;
+	    width: 183px;
+	    height: auto;
+	    line-height: 12px;
+	    max-height: 200px;
+	    padding: 6px;
+	    font-family: $RobR;
+	    font-size: 10px;
+	    color: $c_font_dark;
+	    border-radius: 4px;
+	    background-color: $c_bg_light;
+	    box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+	    border: solid 1px $c_bd_st;
+	    text-align: left;
+	    opacity: 0;
+	    z-index: 1;
+	    @include trans(opacity, st);
+	    &.active {
+	        opacity: 1;
+	    }
+	    &:before {
+	        content: '';
+	        background-color: $c_bg_light;
+	        width: 10px;
+	        height: 10px;
+	        transform: rotate(45deg);
+	        position: absolute;
+	        top: 12px;
+	        left: -6px;
+	        border-left: solid 1px $c_bd_st;
+	        border-bottom: solid 1px $c_bd_st;
+	        box-shadow: 0 2px 6px 0 rgba(0, 0, 0, 0.1);
+	    }
+	} // input {
+	// 	height: $input_h;
+	// 	color: $c_font_dark;
+	// 	text-indent: 2px;
+	// 	font-size: 12px;
+	// 	font-family: Ubuntu-Light;
+	// 	width: $input_w;
+	// 	border-bottom: 1px solid $c_bd_input;
+	// 	@include ph($RobR, 14px, $c_font_dark) {
+	// 		opacity: 0.3;
+	// 	}
+	// }
 	@include bp(mobile) {
-		/* --- --- --- --- --- Common --- --- --- --- --- */
-		.main_title.center_title {
-			padding-top: 44px + 40px;
-			margin-bottom: 30px;
-			padding-left: 0;
-			text-align: right;
-		}
-		.row_title {
-			display: none;
-		}
-		.row_content {
-			@include table_row_mob;
-		}
-		.mob_title {
-			display: block;
-			font-family: $RobR;
-		}
-		.popup_info_trigger {
-			margin-top: 4px;
-			height: 24px;
-			width: 12px + 30px;
-			margin-right: -15px;
-			padding-right: 15px;
-			margin-left: -15px;
-			padding-left: 15px;
-			&:before {
-				top: 50%;
-				margin-top: -6px;
-				left: 15px;
-			}
-		}
-		.popup_info {
-			top: 25px;
-			left: -35px;
-			width: 100px;
-			&:before {
-				top: -6px;
-				left: 50px;
-				border-top: solid 1px $c_bd_st;
-				border-bottom: none;
-				box-shadow: none;
-			}
-		}
-		input {
-			font-size: 16px;
-			&:focus {
-				font-size: 16px;
-			}
-		}
-	}
-
-.form {
-	padding: 50px;
-}
-
-.form-control-wrap {
-	//margin-bottom: 20px;
-	
-	.form-block_title {
-		display: flex;
-		align-items: center;
-
-		label.title {
-			font-size: 14px;
-    		font-family: RobotoBold;
-    		color: #aaa;
-			margin-right: 10px;
-			
-			&.checkbox-label {
-				display: flex;
-				align-items: center;
-				color: #444;
-				i {
-					cursor: pointer;
-					font-size: 20px;
-					color: #aaa;
-					margin-right: 15px;
-				}
-			}
-		}
+	    /* --- --- --- --- --- Common --- --- --- --- --- */
+	    .main_title.center_title {
+	        padding-top: 44px + 40px;
+	        margin-bottom: 30px;
+	        padding-left: 0;
+	        text-align: right;
+	    }
+	    .row_title {
+	        display: none;
+	    }
+	    .row_content {
+	        @include table_row_mob;
+	    }
+	    .mob_title {
+	        display: block;
+	        font-family: $RobR;
+	    }
+	    .popup_info_trigger {
+	        margin-top: 4px;
+	        height: 24px;
+	        width: 12px + 30px;
+	        margin-right: -15px;
+	        padding-right: 15px;
+	        margin-left: -15px;
+	        padding-left: 15px;
+	        &:before {
+	            top: 50%;
+	            margin-top: -6px;
+	            left: 15px;
+	        }
+	    }
+	    .popup_info {
+	        top: 25px;
+	        left: -35px;
+	        width: 100px;
+	        &:before {
+	            top: -6px;
+	            left: 50px;
+	            border-top: solid 1px $c_bd_st;
+	            border-bottom: none;
+	            box-shadow: none;
+	        }
+	    }
+	    input {
+	        font-size: 16px;
+	        &:focus {
+	            font-size: 16px;
+	        }
+	    }
 	}
 	
-	[class*="form-control"] {
-		width: 253px;
-		font-size: 14px;
-		
-		&:focus, &:hover {
-			border-color: $ambisafe-red;
-		}
-		
-		&[class*="--textarea"] {
-			margin-top: 5px;
-			box-sizing: border-box;
-			text-indent: 5px;
-			height: 100px;
-			border: 2px solid #acacac;
-			&:focus, &:hover {
-				border-color: $ambisafe-red;
-			}
-		}
-		
-		&[class*="--select"] {
-			height: 30px;
-			width: 250px;
-			border: none;
-			outline: none;
-			background: transparent;
-		}
-		
-		&[class*="--checkbox"] {
-			display: none;
-		
-			&:checked ~ i.icon-checkbox-checked {
-				display: inline-block;
-				color: $ambisafe-red;
-			}
-			&:checked ~ i.icon-checkbox-unchecked {
-				display: none;
-			}
-		}
+	.form {
+	    padding: 50px;
 	}
 	
-	.custom-select {
-		margin-top: 5px;
-		width: 253px;
-		height: 34px;	
-		border: 2px solid #acacac;
-		overflow: hidden;
-		&:hover {
-			border-color: $ambisafe-red;
-		}
+	.form-control-wrap {
+	    //margin-bottom: 20px;
+	    .form-block_title {
+	        display: flex;
+	        align-items: center;
+	        label.title {
+	            font-size: 14px;
+	            font-family: RobotoBold;
+	            color: #aaa;
+	            margin-right: 10px;
+	            &.checkbox-label {
+	                display: flex;
+	                align-items: center;
+	                color: #444;
+	                i {
+	                    cursor: pointer;
+	                    font-size: 20px;
+	                    color: #aaa;
+	                    margin-right: 15px;
+	                }
+	            }
+	        }
+	    }
+	    [class*="form-control"] {
+	        width: 253px;
+	        font-size: 14px;
+	        &:focus,
+	        &:hover {
+	            border-color: $ambisafe-red;
+	        }
+	        &[class*="--textarea"] {
+	            margin-top: 5px;
+	            box-sizing: border-box;
+	            text-indent: 5px;
+	            height: 100px;
+	            border: 2px solid #acacac;
+	            &:focus,
+	            &:hover {
+	                border-color: $ambisafe-red;
+	            }
+	        }
+	        &[class*="--select"] {
+	            height: 30px;
+	            width: 250px;
+	            border: none;
+	            outline: none;
+	            background: transparent;
+	        }
+	        &[class*="--checkbox"] {
+	            display: none;
+	            &:checked~i.icon-checkbox-checked {
+	                display: inline-block;
+	                color: $ambisafe-red;
+	            }
+	            &:checked~i.icon-checkbox-unchecked {
+	                display: none;
+	            }
+	        }
+	    }
+	    .custom-select {
+	        margin-top: 5px;
+	        width: 253px;
+	        height: 34px;
+	        border: 2px solid #acacac;
+	        overflow: hidden;
+	        &:hover {
+	            border-color: $ambisafe-red;
+	        }
+	    }
+	    .icon-checkbox-checked {
+	        display: none;
+	    }
 	}
-	.icon-checkbox-checked {
-		display: none;
+	
+	.ff-UbLightBold {
+	    font-family: UbuntuLight-Bold;
 	}
-}
-
-.ff-UbLightBold {
-	font-family:UbuntuLight-Bold;
-}
-.forgot_pass_text {
-	font-family:Ubuntu-Light;
-	color:#000;font-size:16px;
-	line-height:26px;
-	margin:40px 20px;
-}
-
-
+	
+	.forgot_pass_text {
+	    font-family: Ubuntu-Light;
+	    color: #000;
+	    font-size: 16px;
+	    line-height: 26px;
+	    margin: 40px 20px;
+	}

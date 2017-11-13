@@ -1,0 +1,60 @@
+* {
+    box-sizing: border-box;
+}
+
+.Checkbox {
+    width: 420px;
+    height: 20px;
+    position: relative;
+    >* {
+        position: absolute;
+    }
+    &-visible {
+        border: 1px solid red;
+        width: 18px;
+        height: 18px;
+        margin: 2px;
+        background: #fff;
+        border: 1px solid hsl(0, 0, 87%);
+        border-radius: 3px;
+    }
+    >input {
+        z-index: 1;
+        opacity: 0;
+        left: 50%;
+        top: 50%;
+        transform: translatex(-50%) translatey(-50%);
+        display: block;
+        cursor: pointer;
+        width: 18px;
+        height: 18px;
+    }
+    >input:checked+.Checkbox-visible {
+        background: red;
+        border-color: red;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxNCAxNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48dGl0bGU+d2hpdGU8L3RpdGxlPjxwYXRoIGQ9J001LjM3OCAxMS4zN0wyIDcuNTlsMS40MzgtMS4yODZMNS4zNzQgOC40N2w1LjE4NS01Ljg0TDEyIDMuOTFsLTYuNjIyIDcuNDYnIGZpbGw9JyNmZmYnLz48L3N2Zz4=);
+    }
+    >input:hover+.Checkbox-visible {
+        border-color: hsl(0, 0, 80%);
+        border: 1px solid red;
+    }
+    >input:hover:checked+.Checkbox-visible {
+        border-color: red;
+    }
+    >input:focus+.Checkbox-visible {
+        border-color: red;
+    }
+}
+
+.Checkbox-visible {
+    border: 1px solid red;
+}
+
+.checkbox-title {
+    margin-left: 30px;
+    font-family: Ubuntu-Regular;
+    font-size: 18px;
+    line-height: 21px;
+}
