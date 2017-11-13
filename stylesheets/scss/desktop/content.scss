@@ -1,0 +1,256 @@
+	main {
+		$left_col_w: 348px;
+		$pad_hz: 30px;
+		@extend %clear;
+		padding-top: 10px;
+		padding-left: $pad_hz;
+		padding-bottom: 10px;
+		padding-right: $pad_hz;
+		font-family: Ubuntu-Regular;
+		margin-left: $menu_w;
+		min-height: 100vh;
+		overflow: hidden;
+		@include bp(tablet) {
+			margin-left: 0;
+		}
+		.main_title {
+			height: 80px;
+			line-height: 80px;
+			font-size: 34px;
+			font-family: Ubuntu-Light;
+			@include bp(tablet) {
+				text-align: center;
+				font-size: 20px;
+				font-family: $RobR;
+				height: auto;
+				line-height: 1.43;
+			}
+		}
+		.chat_trigger {
+			position: fixed;
+			width: 65px;
+			height: 65px;
+			right: 30px;
+			bottom: 30px;
+			border-radius: 50%;
+			cursor: pointer;
+			//background-color: $c_bg_dark;
+			background-color: $ambisafe-red;
+			background-image: url(../images/icon_chat.png);
+			background-position: center center;
+			background-size: 30px 30px;
+			box-shadow: 0 2px 5px 0.5px rgba(0, 0, 0, 0.1), 0 1px 2.5px 0 rgba(0, 0, 0, 0.2);
+			@include trans(bg, st);
+			&:hover {
+				//background-color: $c_bg_grey_l;
+				background-color: darken($ambisafe-red, 10%);
+			}
+		}
+        
+        /* --- --- --- --- --- --- < Icons  --- --- --- --- --- --- */
+        @import '../../fonts/wallet-icons/style.css';
+        /* --- --- --- --- --- --- < Icons  --- --- --- --- --- --- */
+        
+		/* --- --- --- --- --- --- Dashboard >  --- --- --- --- --- --- */
+		@import 'dashboard/dashboard.scss';
+		/* --- --- --- --- --- --- < Dashboard  --- --- --- --- --- --- */
+		/* --- --- --- --- --- --- Users >  --- --- --- --- --- --- */
+		@import 'users/users.scss';
+		@import 'users/edit_profile.scss';
+		/* --- --- --- --- --- --- < Users  --- --- --- --- --- --- */
+		/* --- --- --- --- --- --- Operations >  --- --- --- --- --- --- */
+		@import 'operations/operations.scss';
+		/* --- --- --- --- --- --- < Operations  --- --- --- --- --- --- */
+		/* --- --- --- --- --- --- Assets >  --- --- --- --- --- --- */
+		@import 'assets/assets.scss';
+		/* --- --- --- --- --- --- < Assets  --- --- --- --- --- --- */   
+        
+	}
+	
+	@include bp(mobile) {
+		main {
+			padding: $main_content_hz_pad;
+			.main_title {
+				font-size: 14px;
+				
+			}
+			.chat_trigger {
+				width: 40px;
+				height: 40px;
+				background-size: 20px 20px;
+				bottom: 20px;
+				right: 20px;
+			}
+		}
+	}
+
+
+	.button-wave,.menus {
+		position: relative;
+		background-color: #FFF0F5;
+		border: none;
+		font-size: 28px;
+		color: #FFFFFF;
+		padding: 20px;
+		width: 200px;
+		text-align: center;
+		-webkit-transition-duration: 0.4s; /* Safari */
+		transition-duration: 0.4s;
+		text-decoration: none;
+		overflow: hidden;
+		cursor: pointer;
+	}
+	
+	.button-wave:after,.menus:after {
+		content: "";
+		background: #DCDCDC;
+		display: block;
+		position: absolute;
+		padding-top: 300%;
+		padding-left: 350%;
+		margin-left: -20px!important;
+		margin-top: -120%;
+		opacity: 0;
+		transition: all 0.8s
+	}
+	
+	.button-wave:active:after,.menus:active:after  {
+		padding: 0;
+		margin: 0;
+		opacity: 1;
+		transition: 0s
+	}
+
+	.container-shadow {
+		box-shadow:0px 2px 4px rgba(0, 0, 0, 0.2);
+		padding: 10px 40px 40px;
+	}
+	.mr-t40 {
+		margin-top:40px !important;
+	}
+
+	.mr-t20 {
+		margin-top:20px;
+	}
+
+	.mr-t30 {
+		margin-top:30px;
+	}
+
+	.mr-t15 {
+		margin-top:15px;
+	}
+
+	.mr-t45 {
+		margin-top:45px;
+	}
+
+	.mr-t35 {
+		margin-top:35px;
+	}
+
+	.mr-t70 {
+		margin-top:70px;
+	}
+
+	.pd_b125 {
+		padding-bottom:125px;
+	}
+
+	.mr-b160 {
+		margin-bottom: 160px;
+	}
+
+	.mr-r30 {
+		margin-right: 30px;
+	}
+	.pd-t20 {
+		padding-top:20px;
+	}
+
+	.pd-l15 {
+		padding-left:15px;
+	}
+
+	.mr_l10 {
+		margin-left:10px;
+	}
+
+	.pd_r40 {
+		padding-right: 40px;
+	}
+
+	.mr_l20 {
+		margin-left: 20px;
+	}
+
+	.mr_b250 {
+		margin-bottom: 250px;
+	}
+
+	.mr_t-20_mr_r20 {
+		margin-top:-20px;
+		margin-right:20px;
+	}
+
+	.mr_t-40_mr_r20 {
+		margin-top:-40px;
+		margin-right:20px;
+	}
+
+	.mr_t-25 {
+		margin-top:-25px;
+	}
+
+	.mr_b40 {
+		margin-bottom:40px;
+	}
+
+	.mr_t160 {
+		margin-top:160px;
+	}
+
+	.mr_t-50 {
+		margin-top:-50px !important;
+	}
+
+	.mr_t-40 {
+		margin-top:-40px;
+	}
+
+	input[type='checkbox']{
+		display:none;
+	}
+	input[type='checkbox'] + label {
+		cursor:pointer;
+		font-size: 18px;
+		line-height: 21px;
+		font-family: Ubuntu-Regular;
+	}
+	input[type='checkbox'] + label:before {
+		background:#fff;
+		height:18px;
+		border-radius:4px;
+		border:2px solid red;
+		content: ' ';
+		display:inline-block;
+		width:18px;
+		vertical-align: middle;
+		margin-right:10px;
+		position:relative;
+		top:-1px;
+	}
+	input[type='checkbox']:checked + label:before {
+		content: '\2713';
+		color:red;
+		font-size:18px;
+		text-align:center;
+		line-height:18px;
+	}
+
+	material-input {
+		--material-input-highlight-color: $grey3;
+		--material-input-placeholder-color: #B9B9B9;
+		font-family: Ubuntu-Light;
+		font-weight: normal;
+	  }

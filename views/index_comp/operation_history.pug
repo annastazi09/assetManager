@@ -1,0 +1,28 @@
+// content begins
+
+main(data-page='operation_history')
+	header.top_block
+		
+	div.operations_content.container-shadow
+		h1.main_title Operations History
+		div.table_history.table-operations
+				ul.row_title
+					li.cell_id ID
+					li.cell_date Date
+					li.cell_status Status
+					li.cell_description Description
+				-for (var i =0; i< 20; i++)
+					a(href="operation_complete_t.html").row_content
+						div.cell_id.single-cell
+							span.mob_title ID
+							span=  i + 419
+						div.cell_date.single-cell
+							span.mob_title Date
+							span March  3, 2017, 4:21 PM
+						div.cell_status.single-cell
+							span.mob_title Status
+							span= operations_status[i]
+						div.cell_description.single-cell
+							span.mob_title Description
+							span= operations_descriptions[i]
+// content ends

@@ -1,0 +1,53 @@
+include ../index_help/variables    
+include ../index_help/mixins  
+
+doctype html
+html
+	head
+		include ../index_meta/head  
+	body.general_wrapper
+		form.form
+			div.form-control-wrap
+				div.form-block_title
+					label.title Login
+					div.popup_info_trigger.clickable
+						i.icon-help
+						div.popup_info= lorem1
+				input(class="form-control" type='email' placeholder="Reissue asset")
+			br
+			br
+			div.form-control-wrap
+				div.form-block_title
+					label.title Textarea
+					div.popup_info_trigger.clickable
+						i.icon-help
+						div.popup_info= lorem1
+				textarea(class="form-control--textarea" type='email' placeholder="Reissue asset")
+			br
+			br
+			div.form-control-wrap
+				div.form-block_title
+					label.title Select
+					div.popup_info_trigger.clickable
+						i.icon-help
+						div.popup_info= lorem1
+				div.custom-select
+					select(class="form-control--select")
+						option hello
+						option hello
+						option hello
+			br
+			br
+			br
+			div.form-control-wrap
+				div.form-block_title
+					label.title.checkbox-label 
+						input(class="form-control--checkbox" type="checkbox")
+						i.icon-checkbox-unchecked
+						i.icon-checkbox-checked
+						span Checkbox
+//					div.popup_info_trigger.clickable
+//						i.icon-help
+//						div.popup_info= lorem1
+			
+			

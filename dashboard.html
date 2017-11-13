@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambisafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-ambisafe.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/min/jquery-3.1.1.min.js" defer></script>
+    <script src="js/min/clipboard.min.js" defer></script>
+    <script src="js/script.js" defer> </script>
+    <script src="js/webcomponents-lite.js" defer></script>
+    <script src="js/material-input.js" defer></script>
+  </head>
+  <body class="general_wrapper">
+    <!-- menu left begins-->
+    <div class="main_menu">
+      <div class="menu_shim"></div>
+      <div class="menu_under_shim"></div>
+      <div class="menu_left">
+        <div class="menu_trigger clickable"><i class="icon-menu-mobile-btn"></i></div>
+        <header class="menu_header"><a class="h_logo clickable" href="" style="position:fixed;"><img src="images/logo-grey.svg" alt="logo"></a></header>
+        <nav>
+          <ul>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard" style="margin-top:50px;">
+              <div class="item-wrap"><i class="icon-icon-dashboard"></i><a href="dashboard.html">Dashboard</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard">
+              <div class="item-wrap"><i class="icon-icon-manage"></i><a href="manage_users.html">Manage Users</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-history"></i><a href="operation_history.html">Operation History</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap assets-wrap"><i class="icon-icon-assets"></i><a href="assets.html">Assets</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="new_asset">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-new-asset"></i><a href="new_asset.html">Issue new asset</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="edit_profile">
+              <div class="item-wrap"><i class="icon-icon-profile"></i><a href="edit_profile.html">Edit Profile</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logout clickable">
+        <div class="item-wrap"> <i class="icon-icon-logout"></i><a href="login.html">Log Out</a></div>
+      </div>
+    </div>
+    <!-- menu left ends-->
+    <!-- content begins-->
+    <main data-page="dashboard">
+      <header class="top_block"></header>
+      <div class="main_info container-shadow">
+        <div class="block_name">
+          <h1 class="main_title mr-t40">Organization</h1>
+          <div class="block_panel">
+            <div class="bttn clickable btn_dash">Edit</div>
+          </div>
+          <div class="block_content">
+            <material-input type="text" value="Ambisafe" label="Company name"></material-input>
+            <div class="panel_bttn">
+              <div class="bttn_edit clickable"></div>
+              <div class="bttn_cancel clickable"></div>
+            </div>
+          </div>
+        </div>
+        <div class="block_signatures">
+          <div class="block_panel">
+            <div class="bttn clickable btn_dash">Edit</div>
+          </div>
+          <div class="block_content">
+            <material-input type="text" value="1" label="Signature required"></material-input>
+            <div class="panel_bttn">
+              <div class="bttn_edit clickable"></div>
+              <div class="bttn_cancel clickable"></div>
+            </div>
+          </div>
+        </div>
+        <div class="block_checkbox">
+          <input type="checkbox" name="sensitive_info" id="sensitive_info" value="sensitive_info">
+          <label for="sensitive_info">Hide sensitive information from emails</label>
+        </div>
+        <div class="block_owners">
+          <div class="block_panel">
+            <p class="title">Owners</p><a class="bttn clickable save_btn" href="">Save		</a>
+          </div>
+          <div class="block_content">
+            <div class="single_owner" style="width:250px;">
+              <div class="owner_name">Andrey Zamovskiy</div>
+              <div class="panel_bttn">
+                <div class="bttn_delete clickable"></div>
+              </div>
+            </div>
+            <div class="single_owner" style="width:250px;">
+              <div class="owner_name">Oleh Vasylenko</div>
+              <div class="panel_bttn">
+                <div class="bttn_delete clickable"></div>
+              </div>
+            </div>
+            <div class="single_owner" style="width:250px;">
+              <div class="owner_name">Anton Simernia</div>
+              <div class="panel_bttn">
+                <div class="bttn_delete clickable"></div>
+              </div>
+            </div>
+            <div class="single_owner" style="width:250px;">
+              <div class="owner_name">Johny Kartakov</div>
+              <div class="panel_bttn">
+                <div class="bttn_delete clickable"></div>
+              </div>
+            </div>
+            <div class="single_owner" style="width:250px;">
+              <div class="owner_name">Sergiy Martynenko</div>
+              <div class="panel_bttn">
+                <div class="bttn_delete clickable"></div>
+              </div>
+            </div>
+          </div>
+          <div class="block_content" style="margin-bottom:300px;">
+            <div class="single_owner owner_sets">
+              <div class="owner_name add_icon">&nbsp;Add owner</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="cold_storage container-shadow">
+        <h1 class="main_title">Cold Storage Address</h1>
+        <div class="block_cs_adress flex-row">
+          <p class="cs_code" id="code">0x3275b4h64ue34h98hf93g94t394d9384m398dl39</p>
+          <div class="bttn_copy clickable" data-clipboard-target="#code"></div>
+        </div>
+        <div class="panel_bttn block_dash">
+          <button class="btn_invite button-wave" type="submit">Send ETH from cold storage</button>
+        </div>
+        <h1 class="main_title">Cold Storage Balance</h1>
+        <div class="tab_users active">
+          <div class="table_users" style="margin-bottom:260px;">
+            <ul class="row_title">
+              <li class="cell_email">Symbol</li>
+              <li class="cell_name">Quantity</li>
+              <li class="cell_active txt_r">Name</li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>ETH</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.4675825200000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Ethereum</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>GMT</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.4678908980000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>GMTInCorporation Obligations</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>FND</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.46759080000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>SomeFund</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>NX3</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.469075000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>NixoidCoin3</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>AIM</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.46757590887000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>ArgonCoin</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>AQUA</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.46756789000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Auqa</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>GDX</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.4698000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Gdax</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Symbol</span><span>GHS</span></li>
+              <li class="cell_name"><span class="mob_title">Quantity</span><span>0.754509000000</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Gigahashes</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- content ends-->
+  </body>
+</html>

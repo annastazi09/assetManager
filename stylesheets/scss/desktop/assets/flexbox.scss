@@ -1,0 +1,39 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-row-reverse {
+    display: flex;
+    flex-direction:row-reverse;
+}
+
+.flex_block_row100 {
+    display:flex;
+    flex-direction:row;
+    width:100%;
+}
+
+.flex_block_col35 {
+    display:flex;
+    flex-direction:column;
+    width:35%;
+}
+
+.flex_block_col65 {
+    display:flex;
+    flex-direction:column;
+    width:65%;
+}
+
+.flex_block_col33 {
+    display:flex;
+    flex-direction:column;
+    width:33%;
+}
+

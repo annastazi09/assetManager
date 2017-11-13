@@ -1,0 +1,107 @@
+.block_owners {
+	//$inp_w: 318px;
+	padding-top: 20px;
+	.block_panel {
+		margin-bottom: 20px;
+		.bttn {
+			//width: 120px;
+			color:red;
+			position: relative;
+			text-align: left;
+			text-indent: 37px;
+			font-family: Ubuntu-Regular;
+			font-size:16px;
+			line-height: 18px;
+			padding-right: 10px;
+			&:before {
+				content: '';
+				height: 12px;
+				width: 12px;
+				left: 14px;
+				top: 50%;
+				position: absolute;
+				margin-top: -6px;
+				background-image: url(../images/icon_add.png);
+				background-size: contain;
+			}
+		}
+	}
+	.block_content {
+		margin-top: -11px;
+	}
+	.single_owner {
+		@extend %clear;
+		height: $input_h;
+		margin-bottom: 10px;
+		background-color: $c_bg_input_owners;
+		border-radius: 20px;
+		.owner_name {
+			position: relative;
+			height: $input_h;
+			float: left;
+			text-overflow: ellipsis;
+			font-size: 18px;
+			text-indent: 15px;
+			font-family: Ubuntu-Regular;
+			color: $c_font_dark;
+			height: $input_h;
+			line-height: $input_h;
+			@include bp(laptop) {
+				width: 70%;
+				width: calc(100% - 40px - 10px);
+			}
+		}
+		.panel_bttn {
+			width: 40px;
+			height: 100%;
+			padding-left: 15px;
+			@include bp(tablet) {
+				padding-left: 0;
+				margin-top: -5px;
+				margin-bottom: -5px;
+				margin-right: -5px;
+				margin-left: -5px;
+				height: auto;
+				width: auto;
+			}
+			.bttn_delete {
+				&:before {
+					height: 10px;
+					width: 10px;
+					background-image: url(../images/close_icon.svg);
+					top: 15px;
+					background-size: contain;
+
+					opacity: 0.8;
+				}
+				&:hover {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+			.bttn_add {
+				&:before {
+					height: 10px;
+					width: 10px;
+					background-image: url(../images/close_icon.svg);
+					top: 15px;
+					background-size: contain;
+
+					opacity: 0.8;
+				}
+				&:hover {
+					&:before {
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+}
+
+.owner_sets {
+	margin-top:20px;
+	width:40%;
+	text-align:right
+}

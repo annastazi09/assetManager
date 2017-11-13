@@ -1,0 +1,171 @@
+@import "fonts.scss";
+@import "colors.scss";
+@import "sizes.scss";
+%clear {
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+@mixin clear {
+	position: relative;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+%shim {
+	&:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+	}
+}
+
+@mixin bp($size) {
+	@if $size==desktop {
+		@media screen and (max-width: $desktop) {
+			@content;
+		}
+	}
+	@elseif $size==laptop {
+		@media screen and (max-width: $desktop - 1px) {
+			@content;
+		}
+	}
+	@elseif $size==tablet {
+		@media screen and (max-width: $laptop - 1px) {
+			@content;
+		}
+	}
+	@elseif $size==mobile {
+		@media screen and (max-width: $tablet) {
+			@content;
+		}
+	}
+}
+
+@mixin ph($font-name, $font-size, $font-color) {
+	&::-webkit-input-placeholder {
+		font-family: Ubuntu-Light;
+		font-size: $font-size+2;
+		color: $font-color;
+		@content;
+	}
+	&::-moz-placeholder {
+		font-family:  Ubuntu-Light;
+		font-size: $font-size+2;
+		color: $font-color;
+		@content;
+	}
+	/* Firefox 19+ */
+	&:-moz-placeholder {
+		font-family:  Ubuntu-Light;
+		font-size: $font-size+2;
+		color: $font-color;
+		@content;
+	}
+	&::placeholder {
+		font-family:  Ubuntu-Light;
+		font-size: $font-size+2;
+		color: $font-color;
+		@content;
+	}
+
+}
+
+@mixin trans($property, $time) {
+	@if $property==bg {
+		transition-property: background-color;
+	}
+	@elseif $property==h {
+		transition-property: height;
+	}
+	@else {
+		transition-property: $property;
+	}
+	@if $time==st {
+		transition-duration: 0.3s
+	}
+	@else {
+		transition-duration: $time;
+	}
+}
+
+@mixin icon {
+	position: relative;
+	&:before {
+		content: '';
+		position: absolute;
+		width: 25px;
+		height: 25px;
+	}
+}
+
+%rect_bttn {
+	font-size: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	border-radius: 40px;
+	font-family: Ubuntu-Light;
+	@include trans(bg, st);
+}
+
+%bttn_dark {
+	@extend %rect_bttn;
+	//background-color: $c_bg_bttn_st;
+	background-color: $ambisafe-grey;
+	color: $c_font_light;
+	&:hover {
+		//background-color: $c_bg_bttn_hov;
+		background-color: $ambisafe-grey-hover;
+	}
+}
+
+%bttn_light {
+	@extend %rect_bttn;
+	color: $c_font_bttn;
+	//border: 2px solid $c_bd_st;
+	border: 2px solid $ambisafe-red;
+	&:hover {
+		//border-color: $c_bd_bttn_hov;
+		border-color: darken($ambisafe-red, 10%);
+	}
+}
+
+%table_row {
+	height: $row_height;
+	position: relative;
+	display: table-row;
+	border-collapse: collapse;
+}
+
+@mixin table_row_mob {
+	display: block;
+	height: auto;
+	border-top: 1px solid $c_bd_table;
+	border-bottom: 1px solid $c_bd_table;
+	margin-left: -$main_content_hz_pad;
+	margin-right: -$main_content_hz_pad;
+	padding-left: $main_content_hz_pad;
+	padding-right: $main_content_hz_pad;
+}
+
+@mixin table_cell_mob {
+	@include clear;
+	display: block;
+	width: 100%;
+	padding: 0;
+	min-width: 0;
+	height: $row_h_mob;
+	line-height: $row_h_mob;
+	border: none;
+}

@@ -1,0 +1,51 @@
+// content begins
+
+main(data-page='new_asset')
+	.container-shadow.mr-t20
+		header.top_block
+			h1.main_title Issue New Asset
+			//a(href="assets.html").bttn_return back to list of assets
+		div.mr-b160 
+			form.flex_block_row100
+				div.flex_block_col35
+					div.single_field
+						material-input(type='text' label="Name")
+					div.single_field
+						material-input(type='text' label="Symbol")
+					div.single_field
+						material-input(type='text' label="Issue value")
+					div.single_field.pd_b125 
+						material-input(type='text' label="Description")
+					div.single_field
+						material-input(type='text' label="Base unit")
+					div.single_field
+						material-input(type='text' label="ICAP")
+					.block_checkbox.mr-t30
+						input(type='checkbox' name='reissuable' id='reissuable' value='reissuable')
+						label(for='reissuable') It's reissuable
+					div.block_asset
+						button(type='submit').btn_continue Continue
+				div.flex_block_col65
+					ul.new_asset_info
+						li Thats is how users will call your asset.
+						li.mr-t40
+							div It is the currency name abbreviation, like <span class="ff-UbLightBold">"BTC"</span> or <span class="ff-UbLightBold">"Bitcoin"</span>.	
+							div Try to keep it short - 4 symbols max and check if it's not taken yet.
+						li.mr-t15 The amount of assets issued during creation	
+						li.mr-t45
+							div This is a slogan or phrase, which shortly introduces your currency to users.
+							div Example: Company HayekGold is ussuing assets each of which represents some amount
+							div of real world gold.
+							div Their currency has the next description: "Digital, Spendable Gold. http://www.hayekgold.com"
+							div So when somebody finds this contract among others on blockchain he easily understands
+							div what is it used for. 18000 symbols max.
+						li.mr-t35 
+							div Number of digits after decimal point.
+							div Set to 4 if not sure. Example: It's <span class="ff-UbLightBold">2</span> decimal places for <span class="ff-UbLightBold">USD ($1.00)</span> and <span class="ff-UbLightBold">8</span> for <span class="ff-UbLightBold">Bitcoin (1.00000000 BTC)</span>
+						li.mr-t70
+							div If True - you'll be able to issue additional amounts of the asset in future.
+							div If False - the initially issued amount of assets is final and can't be changed in future.
+
+	//- div.chat_trigger
+
+// content ends

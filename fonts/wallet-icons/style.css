@@ -1,0 +1,124 @@
+@font-face {
+  font-family: 'wallet-icons';
+  src:  url('fonts/wallet-icons.eot?inx3tj');
+  src:  url('fonts/wallet-icons.eot?inx3tj#iefix') format('embedded-opentype'),
+    url('fonts/wallet-icons.ttf?inx3tj') format('truetype'),
+    url('fonts/wallet-icons.woff?inx3tj') format('woff'),
+    url('fonts/wallet-icons.svg?inx3tj#wallet-icons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'wallet-icons' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-trashcan:before {
+  content: "\e903";
+}
+.icon-key:before {
+  content: "\e98d";
+}
+.icon-checkbox-checked:before {
+  content: "\ea52";
+}
+.icon-checkbox-unchecked:before {
+  content: "\ea53";
+}
+.icon-group:before {
+  content: "\e904";
+}
+.icon-info_outline:before {
+  content: "\e91c";
+}
+
+.icon-edit:before {
+  content: "\e91d";
+}
+.icon-menu-mobile-btn:before {
+  content: "\e902";
+}
+.icon-settings:before {
+  content: "\e919";
+}
+.icon-close:before {
+  content: "\e91a";
+}
+.icon-exclamation:before {
+  content: "\e900";
+}
+.icon-help:before {
+  content: "\e901";
+}
+.icon-arrow-lg-down:before {
+  content: "\e905";
+}
+.icon-arrow-done:before {
+  content: "\e906";
+}
+.icon-arrow-right:before {
+  content: "\e907";
+}
+.icon-arrow-left:before {
+  content: "\e908";
+}
+.icon-recieved-state:before {
+  content: "\e909";
+}
+.icon-send-state:before {
+  content: "\e90a";
+}
+.icon-converting-state:before {
+  content: "\e90b";
+}
+.icon-logout:before {
+  content: "\e90d";
+}
+.icon-arrow-top:before {
+  content: "\e90e";
+}
+.icon-btc:before {
+  content: "\e90f";
+}
+.icon-usd:before {
+  content: "\e910";
+}
+.icon-arrow-bottom:before {
+  content: "\e911";
+}
+.icon-plus:before {
+  content: "\e912";
+}
+.icon-user:before {
+  content: "\e913";
+}
+.icon-menu-send:before {
+  content: "\e915";
+}
+.icon-menu-transactions:before {
+  content: "\e916";
+}
+.icon-menu-dashboard:before {
+  content: "\e917";
+  color: #000;
+}
+.icon-arrow-lg-left:before {
+  content: "\e918";
+}
+.icon-menu-account:before {
+  content: "\e90c";
+}
+.icon-copy:before {
+  content: "\e914";
+}

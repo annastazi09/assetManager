@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambisafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-ambisafe.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/min/jquery-3.1.1.min.js" defer></script>
+    <script src="js/min/clipboard.min.js" defer></script>
+    <script src="js/script.js" defer> </script>
+    <script src="js/webcomponents-lite.js" defer></script>
+    <script src="js/material-input.js" defer></script>
+  </head>
+  <body class="general_wrapper">
+    <!-- menu left begins-->
+    <div class="main_menu">
+      <div class="menu_shim"></div>
+      <div class="menu_under_shim"></div>
+      <div class="menu_left">
+        <div class="menu_trigger clickable"><i class="icon-menu-mobile-btn"></i></div>
+        <header class="menu_header"><a class="h_logo clickable" href="" style="position:fixed;"><img src="images/logo-grey.svg" alt="logo"></a></header>
+        <nav>
+          <ul>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard" style="margin-top:50px;">
+              <div class="item-wrap"><i class="icon-icon-dashboard"></i><a href="dashboard.html">Dashboard</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard">
+              <div class="item-wrap"><i class="icon-icon-manage"></i><a href="manage_users.html">Manage Users</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-history"></i><a href="operation_history.html">Operation History</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap assets-wrap"><i class="icon-icon-assets"></i><a href="assets.html">Assets</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="new_asset">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-new-asset"></i><a href="new_asset.html">Issue new asset</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="edit_profile">
+              <div class="item-wrap"><i class="icon-icon-profile"></i><a href="edit_profile.html">Edit Profile</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logout clickable">
+        <div class="item-wrap"> <i class="icon-icon-logout"></i><a href="login.html">Log Out</a></div>
+      </div>
+    </div>
+    <!-- menu left ends-->
+    <!-- content begins-->
+    <main data-page="new_asset">
+      <div class="container-shadow mr-t20">
+        <header class="top_block">
+          <h1 class="main_title">Issue New Asset</h1>
+          <!--a(href="assets.html").bttn_return back to list of assets-->
+        </header>
+        <div class="mr-b160"> 
+          <form class="flex_block_row100">
+            <div class="flex_block_col35">
+              <div class="single_field">
+                <material-input type="text" label="Name"></material-input>
+              </div>
+              <div class="single_field">
+                <material-input type="text" label="Symbol"></material-input>
+              </div>
+              <div class="single_field">
+                <material-input type="text" label="Issue value"></material-input>
+              </div>
+              <div class="single_field pd_b125"> 
+                <material-input type="text" label="Description"></material-input>
+              </div>
+              <div class="single_field">
+                <material-input type="text" label="Base unit"></material-input>
+              </div>
+              <div class="single_field">
+                <material-input type="text" label="ICAP"></material-input>
+              </div>
+              <div class="block_checkbox mr-t30">
+                <input type="checkbox" name="reissuable" id="reissuable" value="reissuable">
+                <label for="reissuable">It's reissuable</label>
+              </div>
+              <div class="block_asset">
+                <button class="btn_continue" type="submit">Continue</button>
+              </div>
+            </div>
+            <div class="flex_block_col65">
+              <ul class="new_asset_info">
+                <li>Thats is how users will call your asset.</li>
+                <li class="mr-t40">
+                  <div>It is the currency name abbreviation, like <span class="ff-UbLightBold">"BTC"</span> or <span class="ff-UbLightBold">"Bitcoin"</span>.	</div>
+                  <div>Try to keep it short - 4 symbols max and check if it's not taken yet.</div>
+                </li>
+                <li class="mr-t15">The amount of assets issued during creation	</li>
+                <li class="mr-t45">
+                  <div>This is a slogan or phrase, which shortly introduces your currency to users.</div>
+                  <div>Example: Company HayekGold is ussuing assets each of which represents some amount</div>
+                  <div>of real world gold.</div>
+                  <div>Their currency has the next description: "Digital, Spendable Gold. http://www.hayekgold.com"</div>
+                  <div>So when somebody finds this contract among others on blockchain he easily understands</div>
+                  <div>what is it used for. 18000 symbols max.</div>
+                </li>
+                <li class="mr-t35"> 
+                  <div>Number of digits after decimal point.</div>
+                  <div>Set to 4 if not sure. Example: It's <span class="ff-UbLightBold">2</span> decimal places for <span class="ff-UbLightBold">USD ($1.00)</span> and <span class="ff-UbLightBold">8</span> for <span class="ff-UbLightBold">Bitcoin (1.00000000 BTC)</span></div>
+                </li>
+                <li class="mr-t70">
+                  <div>If True - you'll be able to issue additional amounts of the asset in future.</div>
+                  <div>If False - the initially issued amount of assets is final and can't be changed in future.</div>
+                </li>
+              </ul>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- content ends-->
+  </body>
+</html>

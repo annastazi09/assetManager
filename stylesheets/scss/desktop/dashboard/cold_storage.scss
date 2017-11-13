@@ -1,0 +1,102 @@
+.cold_storage {
+	float: right;
+	$pad: 20px;
+	$abs_w: $right_col_w;
+	$bd_rad: 20px;
+	margin-top: 20px;
+	width: 57%; // $abs_w;
+	@include bp(laptop) {
+		float: none;
+		margin: auto;
+		width: $abs_w;
+	}
+	@include bp(tablet) {
+		clear: both;
+		width: 100%;
+		margin-top: 25px;
+	}
+	.block_cs_adress {
+		margin: auto;
+		padding: 16px 0 29px;
+		//border-top-left-radius: $bd_rad;
+		//border-top-right-radius: $bd_rad;
+		//border: solid 2px $c_bd_table;
+		overflow: hidden;
+		.block_panel {}
+		.cs_code {
+			font-family: $RobR;
+			font-size: 20px;
+			line-height: 23px;
+			color: $c_font_dark;
+			word-wrap: break-word;
+		}
+		.panel_bttn {
+			@extend %clear;
+			margin-top: 22px;
+			margin-left: -10px;
+			margin-right: -10px;
+			.bttn_copy,
+			.bttn_send_from {
+				height: 40px;
+				float: left;
+				margin: 0 10px;
+			}
+			.bttn_copy {
+				@extend %bttn_light;
+				width: 80px;
+				line-height: 36px;
+			}
+			.bttn_send_from {
+				@extend %bttn_dark;
+				display: block;
+				width: 192px;
+				line-height: 40px;
+			}
+		}
+	}
+	.block_cs_balances {
+		margin: auto;
+		padding: 16px 18px 20px;
+		border-bottom-left-radius: $bd_rad;
+		border-bottom-right-radius: $bd_rad;
+		border-bottom: solid 2px $c_bd_table;
+		border-left: solid 2px $c_bd_table;
+		border-right: solid 2px $c_bd_table;
+		.block_panel {
+			margin-bottom: 13px;
+		}
+		.single_item {
+			display: block;
+			min-height: 60px;
+			padding: 14px 33px 14px 20px;
+			border: solid 1px $c_bd_table;
+			color: $c_font_dark;
+			overflow: hidden;
+			line-height: 30px;
+			word-wrap: break-word;
+			border-radius: 4px;
+			@include trans(border-color, st);
+			&:not(:last-of-type) {
+				margin-bottom: 20px;
+			}
+			&:hover {
+				border-color: $c_bd_bttn_hov;
+				box-shadow: 0px 0px 0px 1px $c_bd_bttn_hov;
+			}
+			.item_title {
+				float: left;
+				padding-right: 10px;
+				width: 60%;
+				font-family: $RobR;
+				font-size: 14px;
+			}
+			.item_balance {
+				float: right;
+				width: 40%;
+				font-family: $RobB;
+				font-size: 14px;
+				text-align: right;
+			}
+		}
+	}
+}

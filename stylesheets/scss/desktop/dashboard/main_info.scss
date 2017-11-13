@@ -1,0 +1,62 @@
+.main_info {
+	$bttns_right_w: 80px;
+	$input_h: 30px;
+	width: 40%;
+	float: left;
+	margin-top: 20px;
+	@include bp(laptop) {
+		width: $right_col_w;
+		float: none;
+		margin: auto;
+	}
+	@include bp(tablet) {
+		width: 100%;
+		margin-top: 15px;
+	}
+	.block_panel {
+		.bttn {
+			//@extend %bttn_dark;
+			display: block;
+			font-family: Ubuntu-Regular;
+			font-size:16px;
+			color:#989696;
+			float: right;
+			//width: 32px;
+			height: 19px;
+			line-height: 18px;
+		}
+	}
+	.panel_bttn {
+		height: $input_h;
+		float: right;
+		font-size: 0;
+		line-height: 18px;
+		.bttn_edit,
+		.bttn_cancel,
+		.bttn_delete {
+			vertical-align: middle;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			@include icon;
+			&:before {
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%)
+			}
+			@include bp(tablet) {
+				width: 40px;
+				height: 40px;
+			}
+		}
+	}
+	.block_name,
+	.block_signatures,
+	.block_owners {
+		//padding-top: 20px;
+		padding-bottom: 10px;
+		margin-top:-40px;
+	}
+	@import 'name_sign.scss';
+	@import 'owners.scss';
+}

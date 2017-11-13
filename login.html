@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambisafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-ambisafe.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/min/jquery-3.1.1.min.js" defer></script>
+    <script src="js/min/clipboard.min.js" defer></script>
+    <script src="js/script.js" defer> </script>
+    <script src="js/webcomponents-lite.js" defer></script>
+    <script src="js/material-input.js" defer></script>
+  </head>
+  <body class="general_wrapper">
+    <!-- content begins-->
+    <main data-page="login">
+      <header class="top_block"><img class="black-logo" src="images/logo-black.svg" alt="logo">
+        <h1 class="centred flex-col content_title"><span class="flex-col mr-top25"> Hello, </span><span class="flex-col">Log in to access your organization</span></h1>
+      </header>
+      <form class="new_asset">
+        <div class="sum_error" style="display:block;">Please enter a correct email and password. Note that both fields may be case-sensitive</div>
+        <div class="single_field">
+          <material-input type="email" label="Email"></material-input><span class="input_error" style="display:block;">Lorem ipsum</span>
+        </div>
+        <div class="single_field">
+          <material-input type="password" label="Password"></material-input><span class="input_error" style="display:block;">Lorem ipsum</span>
+        </div>
+        <div class="bottom_block non-brd">
+          <button class="bttn_submit" type="submit">Log in</button>
+          <div class="support flex-col">
+            <div><a class="flex-col" href="#" id="myBtn">Forgot your password?</a></div>
+            <div><a class="flex-col" href="#">Contact to Support</a></div>
+          </div>
+        </div>
+      </form>
+      <footer class="main_footer"> <span class="copy_text">&copy; 2017 Ambisafe Inc. All right reserved</span></footer>
+      <div class="modal" id="myModal">
+        <div class="modal-content login_modal"><span class="close">&times;</span>
+          <p class="forgot_pass_text">Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum</p>
+        </div>
+      </div>
+    </main>
+    <!-- content ends-->
+  </body>
+</html>

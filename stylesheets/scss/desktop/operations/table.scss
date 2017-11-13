@@ -1,0 +1,73 @@
+.operations_content {
+	$row_height: 48px;
+	color: $c_font_dark;
+	margin-top: 20px;
+	@include bp(mobile) {
+		margin-top: 20px;
+	}
+	.table_history {}
+	.row_content {
+		&:hover {
+			box-shadow: 0px 0px 2px 0 rgba(249, 35, 36, 0.9);
+		}
+		@include bp(mobile) {
+			&:hover {
+				box-shadow: none;
+			}
+		}
+	}
+	.row_title li,
+	.row_content>div {
+		text-overflow: ellipsis;
+	}
+	.row_content>div {
+		font-size: 18px;
+		@include bp(mobile) {
+			@include table_cell_mob;
+			height: auto;
+		}
+	}
+	/* --- Cells ---*/
+	.cell_id {
+		width: 8%;
+		min-width: 60px;
+		position: relative;
+	}
+	.cell_date {
+		width: 25%;
+		min-width: 250px;
+		position: relative;
+	}
+	.cell_status {
+		width: 20%;
+		min-width: 340px;
+		position: relative;
+	}
+	.cell_description {
+		width: 47%;
+		min-width: 535px;
+		position: relative;
+		@include bp(laptop) {
+			width: 45%
+		}
+	}
+}
+
+.table-operations {
+	display: table;
+	width: 100%;
+	table-layout: fixed;
+	@include bp(mobile) {
+		display: block;
+		overflow: hidden;
+		width: auto;
+		position: relative;
+	}
+	.mob_title {
+		@include bp(mobile) {
+			font-size: 10px;
+			color: $c_font_grey;
+			height: 20px;
+		}
+	}
+}

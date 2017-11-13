@@ -1,0 +1,7 @@
+cd /d H:\1_Projects\Commerce\016 Asset Manager\asset_manager
+
+gulp compile:pug
+
+gulp all:watch
+
+

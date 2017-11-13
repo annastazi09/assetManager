@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambisafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-ambisafe.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/min/jquery-3.1.1.min.js" defer></script>
+    <script src="js/min/clipboard.min.js" defer></script>
+    <script src="js/script.js" defer> </script>
+    <script src="js/webcomponents-lite.js" defer></script>
+    <script src="js/material-input.js" defer></script>
+  </head>
+  <body class="general_wrapper">
+    <!-- menu left begins-->
+    <div class="main_menu">
+      <div class="menu_shim"></div>
+      <div class="menu_under_shim"></div>
+      <div class="menu_left">
+        <div class="menu_trigger clickable"><i class="icon-menu-mobile-btn"></i></div>
+        <header class="menu_header"><a class="h_logo clickable" href="" style="position:fixed;"><img src="images/logo-grey.svg" alt="logo"></a></header>
+        <nav>
+          <ul>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard" style="margin-top:50px;">
+              <div class="item-wrap"><i class="icon-icon-dashboard"></i><a href="dashboard.html">Dashboard</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard">
+              <div class="item-wrap"><i class="icon-icon-manage"></i><a href="manage_users.html">Manage Users</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-history"></i><a href="operation_history.html">Operation History</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap assets-wrap"><i class="icon-icon-assets"></i><a href="assets.html">Assets</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="new_asset">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-new-asset"></i><a href="new_asset.html">Issue new asset</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="edit_profile">
+              <div class="item-wrap"><i class="icon-icon-profile"></i><a href="edit_profile.html">Edit Profile</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logout clickable">
+        <div class="item-wrap"> <i class="icon-icon-logout"></i><a href="login.html">Log Out</a></div>
+      </div>
+    </div>
+    <!-- menu left ends-->
+    <!-- content begins-->
+    <main data-page="users">
+      <header class="top_block"></header>
+      <div class="tabs_content container-shadow">
+        <div class="block_users">
+          <h1 class="main_title">Team</h1><span class="btn_invite button-wave" id="myBtn">Invite new users </span>
+        </div>
+        <div class="tab_users active">
+          <div class="table_users">
+            <ul class="row_title">
+              <li class="cell_email">Email</li>
+              <li class="cell_name">Name</li>
+              <li class="cell_active">Status</li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>deploy@ambisafe.co</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>Deploy Key</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Owner</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>anton.simernia@ambisafe.co</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>Anton Simernia</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Owner</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>deploy+goldminingtech@ambisafe.co</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>common GMT</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Owner</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>konstantin@argongroup.com</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>Konstantin</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Active User</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>anton.simernia+test@ambisafe.co</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>Test Mobile</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Active User</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>anton.simernia+test2@ambisafe.co</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>Test Mobile2</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Invited user</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>anton.simernia+test3@ambisafe.co</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>Test Mobile3</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Active User</span></li>
+            </ul>
+            <ul class="row_content">
+              <li class="cell_email"><span class="mob_title">Email</span><span>oleksii+crash@ambisafe.co</span></li>
+              <li class="cell_name"><span class="mob_title">Name</span><span>Test Crash</span></li>
+              <li class="cell_active"> <span class="mob_title">Status</span><span>Active User</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-content"><span class="close">&times;</span>
+          <h1 class="main_title pd-l15">Operations History</h1>
+          <div class="ff-UbLightBold bold_modal_title">Use email of user you want to invite</div>
+          <div class="modal_title">You can invite a few users at once</div>
+          <div class="single_field invite_input">
+            <material-input type="email" label="Email"></material-input>
+          </div>
+          <div class="single_field invite_input">
+            <material-input type="email" label="Email"></material-input>
+          </div>
+          <div class="single_field invite_input">
+            <material-input type="email" label="Email"></material-input>
+          </div>
+          <div class="single_field invite_input">
+            <material-input type="email" label="Email"></material-input>
+          </div>
+          <div class="single_field invite_input">
+            <material-input type="email" label="Email"></material-input>
+          </div>
+          <div class="panel_bttn block_users">
+            <button class="btn_send_invite button-wave" type="submit">Send invites</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- content ends-->
+  </body>
+</html>

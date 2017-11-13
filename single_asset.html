@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambisafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-ambisafe.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/min/jquery-3.1.1.min.js" defer></script>
+    <script src="js/min/clipboard.min.js" defer></script>
+    <script src="js/script.js" defer> </script>
+    <script src="js/webcomponents-lite.js" defer></script>
+    <script src="js/material-input.js" defer></script>
+  </head>
+  <body class="general_wrapper">
+    <!-- menu left begins-->
+    <div class="main_menu">
+      <div class="menu_shim"></div>
+      <div class="menu_under_shim"></div>
+      <div class="menu_left">
+        <div class="menu_trigger clickable"><i class="icon-menu-mobile-btn"></i></div>
+        <header class="menu_header"><a class="h_logo clickable" href="" style="position:fixed;"><img src="images/logo-grey.svg" alt="logo"></a></header>
+        <nav>
+          <ul>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard" style="margin-top:50px;">
+              <div class="item-wrap"><i class="icon-icon-dashboard"></i><a href="dashboard.html">Dashboard</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard">
+              <div class="item-wrap"><i class="icon-icon-manage"></i><a href="manage_users.html">Manage Users</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-history"></i><a href="operation_history.html">Operation History</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap assets-wrap"><i class="icon-icon-assets"></i><a href="assets.html">Assets</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="new_asset">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-new-asset"></i><a href="new_asset.html">Issue new asset</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="edit_profile">
+              <div class="item-wrap"><i class="icon-icon-profile"></i><a href="edit_profile.html">Edit Profile</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logout clickable">
+        <div class="item-wrap"> <i class="icon-icon-logout"></i><a href="login.html">Log Out</a></div>
+      </div>
+    </div>
+    <!-- menu left ends-->
+    <!-- content begins-->
+    <main data-page="assets">
+      <header class="top_block"></header>
+      <div class="operation_content container-shadow asset_info-block">
+        <h1 class="main_title"><span>ArgonCoin</span></h1>
+        <div class="title title_border">
+          <div class="flex-row mr_l10">Info</div>
+        </div>
+        <div class="text_description">
+          <div class="flex-col mr_l10"> 
+            <div class="flex-row">
+              <div class="asset_info-title">Cold Storage Balance: </div>
+              <div class="mr_l20">123456.7890123 AST</div>
+            </div>
+            <div class="flex-row">
+              <div class="asset_info-title">Cold Storage Balance:  </div>
+              <div class="mr_l20" id="code">0x2hf74jvn8gkc3794jg38fht3910ch48r</div>
+              <div class="bttn_copy clickable" data-clipboard-target="#code"></div>
+            </div>
+          </div>
+        </div>
+        <div class="title title_border mr_t40">
+          <div class="asset_info-text">
+            <div class="asset_info-desc">Symbol</div>
+            <div class="asset_info-desc">Base Unit</div>
+            <div class="asset_info-desc"> Supply </div>
+          </div>
+        </div>
+        <div class="text_description">
+          <div class="asset_info-text">
+            <div class="asset_info-desc">AIM</div>
+            <div class="asset_info-desc">10</div>
+            <div class="asset_info-desc">1,000.0000000000 	</div>
+          </div>
+        </div>
+        <div class="block_owners mr-t40">
+          <h5 class="main_title">Owners</h5>
+          <ul class="list_owners">
+            <li class="single_owner">Andrey Zamovskiy</li>
+            <li class="single_owner">Oleh Vasylenko</li>
+            <li class="single_owner">Anton Simernia</li>
+            <li class="single_owner">Johny Kartakov</li>
+            <li class="single_owner">Sergiy Martynenko</li>
+          </ul>
+        </div>
+        <div class="block_owners mr_t-40">
+          <h5 class="main_title">Available operations</h5>
+        </div>
+        <div class="block_pass flex-col mr_b250">
+          <div class="flex-row mr-t30">
+            <div class="single_field flex-col asset_select">
+              <select class="custom-select">
+                <option>Reissue asset</option>
+                <option>Send</option>
+                <option>Send to ICAP</option>
+                <option>Operation_004</option>
+                <option>Operation_005</option>
+                <option>Operation_006</option>
+              </select>
+            </div>
+            <div class="flex-col">
+              <div class="text_explanation">Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum</div>
+              <div class="block_operation">
+                <div class="mr_t-50 btn_approve" id="myBtn">Proceed</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="myModal">
+        <div class="modal-content assets_modal"><span class="close">&times;</span>
+          <h1 class="main_title pd-l15">Send</h1>
+          <div class="single_field invite_input">
+            <material-input type="text" label="To adress"></material-input>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
+          </div>
+          <div class="single_field invite_input">
+            <material-input type="text" label="Amount"></material-input>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
+            <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </div>
+          </div>
+          <div class="panel_bttn block_users mr_t70">
+            <button class="btn_send_invite button-wave" type="submit">Continue</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- content ends-->
+  </body>
+</html>

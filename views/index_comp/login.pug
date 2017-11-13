@@ -1,0 +1,31 @@
+// content begins
+
+main(data-page='login')
+	header.top_block
+		img.black-logo(src="images/logo-black.svg" alt="logo")
+		h1.centred.flex-col.content_title
+			span.flex-col.mr-top25  Hello, 
+			span.flex-col Log in to access your organization
+	form.new_asset
+		div(style="display:block").sum_error Please enter a correct email and password. Note that both fields may be case-sensitive
+		div.single_field
+			material-input(type='email' label="Email")
+			span(style="display:block").input_error Lorem ipsum
+		div.single_field
+			material-input(type='password' label="Password")
+			span(style="display:block").input_error Lorem ipsum
+		
+		div.bottom_block.non-brd
+			button(type='submit').bttn_submit Log in
+			div.support.flex-col
+				div
+					a(href="#").flex-col#myBtn Forgot your password?
+				div
+					a(href="#").flex-col Contact to Support
+	footer.main_footer 
+		span.copy_text &copy; 2017 Ambisafe Inc. All right reserved
+	#myModal.modal
+		.modal-content.login_modal
+			span.close &times;
+			p.forgot_pass_text Lorem Ipsum Lorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem IpsumLorem Ipsum Lorem Ipsum
+// content ends

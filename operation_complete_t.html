@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambisafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-ambisafe.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/min/jquery-3.1.1.min.js" defer></script>
+    <script src="js/min/clipboard.min.js" defer></script>
+    <script src="js/script.js" defer> </script>
+    <script src="js/webcomponents-lite.js" defer></script>
+    <script src="js/material-input.js" defer></script>
+  </head>
+  <body class="general_wrapper">
+    <!-- menu left begins-->
+    <div class="main_menu">
+      <div class="menu_shim"></div>
+      <div class="menu_under_shim"></div>
+      <div class="menu_left">
+        <div class="menu_trigger clickable"><i class="icon-menu-mobile-btn"></i></div>
+        <header class="menu_header"><a class="h_logo clickable" href="" style="position:fixed;"><img src="images/logo-grey.svg" alt="logo"></a></header>
+        <nav>
+          <ul>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard" style="margin-top:50px;">
+              <div class="item-wrap"><i class="icon-icon-dashboard"></i><a href="dashboard.html">Dashboard</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="dashboard">
+              <div class="item-wrap"><i class="icon-icon-manage"></i><a href="manage_users.html">Manage Users</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-history"></i><a href="operation_history.html">Operation History</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="operation_history">
+              <div class="item-wrap assets-wrap"><i class="icon-icon-assets"></i><a href="assets.html">Assets</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="new_asset">
+              <div class="item-wrap" style="margin-bottom:40px;"><i class="icon-icon-new-asset"></i><a href="new_asset.html">Issue new asset</a></div>
+            </li>
+            <li class="menu_lvl_1 clickable" data-menu-item="edit_profile">
+              <div class="item-wrap"><i class="icon-icon-profile"></i><a href="edit_profile.html">Edit Profile</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="logout clickable">
+        <div class="item-wrap"> <i class="icon-icon-logout"></i><a href="login.html">Log Out</a></div>
+      </div>
+    </div>
+    <!-- menu left ends-->
+    <!-- content begins-->
+    <main data-page="operation_history">
+      <header class="top_block"> </header>
+      <div class="operation_content container-shadow">
+        <h1 class="main_title"><span>Operation ID:</span><span class="operation_id">421</span></h1>
+        <div class="title title_border">
+          <div class="flex-row mr_l10">Description</div>
+          <div class="flex-row-reverse mr_t-20_mr_r20"> 
+            <div>Status </div>
+            <div class="pd_r40">Signature Required</div>
+          </div>
+        </div>
+        <div class="text_description">
+          <div class="flex-col mr_l10"> 
+            <div class="flex-row">
+              <div>Send: </div>
+              <div class="mr_l20">123456.7890123 AST</div>
+            </div>
+            <div class="flex-row">
+              <div class="mr_l20">To: </div>
+              <div class="mr_l20">0x2hf74jvn8gkc3794jg38fht3910ch48r</div>
+            </div>
+          </div>
+          <div class="flex-row-reverse mr_t-40_mr_r20"> 
+            <div>Complete</div>
+            <div class="pd_r40">4</div>
+          </div>
+        </div>
+        <div class="block_owners mr-t40">
+          <h5 class="main_title">Owners</h5>
+          <ul class="list_owners">
+            <li class="single_owner">Andrey Zamovskiy</li>
+            <li class="single_owner">Oleh Vasylenko</li>
+            <li class="single_owner">Anton Simernia</li>
+            <li class="single_owner">Johny Kartakov</li>
+            <li class="single_owner">Sergiy Martynenko</li>
+          </ul>
+        </div>
+        <div class="block_owners mr_t-25"> 
+          <h5 class="main_title">Confirmations	</h5>
+        </div>
+        <div class="title title_border">
+          <div class="flex-row mr_l10">Signature info</div>
+          <div class="flex-row-reverse mr_t-20_mr_r20"> 
+            <div>Status 	</div>
+          </div>
+        </div>
+        <div class="table_users table-operations">
+          <div class="mr_b40">
+            <div class="flex-col mr_l10">
+              <div class="flex-row">
+                <div class="title">User: </div>
+                <div class="mr_l20">Deploy Key </div>
+              </div>
+              <div class="flex-row">
+                <div class="title">Hesh: </div>
+                <div class="mr_l20">0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08</div>
+              </div>
+            </div>
+            <div class="flex-row-reverse mr_t-40_mr_r20"> 
+              <div>OK</div>
+            </div>
+          </div>
+          <div class="mr_b40">
+            <div class="flex-col mr_l10">
+              <div class="flex-row">
+                <div class="title">User: </div>
+                <div class="mr_l20">Ivan Ivanov</div>
+              </div>
+              <div class="flex-row">
+                <div class="title">Hesh: </div>
+                <div class="mr_l20">0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08</div>
+              </div>
+            </div>
+            <div class="flex-row-reverse mr_t-40_mr_r20"> 
+              <div>OK</div>
+            </div>
+          </div>
+          <div class="mr_b40">
+            <div class="flex-col mr_l10">
+              <div class="flex-row">
+                <div class="title">User: </div>
+                <div class="mr_l20">Test Testov</div>
+              </div>
+              <div class="flex-row">
+                <div class="title">Hesh: </div>
+                <div class="mr_l20">0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08</div>
+              </div>
+            </div>
+            <div class="flex-row-reverse mr_t-40_mr_r20"> 
+              <div>OK</div>
+            </div>
+          </div>
+          <div class="mr_b40">
+            <div class="flex-col mr_l10">
+              <div class="flex-row">
+                <div class="title">User: </div>
+                <div class="mr_l20">Test Testovich</div>
+              </div>
+              <div class="flex-row">
+                <div class="title">Hesh: </div>
+                <div class="mr_l20">0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08</div>
+              </div>
+            </div>
+            <div class="flex-row-reverse mr_t-40_mr_r20"> 
+              <div>OK</div>
+            </div>
+          </div>
+          <div class="mr_b40">
+            <div class="flex-col mr_l10">
+              <div class="flex-row">
+                <div class="title">User: </div>
+                <div class="mr_l20">Rita Kazahova</div>
+              </div>
+              <div class="flex-row">
+                <div class="title">Hesh: </div>
+                <div class="mr_l20">0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08</div>
+              </div>
+            </div>
+            <div class="flex-row-reverse mr_t-40_mr_r20"> 
+              <div>OK</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- content ends-->
+  </body>
+</html>

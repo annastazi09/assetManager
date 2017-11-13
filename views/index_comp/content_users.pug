@@ -1,0 +1,47 @@
+// content begins
+
+main(data-page='users')
+	header.top_block
+	div.tabs_content.container-shadow
+		div.block_users
+			h1.main_title Team
+			span.btn_invite.button-wave#myBtn Invite new users 
+		div.tab_users.active
+			div.table_users
+				ul.row_title
+					li.cell_email Email
+					li.cell_name Name
+					li.cell_active Status
+				-for (var i =0; i< 8; i++)
+					ul.row_content
+						li.cell_email
+							span.mob_title Email
+							span= users_email[i]
+						li.cell_name
+							span.mob_title Name
+							span= users_name[i]
+						li.cell_active 
+							span.mob_title Status
+							span= users_status[i]
+	#myModal.modal
+		.modal-content
+			span.close &times;
+			h1.main_title.pd-l15 Operations History
+			div.ff-UbLightBold.bold_modal_title Use email of user you want to invite
+			div.modal_title You can invite a few users at once
+			.single_field.invite_input
+				material-input(type='email' label="Email")
+			.single_field.invite_input
+				material-input(type='email' label="Email")
+			.single_field.invite_input
+				material-input(type='email' label="Email")
+			.single_field.invite_input
+				material-input(type='email' label="Email")
+			.single_field.invite_input
+				material-input(type='email' label="Email")
+			div.panel_bttn.block_users
+				button(type='submit').btn_send_invite.button-wave Send invites
+    
+
+	
+// content ends

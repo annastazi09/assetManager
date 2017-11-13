@@ -1,0 +1,66 @@
+// content begins
+
+main(data-page='dashboard')
+	header.top_block
+		
+	div.main_info.container-shadow
+		
+		div.block_name
+			h1.main_title.mr-t40 Organization
+			+panel(' ', 'Edit')
+			div.block_content
+				material-input(type="text" value="Ambisafe" label='Company name')
+				div.panel_bttn
+					div.bttn_edit.clickable
+					div.bttn_cancel.clickable
+		div.block_signatures
+			+panel(' ', 'Edit')
+			div.block_content
+				material-input(type="text" value="1" label='Signature required')
+				div.panel_bttn
+					div.bttn_edit.clickable
+					div.bttn_cancel.clickable
+		.block_checkbox
+			input(type='checkbox' name='sensitive_info' id='sensitive_info' value='sensitive_info')
+			label(for='sensitive_info') Hide sensitive information from emails
+		div.block_owners
+			div.block_panel
+				p.title Owners
+				a(href="").bttn.clickable.save_btn Save		
+			div.block_content
+				each owner in owners
+					div.single_owner(style="width:250px")
+						div.owner_name= owner
+						div.panel_bttn
+							div.bttn_delete.clickable
+			div.block_content(style="margin-bottom:300px")
+				div.single_owner.owner_sets
+					div.owner_name.add_icon &nbsp;Add owner
+	div.cold_storage.container-shadow
+		h1.main_title Cold Storage Address
+		div.block_cs_adress.flex-row
+			p.cs_code#code 0x3275b4h64ue34h98hf93g94t394d9384m398dl39
+			div(data-clipboard-target="#code").bttn_copy.clickable
+		div.panel_bttn.block_dash
+
+				button(type='submit').btn_invite.button-wave Send ETH from cold storage
+		h1.main_title Cold Storage Balance
+		div.tab_users.active
+			div.table_users(style="margin-bottom:260px;")
+				ul.row_title
+					li.cell_email Symbol
+					li.cell_name Quantity
+					li.cell_active.txt_r Name
+				-for (var i =0; i< 8; i++)
+					ul.row_content
+						li.cell_email
+							span.mob_title Symbol
+							span= storage_symbol[i]
+						li.cell_name
+							span.mob_title Quantity
+							span= storage_quantity[i]
+						li.cell_active.txt_r
+							span.mob_title Name
+							span= storage_name[i]
+					
+// content ends

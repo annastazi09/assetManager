@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ambisafe</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/favicon-ambisafe.png" type="image/png">
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="js/min/jquery-3.1.1.min.js" defer></script>
+    <script src="js/min/clipboard.min.js" defer></script>
+    <script src="js/script.js" defer> </script>
+    <script src="js/webcomponents-lite.js" defer></script>
+    <script src="js/material-input.js" defer></script>
+  </head>
+  <body class="general_wrapper">
+    <!-- content begins-->
+    <main data-page="login">
+      <header class="top_block"><img class="black-logo" src="images/logo-black.svg" alt="logo">
+        <h1 class="centred flex-col content_title"><span class="flex-col mr-top25"> Hello, </span><span class="flex-col">Asset Manager accounts are independent from Ambisafe website accounts </span></h1>
+      </header>
+      <form class="new_asset">
+        <div class="single_field">
+          <material-input type="email" label="Email"></material-input>
+        </div>
+        <div class="single_field">
+          <material-input type="text" label="First Name"></material-input>
+        </div>
+        <div class="single_field">
+          <material-input type="text" label="Last Name"></material-input>
+        </div>
+        <div class="single_field">
+          <material-input type="text" label="Company Name"></material-input>
+        </div>
+        <div class="single_field">
+          <material-input type="password" label="Password"></material-input>
+        </div>
+        <div class="single_field">
+          <material-input type="password" label="Confirm Password"></material-input>
+        </div>
+        <div class="bottom_block non-brd">
+          <button class="bttn_submit" type="submit">Sign Up</button>
+        </div>
+      </form>
+      <footer class="main_footer">&copy; 2017 Ambisafe Inc. All right reserved</footer>
+    </main>
+    <!-- content ends-->
+  </body>
+</html>

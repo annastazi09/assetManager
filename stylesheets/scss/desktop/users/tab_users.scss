@@ -1,0 +1,98 @@
+.tab_users {
+	width:100%;
+	.row_content {
+		@include bp(mobile) {
+			margin-bottom: 10px;
+		}
+		li {
+			@include bp(mobile) {
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					height: 1px;
+					background-color: $c_bd_table;
+					opacity: 0.3;
+				}
+				&:last-of-type {
+					&:before {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	.cell_email {
+		width: 33%;
+		min-width: 200px;
+		@include bp(mobile) {
+			top: $row_h_mob
+		}
+	}
+	.cell_name {
+		width: 44%;
+		min-width: 150px;
+		@include bp(mobile) {
+			bottom: $row_h_mob
+		}
+	}
+	.cell_active {
+		width: 8.5%;
+		min-width: 50px;
+	}
+	.cell_super {
+		width: 9.5%;
+		min-width: 100px;
+	}
+	.cell_actions {
+		width: 5%;
+		min-width: 55px;
+		text-align: right;
+		position: relative;
+		i {
+			cursor: pointer;
+			font-size: 20px;
+			opacity: .5;
+			transition: opacity .3s;
+//			background-image: url(../images/icon_info.png);
+//			width: 24px;
+//			height: 24px;
+//			position: absolute;
+//			margin: -12px auto 0;
+//			left: 0;
+//			right: 0;
+//			top: 50%;
+//			@include bp(mobile) {
+//				right: 0px;
+//				left: auto;
+//			}
+			&:hover {
+				opacity: 1;
+			}
+		}
+	}
+	.cell_email,
+	.cell_name,
+	.cell_active,
+	.cell_super,
+	.cell_actions {
+		@include bp(mobile) {
+			@include table_cell_mob;
+			font-size: 14px;
+			text-align: right;
+		}
+	}
+	.mob_title {
+		@include bp(mobile) {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: $main_content_hz_pad;
+			line-height: $row_h_mob;
+			color: $c_font_dark;
+			opacity: 0.3;
+		}
+	}
+}

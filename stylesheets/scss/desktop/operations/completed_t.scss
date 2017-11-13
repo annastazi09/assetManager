@@ -1,0 +1,98 @@
+.complete_t {
+	font-family: RobotoBold;
+	&:before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 20px;
+		height: 20px;
+		background-image: url(../images/icon_check.png);
+		background-size: contain;
+		background-position: center center;
+	}
+}
+
+.table_users {
+	margin-top: 18px;
+	.cell_user,
+	.cell_hash,
+	.cell_status {
+		display: table-cell;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		overflow: hidden;
+		color: $c_font_dark;
+	}
+	.row_content {
+		@extend %table_row;
+		font-size: 14px;
+		position: relative;
+		
+		@include trans(h, st);
+		@include bp(mobile) {
+			@include table_row_mob;
+			height: auto;
+			border-bottom: 1px solid $c_bd_table;
+			padding: 0;
+			margin-right: 0;
+			margin-left: 0;
+			padding-top: 10px;
+			&.active {
+				height: 30px * 5
+			}
+		}
+		.cell_user,
+		.cell_hash,
+		.cell_status {
+			white-space: normal;
+			word-wrap: break-word;
+			border-bottom: 1px solid $c_bd_table;
+			height: $row_height;
+			vertical-align: middle;
+			@include bp(mobile) {
+				display: block !important;
+				white-space: normal;
+				padding: 0;
+				min-width: 0!important;
+				height: auto;
+				margin-bottom: 10px;
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.cell_user {
+	width: 25%;
+	min-width: 260px;
+	@include bp(mobile) {
+		width: 100%;
+	}
+}
+
+.cell_hash {
+	width: 65%;
+	min-width: 680px;
+	line-height: 150%;
+	@include bp(mobile) {
+		line-height: 1.33;
+		width: 100%;
+		max-width: none;
+		height: auto;
+		word-wrap: break-word;
+		position: relative;
+		border-bottom: none;
+	}
+}
+
+.cell_status {
+	width: 100px;
+	text-align: right;
+	@include bp(mobile) {
+		width: auto;
+		position: absolute;
+		top: 10px;
+		right: 0
+	}
+}

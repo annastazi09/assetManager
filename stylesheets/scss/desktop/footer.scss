@@ -1,0 +1,20 @@
+footer {
+    &.main_footer {
+            position:absolute;
+            margin:0;
+            text-align: center;
+            left:0px;
+            font-size:16px;
+            bottom:0px;
+            font-family: Ubuntu-Light;
+            width:100%;
+            padding:20px;
+            color:#000;
+            border-top:#CBCBCB;
+            background-color:#F8F8F8;
+            border-top: 1px solid #CBCBCB;
+            .copy_text {
+                padding-left:25px;
+            }
+    }
+}
