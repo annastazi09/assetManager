@@ -480,10 +480,11 @@ body {
   .menu_left .h_logo {
     display: block;
     padding-top: 35px;
-    padding-left: 37px; }
+    padding-left: 34px; }
     .menu_left .h_logo img {
       display: block;
-      height: 40px; }
+      height: 34px;
+      width: 146px; }
   .menu_left .user_info {
     min-height: 80px;
     padding-left: 35px;
@@ -520,7 +521,7 @@ body {
       .menu_left nav li a a,
       .menu_left nav li .item-wrap a {
         border-left: none;
-        padding-left: 0; }
+        padding-left: 6px; }
       .menu_left nav li a i[class*="icon"],
       .menu_left nav li .item-wrap i[class*="icon"] {
         color: black;
@@ -536,6 +537,9 @@ body {
       .menu_left nav li.active > .item-wrap:hover, .menu_left nav li.current > a:hover,
       .menu_left nav li.current > .item-wrap:hover {
         color: #fff; }
+  .menu_left nav .menu_lvl_1:nth-of-type(1) {
+    margin-top: 53px;
+    margin-left: 5px; }
   .menu_left nav .menu_lvl_1 > a,
   .menu_left nav .menu_lvl_1 .item-wrap {
     position: relative;
@@ -543,7 +547,7 @@ body {
     min-height: 70px;
     padding-top: 28px;
     line-height: 23px;
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 1px; }
     .menu_left nav .menu_lvl_1 > a:before,
     .menu_left nav .menu_lvl_1 .item-wrap:before {
@@ -551,6 +555,13 @@ body {
       position: absolute;
       width: 25px;
       height: 25px; }
+  .menu_left nav .menu_lvl_1:nth-of-type(2) .item-wrap {
+    margin-left: 4px; }
+  .menu_left nav .menu_lvl_1:nth-of-type(3) .item-wrap {
+    margin-left: 4px;
+    margin-bottom: 33px !important; }
+  .menu_left nav .menu_lvl_1:nth-of-type(5) .item-wrap {
+    margin-bottom: 34px !important; }
   .menu_left nav .menu_lvl_1 ul {
     transition-property: height;
     transition-duration: 0.3s;
@@ -590,7 +601,7 @@ body {
 .logout {
   position: fixed;
   bottom: 0;
-  left: 70px;
+  left: 83px;
   width: 280px;
   font-size: 16px;
   height: 70px;
@@ -606,7 +617,7 @@ body {
   .logout i[class*="icon"] {
     color: #f92324;
     font-size: 22px;
-    margin-right: 16px; }
+    margin-right: 5px !important; }
   @media screen and (max-width: 969px) {
     .logout {
       transition-property: transform;
