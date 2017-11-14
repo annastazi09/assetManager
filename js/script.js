@@ -215,7 +215,7 @@ $('.cell_remove i').on('click', function() {
     var modal = document.getElementById('myModal');
     var btn = document.getElementById('myBtn');
 
-    var span = document.getElementsByClassName("close")[0];
+    var span = document.getElementsByClassName("close_container")[0];
 
     btn.onclick = function() {
         modal.style.display = "block";

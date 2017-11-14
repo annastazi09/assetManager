@@ -2617,14 +2617,27 @@ main {
   padding: 20px;
   width: 44%; }
 
-.close {
-  color: #989696;
+.close_container {
+  position: relative;
+  left: 20px;
+  top: -20px;
   float: right;
-  margin-right: 11px;
-  margin-top: -3px;
-  font-size: 34px; }
-  .close:hover, .close:focus {
-    color: #E42520;
+  width: 64px;
+  height: 64px; }
+
+.close {
+  position: relative;
+  display: block;
+  z-index: 1;
+  margin-left: 25px;
+  background: url(../images/close_icon.svg) center no-repeat;
+  height: 14px;
+  width: 14px;
+  margin-top: 25px; }
+  .close:hover {
+    background: url(../images/close_icon_active.svg) center no-repeat;
+    height: 14px;
+    width: 14px;
     text-decoration: none;
     cursor: pointer; }
 
