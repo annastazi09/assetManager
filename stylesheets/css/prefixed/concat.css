@@ -2177,6 +2177,10 @@ main {
     position: relative;
     top: 35px;
     right: 5px; }
+  main .block_registr {
+    position: relative;
+    top: 12px;
+    right: 9px; }
   main[data-page='assets'] .top_block {
     position: relative; }
   main[data-page='assets'] .bttn_return {
@@ -2542,7 +2546,7 @@ main {
   padding-left: 15px; }
 
 .mr_l10 {
-  margin-left: 10px; }
+  margin-left: 10px !important; }
 
 .pd_r40 {
   padding-right: 40px; }
@@ -2578,6 +2582,21 @@ main {
 
 .mr-r10 {
   margin-right: 10px; }
+
+.mr-b56 {
+  margin-bottom: 56px !important; }
+
+.b2 {
+  bottom: 2px !important; }
+
+.b7 {
+  bottom: 7px !important; }
+
+.b10 {
+  bottom: 10px !important; }
+
+.b14 {
+  bottom: 14px !important; }
 
 .modal {
   display: none;
@@ -2622,12 +2641,11 @@ main {
 .group {
   position: relative;
   margin-bottom: 37px;
-  font-family: Ubuntu-Light;
-  margin-top: 20px; }
+  font-family: Ubuntu-Light; }
 
 input {
   font-size: 18px !important;
-  padding: 10px 10px 10px 5px !important;
+  padding: 5px 10px !important;
   display: block !important;
   width: 404px !important;
   border: none !important;

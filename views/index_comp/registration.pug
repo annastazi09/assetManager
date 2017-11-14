@@ -2,47 +2,48 @@
 
 main(data-page='login')
 	header.top_block
-		img.black-logo(src="images/logo-black.svg" alt="logo")
-		h1.centred.flex-col.content_title
+		img.black-logo.mr-b56(src="images/logo-black.svg" alt="logo")
+		h1.centred.flex-col.content_title.mr_l10
 			span.flex-col.mr-top25  Hello,
 			span.flex-col Asset Manager accounts are independent from Ambisafe website accounts
 	form.new_asset(novalidate)
-		div.group
-			input(type="text" required)
-			span.highlight
-			span.bar
-			span(style="display:none").input_error Lorem ipsum
-			label Email
-		div.group
-			input(type="text" required)
-			span.highlight
-			span.bar
-			span(style="display:none").input_error Lorem ipsum
-			label First Name
-		div.group
-			input(type="text" required)
-			span.highlight
-			span.bar
-			span(style="display:none").input_error Lorem ipsum
-			label Last Name
-		div.group
-			input(type="text" required)
-			span.highlight
-			span.bar
-			span(style="display:none").input_error Lorem ipsum
-			label Company Name
-		div.group
-			input(type="password" required)
-			span.highlight
-			span.bar
-			span(style="display:none").input_error Lorem ipsum
-			label Password
-		div.group
-			input(type="password" required)
-			span.highlight
-			span.bar
-			span(style="display:none").input_error Lorem ipsum
-			label Confirm Password
+		div.block_registr
+			div.group
+				input(type="text" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Email
+			div.group.b2
+				input(type="text" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label First Name
+			div.group.b7
+				input(type="text" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Last Name
+			div.group.b7
+				input(type="text" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Company Name
+			div.group.b10
+				input(type="password" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Password
+			div.group.b14
+				input(type="password" required)
+				span.highlight
+				span.bar
+				span(style="display:none").input_error Lorem ipsum
+				label Confirm Password
 		div.bottom_block.non-brd
 			button(type='submit').bttn_submit Sign Up
 	footer.main_footer &copy; 2017 Ambisafe Inc. All right reserved
