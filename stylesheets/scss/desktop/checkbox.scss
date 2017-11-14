@@ -38,7 +38,7 @@
     }
     >input:hover+.Checkbox-visible {
         border-color: hsl(0, 0, 80%);
-        border: 1px solid red;
+        border: 2px solid red;
     }
     >input:hover:checked+.Checkbox-visible {
         border-color: red;

@@ -1,5 +1,24 @@
 .profile_block {
-    width: 45%;
-    margin-top: 20px;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 25px;
     padding-bottom: 150px;
+}
+
+.edit_profile {
+    margin-bottom: 47px !important;
+    input,
+    .bar {
+        width: 513px !important;
+    }
+}
+
+.checkbox_profile {
+    top: 15px !important;
+    margin-bottom: 65px !important;
+}
+
+.main_edit {
+    margin-top: 35px !important;
+    margin-bottom: 10px !important;
 }

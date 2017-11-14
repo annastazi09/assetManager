@@ -1493,9 +1493,21 @@ main {
     width: 80%;
     margin: 0 auto; }
   main .profile_block {
-    width: 45%;
-    margin-top: 20px;
+    width: 40%;
+    margin-top: 50px;
+    margin-left: 25px;
     padding-bottom: 150px; }
+  main .edit_profile {
+    margin-bottom: 47px !important; }
+    main .edit_profile input,
+    main .edit_profile .bar {
+      width: 513px !important; }
+  main .checkbox_profile {
+    top: 15px !important;
+    margin-bottom: 65px !important; }
+  main .main_edit {
+    margin-top: 35px !important;
+    margin-bottom: 10px !important; }
   main .operations_content {
     color: #222;
     margin-top: 20px;
@@ -2426,6 +2438,9 @@ main {
 .mr_l10 {
   margin-left: 10px !important; }
 
+.mr_l-10 {
+  margin-left: -10px !important; }
+
 .pd_r40 {
   padding-right: 40px; }
 
@@ -2475,6 +2490,18 @@ main {
 
 .b14 {
   bottom: 14px !important; }
+
+.t3 {
+  top: 3px !important; }
+
+.t5 {
+  top: 5px !important; }
+
+.t7 {
+  top: 7px !important; }
+
+.t9 {
+  top: 9px !important; }
 
 .modal {
   display: none;
@@ -2542,6 +2569,7 @@ input {
   display: block !important;
   width: 404px !important;
   border: none !important;
+  font-family: Ubuntu-Regular;
   border-bottom: 1px solid #B9B9B9 !important; }
 
 input:focus {
@@ -2649,7 +2677,7 @@ input:focus ~ .highlight {
     background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0nMTQnIGhlaWdodD0nMTQnIHZpZXdCb3g9JzAgMCAxNCAxNCcgeG1sbnM9J2h0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnJz48dGl0bGU+d2hpdGU8L3RpdGxlPjxwYXRoIGQ9J001LjM3OCAxMS4zN0wyIDcuNTlsMS40MzgtMS4yODZMNS4zNzQgOC40N2w1LjE4NS01Ljg0TDEyIDMuOTFsLTYuNjIyIDcuNDYnIGZpbGw9JyNmZmYnLz48L3N2Zz4=); }
   .Checkbox > input:hover + .Checkbox-visible {
     border-color: #cccccc;
-    border: 1px solid red; }
+    border: 2px solid red; }
   .Checkbox > input:hover:checked + .Checkbox-visible {
     border-color: red; }
   .Checkbox > input:focus + .Checkbox-visible {
