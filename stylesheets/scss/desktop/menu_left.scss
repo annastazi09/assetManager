@@ -252,26 +252,26 @@ $pad_l: 64px;
 
 .item-wrap {
     .icon-icon-assets {
-        background: url('/images/menu_icons/assets_icon.svg') 0 0 no-repeat;
+        background: url('../images/menu_icons/assets_icon.svg') 0 0 no-repeat;
         display: inline-block;
         width: 28px;
         height: 28px;
         &:hover,
         &:active {
-            background: url('/images/menu_icons/assets_icon_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/assets_icon_active.svg') 0 0 no-repeat;
         }
     }
     &:hover,
     &:active {
         .icon-icon-assets {
-            background: url('/images/menu_icons/assets_icon_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/assets_icon_active.svg') 0 0 no-repeat;
         }
     }
 }
 
 .item-wrap {
     .icon-icon-dashboard {
-        background: url('/images/menu_icons/dashboard_icon.svg') 0 0 no-repeat;
+        background: url('../images/menu_icons/dashboard_icon.svg') 0 0 no-repeat;
         display: inline-block;
         width: 26px;
         height: 26px;
@@ -279,14 +279,14 @@ $pad_l: 64px;
     &:hover,
     &:active {
         .icon-icon-dashboard {
-            background: url('/images/menu_icons/dashboard_icon_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/dashboard_icon_active.svg') 0 0 no-repeat;
         }
     }
 }
 
 .item-wrap {
     .icon-icon-history {
-        background: url('/images/menu_icons/history.svg') 0 0 no-repeat;
+        background: url('../images/menu_icons/history.svg') 0 0 no-repeat;
         display: inline-block;
         width: 24px;
         height: 22px;
@@ -294,14 +294,14 @@ $pad_l: 64px;
     &:hover,
     &:active {
         .icon-icon-history {
-            background: url('/images/menu_icons/history_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/history_active.svg') 0 0 no-repeat;
         }
     }
 }
 
 .item-wrap {
     .icon-icon-manage {
-        background: url('/images/menu_icons/manage_users_icon.svg') 0 0 no-repeat;
+        background: url('../images/menu_icons/manage_users_icon.svg') 0 0 no-repeat;
         display: inline-block;
         width: 28px;
         height: 16px;
@@ -309,14 +309,14 @@ $pad_l: 64px;
     &:hover,
     &:active {
         .icon-icon-manage {
-            background: url('/images/menu_icons/manage_users_icon_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/manage_users_icon_active.svg') 0 0 no-repeat;
         }
     }
 }
 
 .item-wrap {
     .icon-icon-new-asset {
-        background: url('/images/menu_icons/new_asset_icon.svg') 0 0 no-repeat;
+        background: url('../images/menu_icons/new_asset_icon.svg') 0 0 no-repeat;
         display: inline-block;
         width: 28px;
         height: 28px;
@@ -324,14 +324,14 @@ $pad_l: 64px;
     &:hover,
     &:active {
         .icon-icon-new-asset {
-            background: url('/images/menu_icons/new_asset_icon_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/new_asset_icon_active.svg') 0 0 no-repeat;
         }
     }
 }
 
 .item-wrap {
     .icon-icon-profile {
-        background: url('/images/menu_icons/profile_icon.svg') 0 0 no-repeat;
+        background: url('../images/menu_icons/profile_icon.svg') 0 0 no-repeat;
         display: inline-block;
         width: 26px;
         height: 26px;
@@ -339,7 +339,7 @@ $pad_l: 64px;
     &:hover,
     &:active {
         .icon-icon-profile {
-            background: url('/images/menu_icons/profile_icon_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/profile_icon_active.svg') 0 0 no-repeat;
         }
     }
 }
@@ -348,7 +348,7 @@ $pad_l: 64px;
     display: flex;
     align-items: center;
     .icon-icon-logout {
-        background: url('/images/menu_icons/logout.svg') 0 0 no-repeat;
+        background: url('../images/menu_icons/logout.svg') 0 0 no-repeat;
         display: inline-block;
         width: 14px;
         height: 18px;
@@ -356,7 +356,7 @@ $pad_l: 64px;
     &:hover,
     &:active {
         .icon-icon-logout {
-            background: url('/images/menu_icons/logout_active.svg') 0 0 no-repeat;
+            background: url('../images/menu_icons/logout_active.svg') 0 0 no-repeat;
         }
     }
 }

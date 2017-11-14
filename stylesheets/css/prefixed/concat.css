@@ -705,60 +705,60 @@ body {
     opacity: 1; }
 
 .item-wrap .icon-icon-assets {
-  background: url("/images/menu_icons/assets_icon.svg") 0 0 no-repeat;
+  background: url("../images/menu_icons/assets_icon.svg") 0 0 no-repeat;
   display: inline-block;
   width: 28px;
   height: 28px; }
   .item-wrap .icon-icon-assets:hover, .item-wrap .icon-icon-assets:active {
-    background: url("/images/menu_icons/assets_icon_active.svg") 0 0 no-repeat; }
+    background: url("../images/menu_icons/assets_icon_active.svg") 0 0 no-repeat; }
 
 .item-wrap:hover .icon-icon-assets, .item-wrap:active .icon-icon-assets {
-  background: url("/images/menu_icons/assets_icon_active.svg") 0 0 no-repeat; }
+  background: url("../images/menu_icons/assets_icon_active.svg") 0 0 no-repeat; }
 
 .item-wrap .icon-icon-dashboard {
-  background: url("/images/menu_icons/dashboard_icon.svg") 0 0 no-repeat;
+  background: url("../images/menu_icons/dashboard_icon.svg") 0 0 no-repeat;
   display: inline-block;
   width: 26px;
   height: 26px; }
 
 .item-wrap:hover .icon-icon-dashboard, .item-wrap:active .icon-icon-dashboard {
-  background: url("/images/menu_icons/dashboard_icon_active.svg") 0 0 no-repeat; }
+  background: url("../images/menu_icons/dashboard_icon_active.svg") 0 0 no-repeat; }
 
 .item-wrap .icon-icon-history {
-  background: url("/images/menu_icons/history.svg") 0 0 no-repeat;
+  background: url("../images/menu_icons/history.svg") 0 0 no-repeat;
   display: inline-block;
   width: 24px;
   height: 22px; }
 
 .item-wrap:hover .icon-icon-history, .item-wrap:active .icon-icon-history {
-  background: url("/images/menu_icons/history_active.svg") 0 0 no-repeat; }
+  background: url("../images/menu_icons/history_active.svg") 0 0 no-repeat; }
 
 .item-wrap .icon-icon-manage {
-  background: url("/images/menu_icons/manage_users_icon.svg") 0 0 no-repeat;
+  background: url("../images/menu_icons/manage_users_icon.svg") 0 0 no-repeat;
   display: inline-block;
   width: 28px;
   height: 16px; }
 
 .item-wrap:hover .icon-icon-manage, .item-wrap:active .icon-icon-manage {
-  background: url("/images/menu_icons/manage_users_icon_active.svg") 0 0 no-repeat; }
+  background: url("../images/menu_icons/manage_users_icon_active.svg") 0 0 no-repeat; }
 
 .item-wrap .icon-icon-new-asset {
-  background: url("/images/menu_icons/new_asset_icon.svg") 0 0 no-repeat;
+  background: url("../images/menu_icons/new_asset_icon.svg") 0 0 no-repeat;
   display: inline-block;
   width: 28px;
   height: 28px; }
 
 .item-wrap:hover .icon-icon-new-asset, .item-wrap:active .icon-icon-new-asset {
-  background: url("/images/menu_icons/new_asset_icon_active.svg") 0 0 no-repeat; }
+  background: url("../images/menu_icons/new_asset_icon_active.svg") 0 0 no-repeat; }
 
 .item-wrap .icon-icon-profile {
-  background: url("/images/menu_icons/profile_icon.svg") 0 0 no-repeat;
+  background: url("../images/menu_icons/profile_icon.svg") 0 0 no-repeat;
   display: inline-block;
   width: 26px;
   height: 26px; }
 
 .item-wrap:hover .icon-icon-profile, .item-wrap:active .icon-icon-profile {
-  background: url("/images/menu_icons/profile_icon_active.svg") 0 0 no-repeat; }
+  background: url("../images/menu_icons/profile_icon_active.svg") 0 0 no-repeat; }
 
 .item-wrap {
   display: -webkit-box;
@@ -768,12 +768,12 @@ body {
       -ms-flex-align: center;
           align-items: center; }
   .item-wrap .icon-icon-logout {
-    background: url("/images/menu_icons/logout.svg") 0 0 no-repeat;
+    background: url("../images/menu_icons/logout.svg") 0 0 no-repeat;
     display: inline-block;
     width: 14px;
     height: 18px; }
   .item-wrap:hover .icon-icon-logout, .item-wrap:active .icon-icon-logout {
-    background: url("/images/menu_icons/logout_active.svg") 0 0 no-repeat; }
+    background: url("../images/menu_icons/logout_active.svg") 0 0 no-repeat; }
 
 main {
   padding-top: 10px;
