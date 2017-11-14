@@ -453,7 +453,7 @@ body {
   color: #000;
   font-size: 16px;
   line-height: 26px;
-  margin: 40px 20px; }
+  margin: 58px 17px; }
 
 .menu_left {
   position: fixed;
@@ -2620,15 +2620,17 @@ main {
 .close {
   color: #989696;
   float: right;
-  font-size: 28px; }
+  margin-right: 11px;
+  margin-top: -3px;
+  font-size: 34px; }
   .close:hover, .close:focus {
     color: #E42520;
     text-decoration: none;
     cursor: pointer; }
 
 .login_modal {
-  left: 35% !important;
-  width: 30% !important; }
+  left: 32% !important;
+  width: 37% !important; }
 
 .assets_modal {
   width: 30% !important;
@@ -2738,7 +2740,7 @@ input:focus ~ .highlight {
   .Checkbox > * {
     position: absolute; }
   .Checkbox-visible {
-    border: 1px solid red;
+    border: 2px solid red;
     width: 18px;
     height: 18px;
     margin: 2px;
@@ -2771,7 +2773,7 @@ input:focus ~ .highlight {
     border-color: red; }
 
 .Checkbox-visible {
-  border: 1px solid red; }
+  border: 2px solid red; }
 
 .checkbox-title {
   margin-left: 30px;
