@@ -52,6 +52,21 @@
 }
 
 .assets_modal {
-    width: 30% !important;
+    width: 40% !important;
     left: 40% !important;
+}
+
+.user_pd {
+    padding-top: 2% !important;
+}
+
+.user_modal {
+    width: 37% !important;
+}
+
+.modal_inputs {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    margin-top: 30px !important;
 }

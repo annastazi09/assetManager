@@ -47,27 +47,27 @@ main(data-page='assets')
 					div.text_explanation Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
 					.block_operation
 						div.mr_t-50.btn_approve#myBtn Proceed
-	#myModal.modal
+	#myModal.modal(style="padding-top: 5%")
 		.modal-content.assets_modal
-			span.close &times;
+			div.close_container
+				span.close
 			h1.main_title.pd-l15 Send
-			div.group.invite_input
-				input(type="text" required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label To adress
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
-			div.group.invite_input
-				input(type="text" required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label Amount
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
-				div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
-			div.panel_bttn.block_users.mr_t70
-				button(type='submit').btn_send_invite.button-wave Continue
+			div.modal_inputs
+				div.group
+					input(type="text" required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label To adress
+					div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
+				div.group
+					input(type="text" required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label Amount
+					div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
+			div.panel_bttn.block_users
+				button(type='submit').btn_send_invite.mr-10a Continue
 
 // content ends

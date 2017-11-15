@@ -26,51 +26,46 @@ main(data-page='users')
 						li.cell_active
 							span.mob_title Status
 							span= users_status[i]
-	#myModal.modal
-		.modal-content
+	#myModal.modal.user_pd
+		.modal-content.user_modal
 			div.close_container
 				span.close
-			h1.main_title.pd-l15 Operations History
+			h1.main_title.pd-l15 Invite new users
 			div.ff-UbLightBold.bold_modal_title Use email of user you want to invite
-			div.modal_title You can invite a few users at once .invite_input
-			div.group
-				input(type='text' required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label Email
-			div.group
-				input(type='text' required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label Email
-			div.group
-				input(type='text' required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label Email
-			div.group
-				input(type='text' required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label Email
-			div.group
-				input(type='text' required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label Email
-			div.group
-				input(type='text' required)
-				span.highlight
-				span.bar
-				span(style="display:none").input_error Lorem ipsum
-				label Email
+			div.modal_title You can invite a few users at once
+			div.modal_inputs
+				div.group
+					input(type='text' required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label Email
+				div.group
+					input(type='text' required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label Email
+				div.group
+					input(type='text' required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label Email
+				div.group
+					input(type='text' required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label Email
+				div.group
+					input(type='text' required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label Email
 			div.panel_bttn.block_users
-				button(type='submit').btn_send_invite.button-wave Send invites
+				button(type='submit').btn_send_invite.mr-10a Send invites
 
 
 

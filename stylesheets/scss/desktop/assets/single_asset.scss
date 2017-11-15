@@ -1,265 +1,263 @@
 &[data-page='assets'] {
-	.top_block {
-		position: relative;
-	}
-	.bttn_return {
-		padding-left: 20px;
-		padding-right: 20px;
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		span {
-			padding-top: 3px;
-		}
-		@include bp(mobile) {
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}
-	.center_title {
-		text-align: center;
-	}
+    .top_block {
+        position: relative;
+    }
+    .bttn_return {
+        padding-left: 20px;
+        padding-right: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        span {
+            padding-top: 3px;
+        }
+        @include bp(mobile) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
+    .center_title {
+        text-align: center;
+    }
 }
 
 .asset_content {
-	border-radius: 20px;
-	padding: 30px 30px 0;
-	box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1), 0 1px 2.5px 0 rgba(0, 0, 0, 0.3);
-	color: $c_font_dark;
-	font-family: Roboto;
-	margin-top: -15px;
-	@include bp(mobile) {
-		padding-left: 0;
-		padding-right: 0;
-		box-shadow: none;
-	}
-	.bottom_block {
-		margin: 20px -30px 0;
-		padding: 35px 30px 30px;
-		border-top: 2px solid $c_bd_table;
-	}
-	.title {
-		font-family: RobotoBold;
-		font-size: 14px;
-		margin-bottom: 6px;
-		color: $c_font_grey;
-	}
-	.text_name,
-	.text_balances {
-		margin-bottom: 35px;
-	}
-	.text_name,
-	.text_balances,
-	.text_symbol,
-	.text_unit,
-	.text_supply {
-		font-size: 20px;
-		color: $c_font_dark;
-	}
-	.block_symbol,
-	.block_unit,
-	.block_supply {
-		width: 140px;
-		@include bp(mobile) {
-			margin-bottom: 35px;
-		}
-	}
-	.block_symbol {
-		@include bp(mobile) {
-			width: 30%;
-		}
-	}
-	.block_unit {
-		@include bp(mobile) {
-			width: 30%;
-		}
-	}
-	.block_supply {
-		@include bp(mobile) {
-			width: 40%;
-		}
-	}
-	.block_storage {
-		@extend %clear;
-		width: 510px;
-		@include bp(mobile) {
-			width: 100%;
-		}
-	}
-	.wrapper_info {
-		margin-bottom: 15px;
-		@extend %clear;
-		>* {
-			float: left;
-			margin-bottom: 15px;
-		}
-	}
-	.wrapper_storage_content {
-		float: left;
-		width: 170px * 2;
-		word-wrap: break-word;
-		@include bp(mobile) {
-			width: 100%;
-			float: none;
-		}
-	}
-	.text_storage {
-		font-size: 14px;
-		color: $c_font_dark;
-	}
-	.bttn_copy {
-		@extend %bttn_light;
-		float: right;
-		width: 160px;
-		height: 40px;
-		line-height: 36px;
-		@include bp(mobile) {
-			float: none;
-			margin-top: 15px;
-		}
-	}
-	.block_desription {
-		max-width: 237.5px * 2;
-		width: 100%;
-		margin-bottom: 30px;
-	}
-	.text_description {
-		margin-top: 15px;
-		clear: both;
-		font-size: 12px;
-	}
-	.block_owners {
-		.list_owners {
-			font-size: 0;
-			margin-left: -10px;
-			margin-right: -10px;
-			margin-bottom: 20px;
-		}
-		.single_owner {
-			display: inline-block;
-			margin: 0 10px;
-			padding: 0 15px;
-			border-radius: 20px;
-			font-size: 14px;
-			line-height: 30px;
-			background-color: $c_bg_input_owners;
-			margin-bottom: 20px;
-		}
-	}
-	.block_operations {
-		@extend %clear;
-		.block_left,
-		.block_right {
-			width: 48.6%;
-			margin-bottom: 20px;
-			@include bp(mobile) {
-				width: 100%;
-				float: none;
-			}
-		}
-		.block_left {
-			float: left;
-		}
-		.block_right {
-			float: right;
-		}
-		.wrapper_operations {
-			border-bottom: 2px solid $c_bd_input;
-			text-indent: 10px;
-			padding-right: 21px;
-			position: relative;
-			overflow: hidden;
-			height: $input_h;
-			line-height: $input_h;
-			font-size: 14px;
-			margin-top: 20px;
-//			.controls_operations {
-//				position: absolute;
-//				right: 0;
-//				top: 0;
-//				height: 100%;
-//				width: 21px;
-//				background-image: url(../images/arrows.png);
-//				background-position: center center;
-//				background-size: 5px auto;
-//			}
-//			&:before {
-//				position: absolute;
-//				content: '';
-//				background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 25%);
-//				top: 0;
-//				left: 0;
-//				right: 21px;
-//				bottom: 0;
-//			}
-	
-			
-			
-		}
-		.wrapper_operations_descriptions {
-			height: $input_h;
-			font-size: 12px;
-		}
-		.single_description {
-			display: none;
-			&.active {
-				display: block;
-			}
-		}
-	}
-	.bttn_proceed {
-		@extend %bttn_dark;
-		width: 160px;
-		height: 40px;
-		line-height: 40px;
-	}
+    border-radius: 20px;
+    padding: 30px 30px 0;
+    box-shadow: 0 2px 5px 1px rgba(0, 0, 0, 0.1), 0 1px 2.5px 0 rgba(0, 0, 0, 0.3);
+    color: $c_font_dark;
+    font-family: Roboto;
+    margin-top: -15px;
+    @include bp(mobile) {
+        padding-left: 0;
+        padding-right: 0;
+        box-shadow: none;
+    }
+    .bottom_block {
+        margin: 20px -30px 0;
+        padding: 35px 30px 30px;
+        border-top: 2px solid $c_bd_table;
+    }
+    .title {
+        font-family: RobotoBold;
+        font-size: 14px;
+        margin-bottom: 6px;
+        color: $c_font_grey;
+    }
+    .text_name,
+    .text_balances {
+        margin-bottom: 35px;
+    }
+    .text_name,
+    .text_balances,
+    .text_symbol,
+    .text_unit,
+    .text_supply {
+        font-size: 20px;
+        color: $c_font_dark;
+    }
+    .block_symbol,
+    .block_unit,
+    .block_supply {
+        width: 140px;
+        @include bp(mobile) {
+            margin-bottom: 35px;
+        }
+    }
+    .block_symbol {
+        @include bp(mobile) {
+            width: 30%;
+        }
+    }
+    .block_unit {
+        @include bp(mobile) {
+            width: 30%;
+        }
+    }
+    .block_supply {
+        @include bp(mobile) {
+            width: 40%;
+        }
+    }
+    .block_storage {
+        @extend %clear;
+        width: 510px;
+        @include bp(mobile) {
+            width: 100%;
+        }
+    }
+    .wrapper_info {
+        margin-bottom: 15px;
+        @extend %clear;
+        >* {
+            float: left;
+            margin-bottom: 15px;
+        }
+    }
+    .wrapper_storage_content {
+        float: left;
+        width: 170px * 2;
+        word-wrap: break-word;
+        @include bp(mobile) {
+            width: 100%;
+            float: none;
+        }
+    }
+    .text_storage {
+        font-size: 14px;
+        color: $c_font_dark;
+    }
+    .bttn_copy {
+        @extend %bttn_light;
+        float: right;
+        width: 160px;
+        height: 40px;
+        line-height: 36px;
+        @include bp(mobile) {
+            float: none;
+            margin-top: 15px;
+        }
+    }
+    .block_desription {
+        max-width: 237.5px * 2;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .text_description {
+        margin-top: 15px;
+        clear: both;
+        font-size: 12px;
+    }
+    .block_owners {
+        .list_owners {
+            font-size: 0;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-bottom: 20px;
+        }
+        .single_owner {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 0 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            line-height: 30px;
+            background-color: $c_bg_input_owners;
+            margin-bottom: 20px;
+        }
+    }
+    .block_operations {
+        @extend %clear;
+        .block_left,
+        .block_right {
+            width: 48.6%;
+            margin-bottom: 20px;
+            @include bp(mobile) {
+                width: 100%;
+                float: none;
+            }
+        }
+        .block_left {
+            float: left;
+        }
+        .block_right {
+            float: right;
+        }
+        .wrapper_operations {
+            border-bottom: 2px solid $c_bd_input;
+            text-indent: 10px;
+            padding-right: 21px;
+            position: relative;
+            overflow: hidden;
+            height: $input_h;
+            line-height: $input_h;
+            font-size: 14px;
+            margin-top: 20px; //			.controls_operations {
+            //				position: absolute;
+            //				right: 0;
+            //				top: 0;
+            //				height: 100%;
+            //				width: 21px;
+            //				background-image: url(../images/arrows.png);
+            //				background-position: center center;
+            //				background-size: 5px auto;
+            //			}
+            //			&:before {
+            //				position: absolute;
+            //				content: '';
+            //				background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 25%);
+            //				top: 0;
+            //				left: 0;
+            //				right: 21px;
+            //				bottom: 0;
+            //			}
+        }
+        .wrapper_operations_descriptions {
+            height: $input_h;
+            font-size: 12px;
+        }
+        .single_description {
+            display: none;
+            &.active {
+                display: block;
+            }
+        }
+    }
+    .bttn_proceed {
+        @extend %bttn_dark;
+        width: 160px;
+        height: 40px;
+        line-height: 40px;
+    }
 }
+
 .asset_select {
-	width:20%;
-	margin-right:50px;
-	.custom-select {
-		//width: 20%;
-		outline: none;
-		border: none;
-		background: transparent;
-		font-size: 18px;
-		line-height: 21px;
-		font-family: Ubuntu-Regular;
-	}
+    width: 20%;
+    margin-right: 50px;
+    .custom-select {
+        //width: 20%;
+        outline: none;
+        border: none;
+        background: transparent;
+        font-size: 18px;
+        line-height: 21px;
+        font-family: Ubuntu-Regular;
+    }
 }
 
 .single_modal_text {
-	font-family:Ubuntu-Light;
-	font-size:16px;
-	line-height:26px;
-	margin-left:15px;
+    font-family: Ubuntu-Light;
+    font-size: 16px;
+    line-height: 26px;
+    margin-left: 10px;
 }
 
 .asset_info-title {
-	font-family:Ubuntu-Light;
-	color:#989696;
+    font-family: Ubuntu-Light;
+    color: #989696;
 }
 
 .asset_info-title1 {
-	display: flex;
-	width: 50%;
-	margin: 0 10px;
-	flex-direction:row;
+    display: flex;
+    width: 50%;
+    margin: 0 10px;
+    flex-direction: row;
 }
 
 .asset_info-desc {
-	width: 100%;
-	margin: 0 5px;
+    width: 100%;
+    margin: 0 5px;
 }
 
 .asset_info-block {
-	.mr_t40 {
-		margin-top:40px !important;
-		.asset_info-text {
-			display: flex;
-			width: 50%;
-			margin: 0 10px;
-			flex-direction:row;
-		}
-	}
+    .mr_t40 {
+        margin-top: 40px !important;
+    }
+}
+
+.asset_info-text {
+    display: flex !important;
+    width: 50% !important;
+    margin: 0 10px !important;
+    flex-direction: row !important;
 }

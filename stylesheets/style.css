@@ -561,7 +561,7 @@ body {
       .menu_left nav li.current > .item-wrap:hover {
         color: #fff; }
   .menu_left nav .menu_lvl_1:nth-of-type(1) {
-    margin-top: 53px;
+    margin-top: -15px;
     margin-left: 5px; }
   .menu_left nav .menu_lvl_1 > a,
   .menu_left nav .menu_lvl_1 .item-wrap {
@@ -570,7 +570,7 @@ body {
     min-height: 70px;
     padding-top: 28px;
     line-height: 23px;
-    font-size: 1.25rem;
+    font-size: 18px;
     margin-bottom: 1px; }
     .menu_left nav .menu_lvl_1 > a:before,
     .menu_left nav .menu_lvl_1 .item-wrap:before {
@@ -1258,8 +1258,7 @@ main {
         background-color: #f92324;
         color: #ffffff; }
   main .tabs_content {
-    margin-top: 55px;
-    margin-left: 30px;
+    margin-top: 20px;
     color: #222; }
     main .tabs_content .tab_users,
     main .tabs_content .tab_invites {
@@ -1576,8 +1575,7 @@ main {
     margin-left: 7px !important; }
   main .profile_block {
     width: 620px !important;
-    margin-top: 50px;
-    margin-left: 25px;
+    margin-top: 20px;
     padding-bottom: 150px; }
   main .edit_profile {
     margin-bottom: 47px !important; }
@@ -2060,7 +2058,7 @@ main {
     margin-top: 25px !important; }
   main .new_asset_info {
     list-style-type: disc;
-    margin: 30px 60px;
+    margin: 0 80px;
     font-size: 16px;
     font-family: Ubuntu-Light;
     line-height: 26px; }
@@ -2398,7 +2396,7 @@ main {
     font-family: Ubuntu-Light;
     font-size: 16px;
     line-height: 26px;
-    margin-left: 15px; }
+    margin-left: 10px; }
   main .asset_info-title {
     font-family: Ubuntu-Light;
     color: #989696; }
@@ -2417,16 +2415,16 @@ main {
     margin: 0 5px; }
   main .asset_info-block .mr_t40 {
     margin-top: 40px !important; }
-    main .asset_info-block .mr_t40 .asset_info-text {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      width: 50%;
-      margin: 0 10px;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row; }
+  main .asset_info-text {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    width: 50% !important;
+    margin: 0 10px !important;
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important; }
   main .flex-col {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2669,6 +2667,9 @@ main {
 .t9 {
   top: 9px !important; }
 
+.mr-10a {
+  margin: 10px auto !important; }
+
 .modal {
   display: none;
   position: fixed;
@@ -2717,8 +2718,27 @@ main {
   width: 37% !important; }
 
 .assets_modal {
-  width: 30% !important;
+  width: 40% !important;
   left: 40% !important; }
+
+.user_pd {
+  padding-top: 2% !important; }
+
+.user_modal {
+  width: 37% !important; }
+
+.modal_inputs {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: vertical !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: column !important;
+          flex-direction: column !important;
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+  margin-top: 30px !important; }
 
 * {
   box-sizing: border-box !important; }
