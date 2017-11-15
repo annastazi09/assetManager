@@ -3,21 +3,24 @@
 main(data-page='users')
 	header.top_block
 	div.tabs_content.container-shadow
-		div.block_users
+		div.block_users.user_sets
 			h1.main_title Team
 			span.btn_invite.button-wave#myBtn Invite new users
 		div.tab_users.active
 			div.table_users
 				ul.row_title
-					li.cell_email Email
-					li.cell_name Name
-					li.cell_active Status
+					li.cell_email
+						div.mr_l10 Email
+					li.cell_name
+						div.mr-l65 Name
+					li.cell_active
+						div Status
 				-for (var i =0; i< 8; i++)
 					ul.row_content
-						li.cell_email
+						li.cell_email.pd25
 							span.mob_title Email
 							span= users_email[i]
-						li.cell_name
+						li.cell_name.pd-l80
 							span.mob_title Name
 							span= users_name[i]
 						li.cell_active

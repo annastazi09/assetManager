@@ -1257,7 +1257,8 @@ main {
         background-color: #f92324;
         color: #ffffff; }
   main .tabs_content {
-    margin-top: 20px;
+    margin-top: 55px;
+    margin-left: 30px;
     color: #222; }
     main .tabs_content .tab_users,
     main .tabs_content .tab_invites {
@@ -1292,19 +1293,19 @@ main {
         main .tabs_content .tab_users .row_content li:last-of-type:before {
           display: none; } }
       main .tabs_content .tab_users .cell_email {
-        width: 33%;
+        width: 40%;
         min-width: 200px; }
         @media screen and (max-width: 750px) {
           main .tabs_content .tab_users .cell_email {
             top: 40px; } }
       main .tabs_content .tab_users .cell_name {
-        width: 44%;
+        width: 40%;
         min-width: 150px; }
         @media screen and (max-width: 750px) {
           main .tabs_content .tab_users .cell_name {
             bottom: 40px; } }
       main .tabs_content .tab_users .cell_active {
-        width: 8.5%;
+        width: 20%;
         min-width: 50px; }
       main .tabs_content .tab_users .cell_super {
         width: 9.5%;
@@ -1503,7 +1504,9 @@ main {
           main .tabs_content .tab_invites .cell_email:before,
           main .tabs_content .tab_invites .cell_time:before {
             display: none; } }
-  main .block_users, main .block_dash, main .block_assets {
+  main .block_users,
+  main .block_dash,
+  main .block_assets {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1514,7 +1517,15 @@ main {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    main .block_users .btn_invite, main .block_users .btn_send, main .block_users .btn_send_invite, main .block_dash .btn_invite, main .block_dash .btn_send, main .block_dash .btn_send_invite, main .block_assets .btn_invite, main .block_assets .btn_send, main .block_assets .btn_send_invite {
+    main .block_users .btn_invite,
+    main .block_users .btn_send,
+    main .block_users .btn_send_invite,
+    main .block_dash .btn_invite,
+    main .block_dash .btn_send,
+    main .block_dash .btn_send_invite,
+    main .block_assets .btn_invite,
+    main .block_assets .btn_send,
+    main .block_assets .btn_send_invite {
       margin: 5px 20px;
       border-radius: 30px;
       width: 204px;
@@ -1525,7 +1536,15 @@ main {
       padding: 10px;
       color: #fff;
       background-color: #57AD7B; }
-      main .block_users .btn_invite:hover, main .block_users .btn_send:hover, main .block_users .btn_send_invite:hover, main .block_dash .btn_invite:hover, main .block_dash .btn_send:hover, main .block_dash .btn_send_invite:hover, main .block_assets .btn_invite:hover, main .block_assets .btn_send:hover, main .block_assets .btn_send_invite:hover {
+      main .block_users .btn_invite:hover,
+      main .block_users .btn_send:hover,
+      main .block_users .btn_send_invite:hover,
+      main .block_dash .btn_invite:hover,
+      main .block_dash .btn_send:hover,
+      main .block_dash .btn_send_invite:hover,
+      main .block_assets .btn_invite:hover,
+      main .block_assets .btn_send:hover,
+      main .block_assets .btn_send_invite:hover {
         background-color: #4C976C; }
   main .block_users .btn_send_invite {
     margin: 30px auto; }
@@ -1543,13 +1562,17 @@ main {
   main .modal_title {
     font-family: Ubuntu-Light;
     color: #B9B9B9; }
-  main .bold_modal_title, main .modal_title {
+  main .bold_modal_title,
+  main .modal_title {
     font-size: 18px;
     line-height: 31px;
     padding-left: 20px; }
   main .invite_input {
     width: 80%;
     margin: 0 auto; }
+  main .user_sets {
+    margin-top: 5px !important;
+    margin-left: 7px !important; }
   main .profile_block {
     width: 620px !important;
     margin-top: 50px;
@@ -2611,6 +2634,15 @@ main {
 
 .mr-b56 {
   margin-bottom: 56px !important; }
+
+.mr-l65 {
+  margin-left: 65px !important; }
+
+.pd25 {
+  padding: 25px !important; }
+
+.pd-l80 {
+  padding-left: 80px !important; }
 
 .b2 {
   bottom: 2px !important; }
