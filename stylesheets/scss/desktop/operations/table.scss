@@ -9,7 +9,7 @@
     .table_history {}
     .row_content {
         &:hover {
-            box-shadow: 0px 0px 2px 0 rgba(249, 35, 36, 0.9);
+            box-shadow: inset 0px 12px 2px -10px red, inset 0px -14px 0px -11px red;
         }
         @include bp(mobile) {
             &:hover {
@@ -71,4 +71,8 @@
             height: 20px;
         }
     }
+}
+
+.tbl-pd {
+    padding: 29px 10px !important;
 }

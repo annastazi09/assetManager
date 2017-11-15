@@ -1547,7 +1547,7 @@ main {
       main .operations_content {
         margin-top: 20px; } }
     main .operations_content .row_content:hover {
-      box-shadow: 0px 0px 2px 0 rgba(249, 35, 36, 0.9); }
+      box-shadow: inset 0px 12px 2px -10px red, inset 0px -14px 0px -11px red; }
     @media screen and (max-width: 750px) {
       main .operations_content .row_content:hover {
         box-shadow: none; } }
@@ -1605,6 +1605,8 @@ main {
         font-size: 10px;
         color: #aaa;
         height: 20px; } }
+  main .tbl-pd {
+    padding: 29px 10px !important; }
   main[data-page='operation_history'] {
     /*Inner pages*/ }
     main[data-page='operation_history'] .top_block .operation_id {
@@ -2549,6 +2551,9 @@ main {
 
 .mr-10a {
   margin: 10px auto !important; }
+
+.mr-t2 {
+  margin-top: 2px !important; }
 
 .modal {
   display: none;
