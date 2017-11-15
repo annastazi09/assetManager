@@ -230,6 +230,21 @@
     background-color: #fff;
 }
 
+.script {
+    &:hover {
+        color: red;
+        cursor: pointer;
+    }
+}
+
+.overflow-block {
+    width: 200px;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
 @import 'form_asset.scss';
 @import 'single_asset.scss';
 @import 'flexbox.scss';

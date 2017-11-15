@@ -447,7 +447,7 @@ body {
   display: none; }
 
 .ff-UbLightBold {
-  font-family: UbuntuLight-Bold; }
+  font-family: UbuntuLight-Bold !important; }
 
 .forgot_pass_text {
   font-family: Ubuntu-Light;
@@ -2112,6 +2112,15 @@ main {
     padding-top: 20px;
     margin-top: 20px;
     background-color: #fff; }
+  main .script:hover {
+    color: red;
+    cursor: pointer; }
+  main .overflow-block {
+    width: 200px;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   main[data-page='new_asset'] .bttn_return {
     padding-left: 57px; }
     @media screen and (max-width: 750px) {
