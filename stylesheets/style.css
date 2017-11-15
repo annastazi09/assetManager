@@ -130,7 +130,8 @@ main .cold_storage .block_cs_adress .panel_bttn .bttn_send_from, main .table_ass
 html,
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-size: 16px; }
 
 * {
   box-sizing: border-box;
@@ -569,7 +570,7 @@ body {
     min-height: 70px;
     padding-top: 28px;
     line-height: 23px;
-    font-size: 20px;
+    font-size: 1.25rem;
     margin-bottom: 1px; }
     .menu_left nav .menu_lvl_1 > a:before,
     .menu_left nav .menu_lvl_1 .item-wrap:before {

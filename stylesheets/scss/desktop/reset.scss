@@ -1,45 +1,46 @@
 html,
 body {
-	margin: 0;
-	padding: 0;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
 }
 
 * {
-	box-sizing: border-box;
-	background-repeat: no-repeat;
-	&:before,
-	&:after {
-		background-repeat: no-repeat;
-	}
+    box-sizing: border-box;
+    background-repeat: no-repeat;
+    &:before,
+    &:after {
+        background-repeat: no-repeat;
+    }
 }
 
 input {
-	border: none;
-	&:focus {
-		outline: none;
-	}
-	&[type="file"] {
-		display: none;
-	}
+    border: none;
+    &:focus {
+        outline: none;
+    }
+    &[type="file"] {
+        display: none;
+    }
 }
 
 textarea {
-	border: none;
-	resize: none;
-	&:focus {
-		outline: none;
-	}
+    border: none;
+    resize: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 button {
-	display: block;
-	margin: auto;
-	cursor: pointer;
-	border: none;
-	padding: 0;
-	&:focus {
-		outline: none;
-	}
+    display: block;
+    margin: auto;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    &:focus {
+        outline: none;
+    }
 }
 
 h1,
@@ -50,18 +51,18 @@ h5,
 h6,
 p,
 ul {
-	margin: 0;
-	padding: 0;
-	list-style-type: none;
-	font-weight: normal;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-weight: normal;
 }
 
 a {
-	&:link,
-	&:visited,
-	&:active,
-	&:hover {
-		text-decoration: none;
-		color: inherit;
-	}
+    &:link,
+    &:visited,
+    &:active,
+    &:hover {
+        text-decoration: none;
+        color: inherit;
+    }
 }

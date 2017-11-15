@@ -1,7 +1,7 @@
 $big_btn_h: 70px;
 $pad_l: 64px;
 .menu_left {
-    position: fixed;
+    position: fixed; //transform: scale(1);
     left: 0;
     top: 0;
     min-height: 100vh;
@@ -121,7 +121,7 @@ $pad_l: 64px;
                 min-height: $big_btn_h;
                 padding-top: 28px;
                 line-height: 23px;
-                font-size: 20px;
+                font-size: 1.25rem;
                 margin-bottom: 1px;
             }
             &:nth-of-type(2) {
