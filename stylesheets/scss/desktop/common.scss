@@ -14,7 +14,7 @@
 	}
 	
 	.general_wrapper {
-	    position: relative;
+	    position: relative; //background-color: #fbfbfb;
 	}
 	
 	.clickable {
@@ -332,4 +332,8 @@
 	    font-size: 16px;
 	    line-height: 26px;
 	    margin: 58px 17px;
+	}
+	
+	.bgr-w {
+	    background-color: #fff;
 	}

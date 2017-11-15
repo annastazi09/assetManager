@@ -446,6 +446,9 @@ body {
   line-height: 26px;
   margin: 58px 17px; }
 
+.bgr-w {
+  background-color: #fff; }
+
 .menu_left {
   position: fixed;
   left: 0;
@@ -727,6 +730,7 @@ body {
     background: url("../images/menu_icons/logout_active.svg") 0 0 no-repeat; }
 
 main {
+  background-color: #fbfbfb;
   padding-top: 10px;
   padding-left: 30px;
   padding-bottom: 10px;
@@ -791,6 +795,7 @@ main {
       font-size: 18px;
       margin-right: 10px; }
   main .main_info {
+    background-color: #fff;
     width: 40%;
     float: left;
     margin-top: 20px; }
@@ -1018,6 +1023,7 @@ main {
       width: 40%;
       text-align: right; }
   main .cold_storage {
+    background-color: #fff;
     float: right;
     margin-top: 20px;
     width: 57%; }
@@ -1207,6 +1213,7 @@ main {
         background-color: #f92324;
         color: #ffffff; }
   main .tabs_content {
+    background-color: #fff;
     margin-top: 20px;
     color: #222; }
     main .tabs_content .tab_users,
@@ -1518,7 +1525,8 @@ main {
   main .profile_block {
     width: 620px !important;
     margin-top: 20px;
-    padding-bottom: 150px; }
+    padding-bottom: 150px;
+    background-color: #fff; }
   main .edit_profile {
     margin-bottom: 47px !important; }
     main .edit_profile input,
@@ -1531,6 +1539,7 @@ main {
     margin-top: 35px !important;
     margin-bottom: 10px !important; }
   main .operations_content {
+    background-color: #fff;
     color: #222;
     margin-top: 20px;
     /* --- Cells ---*/ }
@@ -1608,6 +1617,7 @@ main {
       main[data-page='operation_history'] .main_title {
         margin-bottom: 0px; } }
   main .operation_content {
+    background-color: #fff;
     margin-top: 20px; }
     @media screen and (max-width: 750px) {
       main .operation_content {
@@ -2018,7 +2028,8 @@ main {
     width: 33%;
     margin-right: 30px;
     padding-top: 20px;
-    margin-top: 20px; }
+    margin-top: 20px;
+    background-color: #fff; }
   main[data-page='new_asset'] .bttn_return {
     padding-left: 57px; }
     @media screen and (max-width: 750px) {
@@ -2319,8 +2330,10 @@ main {
   main .asset_info-desc {
     width: 100%;
     margin: 0 5px; }
-  main .asset_info-block .mr_t40 {
-    margin-top: 40px !important; }
+  main .asset_info-block {
+    background-color: #fff !important; }
+    main .asset_info-block .mr_t40 {
+      margin-top: 40px !important; }
   main .asset_info-text {
     display: flex !important;
     width: 50% !important;

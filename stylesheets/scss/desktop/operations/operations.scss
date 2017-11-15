@@ -21,6 +21,7 @@
 /* Single operation */
 
 .operation_content {
+    background-color: #fff;
     margin-top: 20px;
     @include bp(mobile) {
         padding-left: 0px;
