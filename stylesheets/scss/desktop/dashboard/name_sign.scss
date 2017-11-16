@@ -1,106 +1,103 @@
 .block_name,
 .block_signatures {
-	//border-bottom: 1px solid $c_bd_st;
-	margin-bottom: 7px;
-	.block_content {
-		@extend %clear;
-		&.active {
-			input {
-				border-bottom: 2px solid $c_bd_dark;
-			}
-		}
-	}
-	input {
-		position: relative;
-		height: $input_h;
-		float: left;
-		color: $c_font_dark;
-		text-indent: 5px;
-		font-size: 14px;
-		font-family: $RobR;
-		border: none;
-		text-overflow: ellipsis;
-		&[readonly] {
-			font-family: $RobR;
-			width: $input_w;
-			text-indent: 0px;
-			font-size: 24px;
-			border: none;
-			color: $c_font_dark;
-			-webkit-user-select: none;
-			/* Chrome, Opera, Safari */
-			-moz-user-select: none;
-			/* Firefox 2+ */
-			-ms-user-select: none;
-			/* IE 10+ */
-			user-select: none;
-			/* Standard syntax */
-			pointer-events: none;
-		}
-	}
-	.panel_bttn {
-		display: none;
-		width: $bttns_right_w;
-		padding-left: 11px;
-		&.active {
-			display: block;
-			margin-top:-40px;
-			margin-right:60px;
-		}
-		.bttn_edit,
-		.bttn_cancel {
-			opacity: 0.5;
-			@include trans(opacity, st);
-			margin: 0 5px;
-			&:before {
-				width: 20px;
-				height: 20px;
-			}
-		}
-		.bttn_edit {
-			&:before {
-				background-image: url(../images/icon_check.png);
-			}
-			&:hover,
-			&.active {
-				opacity: 1;
-			}
-		}
-		.bttn_cancel {
-			&:before {
-				background-image: url(../images/icon_close.png);
-			}
-			&:hover {
-				opacity: 1;
-			}
-		}
-		@include bp(tablet) {
-			padding-left: 0;
-			width: 100px;
-		}
-	}
+    //border-bottom: 1px solid $c_bd_st;
+    margin-bottom: 7px;
+    .block_content {
+        @extend %clear;
+        &.active {
+            input {
+                border-bottom: 2px solid $c_bd_dark;
+            }
+        }
+    }
+    input {
+        position: relative;
+        height: $input_h;
+        float: left;
+        color: $c_font_dark;
+        text-indent: 5px;
+        font-size: 14px;
+        font-family: $RobR;
+        border: none;
+        text-overflow: ellipsis;
+        &[readonly] {
+            font-family: $RobR;
+            width: $input_w;
+            text-indent: 0px;
+            font-size: 24px;
+            border: none;
+            color: $c_font_dark;
+            -webkit-user-select: none;
+            /* Chrome, Opera, Safari */
+            -moz-user-select: none;
+            /* Firefox 2+ */
+            -ms-user-select: none;
+            /* IE 10+ */
+            user-select: none;
+            /* Standard syntax */
+            pointer-events: none;
+        }
+    }
+    .panel_bttn {
+        display: none;
+        width: $bttns_right_w;
+        padding-left: 11px;
+        &.active {
+            display: block;
+            margin-top: -40px;
+            margin-right: 60px;
+        }
+        .bttn_edit,
+        .bttn_cancel {}
+        .bttn_edit {
+            cursor: pointer;
+            &:before {
+                width: 40px;
+                height: 18.5px;
+                z-index: 1;
+                margin-left: 93px;
+                margin-top: -42px;
+                background: #fff url(../images/save_icon.svg) center no-repeat;
+            }
+            &:hover,
+            &.active {
+                opacity: 1;
+            }
+        }
+        .bttn_cancel {
+            &:before {
+                background-image: url(../images/icon_close.png);
+            }
+            &:hover {
+                opacity: 1;
+            }
+        }
+        @include bp(tablet) {
+            padding-left: 0;
+            width: 100px;
+        }
+    }
 }
 
 .block_name {
-	input {
-		width: $input_w;
-		@include bp(laptop) {
-			width: 60%;
-			width: calc(100% - #{$bttns_right_w} - 20px);
-		}
-	}
+    input {
+        width: $input_w;
+        @include bp(laptop) {
+            width: 60%;
+            width: calc(100% - #{$bttns_right_w} - 20px);
+        }
+    }
 }
 
 .block_signatures {
-	input {
-		width: 32.5px * 2;
-	}
+    input {
+        width: 32.5px * 2;
+    }
 }
 
 .add_icon {
-	background: url(../images/add_icon.svg) 5px  no-repeat;
-	cursor:pointer;
-	position: relative;
-	left:10px;
-
+    background: url(../images/add_icon.svg) 5px no-repeat;
+    cursor: pointer;
+    position: relative;
+    left: 10px;
 }

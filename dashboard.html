@@ -57,12 +57,10 @@
           </div>
           <div class="block_content">
             <div class="group">
-              <input type="text" value="Ambisafe">
-              <label>Company name</label>
+              <input class="dash_input" type="text" value="Ambisafe" readonly><span class="dash_label">Company name</span>
             </div>
-            <div class="panel_bttn">
-              <div class="bttn_edit clickable"></div>
-              <div class="bttn_cancel clickable"></div>
+            <div class="panel_bttn edit_block">
+              <div class="bttn_edit"></div>
             </div>
           </div>
         </div>
@@ -72,59 +70,41 @@
           </div>
           <div class="block_content">
             <div class="group">
-              <input type="text" value="1">
-              <label>Signature required</label>
+              <input class="dash_input" type="text" value="1" readonly><span class="dash_label">Signature required</span>
             </div>
-            <div class="panel_bttn">
-              <div class="bttn_edit clickable"></div>
-              <div class="bttn_cancel clickable"></div>
+            <div class="panel_bttn edit_block">
+              <div class="bttn_edit"></div>
             </div>
           </div>
         </div>
-        <div class="Checkbox" style="margin-bottom:40px;">
+        <div class="Checkbox b14" style="margin-bottom:40px;">
           <input type="checkbox">
           <div class="Checkbox-visible"></div><span class="checkbox-title">Hide sensitive information from emails</span>
         </div>
         <div class="block_owners">
           <div class="block_panel">
-            <p class="title">Owners</p><a class="bttn clickable save_btn" href="">Save</a>
+            <p class="title">Owners</p><span class="bttn clickable save_btn" id="edit">Edit</span>
           </div>
-          <div class="block_content">
-            <div class="single_owner" style="width:250px;">
+          <div class="owner_bl">
+            <div class="single_owner single_width">
               <div class="owner_name">Andrey Zamovskiy</div>
-              <div class="panel_bttn">
-                <div class="bttn_delete clickable"></div>
-              </div>
-            </div>
-            <div class="single_owner" style="width:250px;">
-              <div class="owner_name">Oleh Vasylenko</div>
-              <div class="panel_bttn">
-                <div class="bttn_delete clickable"></div>
-              </div>
-            </div>
-            <div class="single_owner" style="width:250px;">
-              <div class="owner_name">Anton Simernia</div>
-              <div class="panel_bttn">
-                <div class="bttn_delete clickable"></div>
-              </div>
-            </div>
-            <div class="single_owner" style="width:250px;">
-              <div class="owner_name">Johny Kartakov</div>
-              <div class="panel_bttn">
-                <div class="bttn_delete clickable"></div>
-              </div>
-            </div>
-            <div class="single_owner" style="width:250px;">
-              <div class="owner_name">Sergiy Martynenko</div>
-              <div class="panel_bttn">
-                <div class="bttn_delete clickable"></div>
-              </div>
+              <div class="bttn_close"></div>
             </div>
           </div>
           <div class="block_content" style="margin-bottom:300px;">
-            <div class="single_owner owner_sets">
+            <div class="single_owner owner_sets" id="add_owner">
               <div class="owner_name add_icon">&nbsp;Add owner</div>
             </div>
+            <div class="single_owner single_width t9" id="select_user">
+              <div class="owner_name">Select user</div>
+            </div>
+            <select class="list_owners">
+              <option value="1">Andrey Zamovskiy</option>
+              <option value="2">Oleh Vasylenko</option>
+              <option value="3">Anton Simernia</option>
+              <option value="4">Johny Kartakov</option>
+              <option value="5">Sergiy Martynenko</option>
+            </select>
           </div>
         </div>
       </div>
@@ -139,7 +119,7 @@
         </div>
         <h1 class="main_title">Cold Storage Balance</h1>
         <div class="tab_users active">
-          <div class="table_users" style="margin-bottom:260px;">
+          <div class="table_users">
             <ul class="row_title">
               <li class="cell_email">Symbol</li>
               <li class="cell_name">Quantity</li>
@@ -188,7 +168,14 @@
           </div>
         </div>
       </div>
+      <div class="modal" id="myModal">
+        <div class="modal-content login_modal">
+          <div class="close_container"><span class="close"></span></div>
+          <h1 class="main_title pd-l15">Add/remove owner</h1>
+          <div class="forgot_pass_text">Lorem Ipsum Lorem IpsumLorem</div>
+          <div class="panel_bttn block_users"><a class="btn_send_invite mr-10a" href="operation_complete_f.html">Add/remove</a></div>
+        </div>
+      </div>
     </main>
-    <!-- content ends-->
   </body>
 </html>

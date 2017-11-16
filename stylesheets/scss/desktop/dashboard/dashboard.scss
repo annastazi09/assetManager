@@ -1,135 +1,159 @@
 .block_panel {
-	@extend %clear;
-	height: $title_h; //32px;
-	line-height: $title_h;
-	margin-bottom: 8px;
-	.title {
-		font-size: 14px;
-		font-family: Ubuntu-Light;
-		color: #989696;
-		float: left;
-		line-height: 21px;
-		font-size: 18px;
-		margin-right: 10px;
-	}
+    @extend %clear;
+    height: $title_h; //32px;
+    line-height: $title_h;
+    margin-bottom: 8px;
+    .title {
+        font-size: 14px;
+        font-family: Ubuntu-Light;
+        color: #989696;
+        float: left;
+        line-height: 21px;
+        font-size: 18px;
+        margin-right: 10px;
+    }
 }
 
 @import 'main_info.scss';
 @import 'cold_storage.scss';
 @include bp(mobile) {
-	.block_panel {
-		.title {
-			margin-right: 11px;
-		}
-	}
-	.main_info {
-		.block_panel {
-			.bttn {
-				width: 70px;
-			}
-		}
-	}
-	.block_name,
-	.block_signatures {
-		input {
-			font-size: 16px;
-			&:focus {
-				font-size: 16px;
-			}
-		}
-	}
-	.block_owners {
-		.block_panel {
-			.bttn {
-				width: 47.5px * 2;
-				text-indent: 25px;
-				&:before {
-					left: 7px;
-				}
-			}
-		}
-		.single_owner {
-			.owner_name {
-				width: 80%;
-			}
-		}
-	}
-	.cold_storage {
-		.block_cs_adress {
-			border: none;
-			border-top: solid 2px $c_bd_table;
-			.block_panel {
-				margin-bottom: 0;
-			}
-			.cs_code {
-				font-size: 12px;
-			}
-			.panel_bttn {
-				margin: 0;
-				margin-top: -40px;
-				.bttn_copy {
-					width: 47.5px * 2;
-					max-width: 35%;
-					margin: 0;
-				}
-				.bttn_send_from {
-					float: right;
-					width: 170px;
-					max-width: 65%;
-					margin: 0;
-				}
-			}
-		}
-		.block_cs_balances {
-			border: none;
-			border-top: solid 2px $c_bd_table;
-			.single_item {
-				&:not(:last-of-type) {
-					margin-bottom: 10px;
-				}
-				.item_balance {
-					float: left;
-					text-align: left;
-				}
-				.item_title,
-				.item_balance {
-					width: 100%
-				}
-			}
-		}
-		.block_cs_adress,
-		.block_cs_balances {
-			border-radius: 0;
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}
+    .block_panel {
+        .title {
+            margin-right: 11px;
+        }
+    }
+    .main_info {
+        .block_panel {
+            .bttn {
+                width: 70px;
+            }
+        }
+    }
+    .block_name,
+    .block_signatures {
+        input {
+            font-size: 16px;
+            &:focus {
+                font-size: 16px;
+            }
+        }
+    }
+    .block_owners {
+        .block_panel {
+            .bttn {
+                width: 47.5px * 2;
+                text-indent: 25px;
+                &:before {
+                    left: 7px;
+                }
+            }
+        }
+        .single_owner {
+            .owner_name {
+                width: 80%;
+            }
+        }
+    }
+    .cold_storage {
+        .block_cs_adress {
+            border: none;
+            border-top: solid 2px $c_bd_table;
+            .block_panel {
+                margin-bottom: 0;
+            }
+            .cs_code {
+                font-size: 12px;
+            }
+            .panel_bttn {
+                margin: 0;
+                margin-top: -40px;
+                .bttn_copy {
+                    width: 47.5px * 2;
+                    max-width: 35%;
+                    margin: 0;
+                }
+                .bttn_send_from {
+                    float: right;
+                    width: 170px;
+                    max-width: 65%;
+                    margin: 0;
+                }
+            }
+        }
+        .block_cs_balances {
+            border: none;
+            border-top: solid 2px $c_bd_table;
+            .single_item {
+                &:not(:last-of-type) {
+                    margin-bottom: 10px;
+                }
+                .item_balance {
+                    float: left;
+                    text-align: left;
+                }
+                .item_title,
+                .item_balance {
+                    width: 100%
+                }
+            }
+        }
+        .block_cs_adress,
+        .block_cs_balances {
+            border-radius: 0;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
 
 .btn_dash {
-	display: block;
-	position: absolute;
-	top:63px;
-	right:10px;
-	z-index:1;
+    display: block;
+    position: absolute;
+    top: 63px;
+    right: 10px;
+    z-index: 1;
 }
 
 .block_checkbox {
-	margin-bottom:40px;
+    margin-bottom: 40px;
 }
 
 .save_btn {
-	color:red;
+    color: red;
 }
 
 .bttn_copy {
-	background-image: url(../images/copy.svg);
-	margin-left:14px;
-	height:20px;
-	width:20px;
-	cursor:pointer;
+    background-image: url(../images/copy.svg);
+    margin-left: 14px;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
 }
 
 .txt_r {
-	text-align:right;
+    text-align: right;
+}
+
+.block_panel {
+    .bttn {
+        margin-top: -20px;
+    }
+}
+
+.dash_input {
+    width: 100% !important;
+    font-family: Ubuntu-Regular !important;
+}
+
+.dash_label {
+    position: relative;
+    bottom: 60px;
+    left: 8px;
+    font-size: 14px;
+    color: #969898;
+}
+
+.list_owners,
+#select_user {
+    display: none;
 }

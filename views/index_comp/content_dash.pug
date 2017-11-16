@@ -10,37 +10,41 @@ main(data-page='dashboard')
 			+panel(' ', 'Edit')
 			div.block_content
 				div.group
-					input(type="text" value="Ambisafe")
-					label Company name
-				div.panel_bttn
-					div.bttn_edit.clickable
-					div.bttn_cancel.clickable
+					input.dash_input(type="text" value="Ambisafe" readonly)
+					span.dash_label Company name
+				div.panel_bttn.edit_block
+					div.bttn_edit
 		div.block_signatures
 			+panel(' ', 'Edit')
 			div.block_content
 				div.group
-					input(type="text" value="1")
-					label Signature required
-				div.panel_bttn
-					div.bttn_edit.clickable
-					div.bttn_cancel.clickable
-		div.Checkbox(style="margin-bottom:40px")
+					input.dash_input(type="text" value="1" readonly)
+					span.dash_label Signature required
+				div.panel_bttn.edit_block
+					div.bttn_edit
+		div.Checkbox.b14(style="margin-bottom:40px")
 			input(type="checkbox")
 			div.Checkbox-visible
 			span.checkbox-title Hide sensitive information from emails
 		div.block_owners
 			div.block_panel
 				p.title Owners
-				a(href="").bttn.clickable.save_btn Save
-			div.block_content
-				each owner in owners
-					div.single_owner(style="width:250px")
-						div.owner_name= owner
-						div.panel_bttn
-							div.bttn_delete.clickable
+				span.bttn.clickable.save_btn#edit Edit
+			div.owner_bl
+					div.single_owner.single_width
+						div.owner_name Andrey Zamovskiy
+						div.bttn_close
 			div.block_content(style="margin-bottom:300px")
-				div.single_owner.owner_sets
+				div.single_owner.owner_sets#add_owner
 					div.owner_name.add_icon &nbsp;Add owner
+				div.single_owner.single_width.t9#select_user
+					div.owner_name Select user
+				select.list_owners
+					option(value="1") Andrey Zamovskiy
+					option(value="2") Oleh Vasylenko
+					option(value="3") Anton Simernia
+					option(value="4") Johny Kartakov
+					option(value="5") Sergiy Martynenko
 	div.cold_storage.container-shadow
 		h1.main_title Cold Storage Address
 		div.block_cs_adress.flex-row
@@ -51,7 +55,7 @@ main(data-page='dashboard')
 				button(type='submit').btn_invite.button-wave Send ETH from cold storage
 		h1.main_title Cold Storage Balance
 		div.tab_users.active
-			div.table_users(style="margin-bottom:260px;")
+			div.table_users
 				ul.row_title
 					li.cell_email Symbol
 					li.cell_name Quantity
@@ -67,5 +71,11 @@ main(data-page='dashboard')
 						li.cell_active.txt_r
 							span.mob_title Name
 							span= storage_name[i]
-
-// content ends
+	#myModal.modal
+		.modal-content.login_modal
+			div.close_container
+				span.close
+			h1.main_title.pd-l15 Add/remove owner
+			div.forgot_pass_text Lorem Ipsum Lorem IpsumLorem
+			div.panel_bttn.block_users
+				a(href="operation_complete_f.html").btn_send_invite.mr-10a Add/remove

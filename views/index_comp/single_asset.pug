@@ -37,16 +37,21 @@ main(data-page='assets')
 			div.flex-row.mr-t30
 				div.single_field.flex-col.asset_select
 					select.custom-select
-						option Reissue asset
-						option Send
-						option Send to ICAP
-						option Operation_004
-						option Operation_005
-						option Operation_006
+						option(value="one") Reissue asset
+						option(value="two") Send
+						option(value="three") Send to ICAP
+						option(value="four") Operation_004
+						option(value="five") Operation_005
+						option(value="six") Operation_006
 				div.flex-col
-					div.text_explanation Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
+					div.text_explanation.one Reissue asset Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
+					div.text_explanation.two Send Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
+					div.text_explanation.three Send to ICAP Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
+					div.text_explanation.four Operation_004 Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
+					div.text_explanation.five Operation_005 Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
+					div.text_explanation.six Operation_006 Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
 					.block_operation
-						div.mr_t-50.btn_approve#myBtn Proceed
+						div.mr_t-30.btn_approve#myBtn Proceed
 	#myModal.modal(style="padding-top: 5%")
 		.modal-content.assets_modal
 			div.close_container

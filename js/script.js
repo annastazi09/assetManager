@@ -129,11 +129,13 @@ function changeInput(discard) {
     if (discard || /\s/g.test(inp_block.find('input').val()) || inp_block.val() == '') {
         inp_block.val(inp_block.attr('data-value'));
     }
+
     inp_block.attr('data-value', '');
 };
 
 $('.block_name .bttn_edit, .block_signatures .bttn_edit').on('click', function() {
     changeInput.call(this);
+
 });
 
 $('.block_name .bttn_cancel, .block_signatures .bttn_cancel').on('click', function() {
@@ -142,53 +144,16 @@ $('.block_name .bttn_cancel, .block_signatures .bttn_cancel').on('click', functi
 
 
 
-$('.block_owners .single_owner .bttn_delete').on('click', function() {
+// $('.bttn_delete').on('click', function() {
 
-    $(this).parent().parent().remove();
-
-
-
-})
-
-/* < Manage Input */
-
-/* Info popup > */
-
-var popup_mark = false;
+//     var target = $(this).parent().parent().remove();
 
 
-// $('.popup_info_trigger').on('click', function () {
 
-// 	var $this = $(this);
-// 	var popup = $this.find('.popup_info');
-
-// 	if (!popup_mark) {
-// 		popup_mark = true;
-// 		if (!$this.hasClass('active')) {
-// 			hidePopup($('.popup_info_trigger.active'), $('.popup_info.active'));
-// 			popup.css('display', 'block');
-// 			setTimeout(function () {
-// 				$this.addClass('active');
-// 				popup.addClass('active');
-// 			}, 100);
-
-// 		} else {
-// 			hidePopup($this, popup);
-// 		}
-// 	}
-
-// 	function hidePopup(trigger, element) {
-// 		trigger.removeClass('active');
-// 		element.removeClass('active');
-
-// 		setTimeout(function () {
-// 			element.css('display', 'none');
-// 			popup_mark = false;
-// 		}, 300);
-// 	}
 // })
 
-/* < Info popup */
+
+var popup_mark = false;
 
 
 new Clipboard('.bttn_copy');
@@ -210,11 +175,80 @@ $('.cell_remove i').on('click', function() {
     $(this).parent().parent().remove();
 });
 
+
+//assets select
+$(".custom-select").change(function() {
+    $(this).find("option:selected").each(function() {
+        var optionValue = $(this).attr("value");
+        if (optionValue) {
+            $(".text_explanation").not("." + optionValue).hide();
+            $("." + optionValue).show();
+        } else {
+            $(".text_explanation").hide();
+        }
+    });
+}).change();
+
+// dashboard selection delete/add
+$("#edit").on('click', function() {
+
+    var lable = $("#edit").text().trim();
+
+    if (lable == "Edit") {
+        $("#edit").text("Save").css('color', '#E42520');
+        $("#add_owner, .bttn_close").show();
+    } else {
+        $("#edit").text("Edit").css('color', '#969898');
+        $("#add_owner, .bttn_close, .list_owners, #select_user").hide();
+    }
+
+});
+
+
+$("#add_owner").on('click', function() {
+    var modal = $('myModal');
+    $(this).hide();
+    $('.list_owners, #select_user').show();
+    $('.modal-content').hide();
+    var selectvalue = $('.list_owners').val();
+    var modal = $('#myModal');
+    var content = $('.modal-content.login_modal');
+    var close = $('.close_container .close');
+    $('.list_owners').on('change', function() {
+        if ($('.list_owners').val() !== selectvalue) {
+            modal.show();
+            close.show();
+            content.show();
+        } else {
+            modal.hide();
+            close.hide();
+            content.hide();
+        }
+    })
+});
+///AJAX ADD DELETE OWNERS
+$("#remAdd").click(function(e) {
+    e.preventDefault();
+    $.ajax({
+        type: "POST",
+        url: "/test/test",
+        data: {
+            id: $("#remAdd").val(),
+            access_token: $("#access_token").val()
+        },
+        success: function(result) {
+            alert('ok');
+        },
+        error: function(result) {
+            alert('error');
+        }
+    });
+})
+
 //Pop up window
 (function() {
     var modal = document.getElementById('myModal');
-    var btn = document.getElementById('myBtn');
-
+    var btn = document.querySelector('#myBtn , .bttn_close');
     var span = document.getElementsByClassName("close_container")[0];
 
     btn.onclick = function() {
