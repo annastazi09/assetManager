@@ -2640,7 +2640,7 @@ main {
   width: 37% !important; }
 
 .assets_modal {
-  width: 25% !important;
+  width: 35% !important;
   left: 42% !important; }
 
 .user_pd {
@@ -2820,7 +2820,7 @@ input:focus ~ .highlight {
   position: relative;
   display: none;
   top: 10px;
-  width: 500px;
+  width: 70%;
   border: 1px solid #fff;
   cursor: pointer;
   background: #F4F4F4;
@@ -2957,5 +2957,5 @@ input:focus ~ .highlight {
 
 .asset_select .dropdown {
   display: block !important;
-  width: 300px !important;
+  width: 100% !important;
   top: 5px !important; }
