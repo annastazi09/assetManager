@@ -9,6 +9,7 @@
     <script src="js/min/jquery-3.1.1.min.js" defer></script>
     <script src="js/min/clipboard.min.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/jquery.easydropdown.min.js" defer></script>
   </head>
   <body class="general_wrapper">
     <!-- menu left begins-->
@@ -97,7 +98,7 @@
         <div class="block_pass flex-col mr_b250">
           <div class="flex-row mr-t30">
             <div class="single_field flex-col asset_select">
-              <select class="custom-select">
+              <select class="dropdown" style="display:block;width:300px;">
                 <option value="one">Reissue asset</option>
                 <option value="two">Send</option>
                 <option value="three">Send to ICAP</option>
@@ -120,7 +121,7 @@
           </div>
         </div>
       </div>
-      <div class="modal" id="myModal" style="padding-top: 5%;">
+      <div class="myModal modal" style="padding-top: 5%;">
         <div class="modal-content assets_modal">
           <div class="close_container"><span class="close"></span></div>
           <h1 class="main_title pd-l15">Send</h1>
@@ -134,6 +135,10 @@
               <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
               <label>Amount</label>
               <div class="single_modal_text">Lorem ipsum Lorem ipsum Lorem ipsum</div>
+            </div>
+            <div class="group">
+              <input type="text" required><span class="highlight"></span><span class="bar"></span><span class="input_error" style="display:none;">Lorem ipsum</span>
+              <label>Your comment</label>
             </div>
           </div>
           <div class="panel_bttn block_users">

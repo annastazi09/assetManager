@@ -28,10 +28,68 @@ main(data-page='operation_history')
 			ul.list_owners
 				each owner in owners
 					li.single_owner= owner
-		div.block_pass.flex-col.mr_b250
+		div.block_pass.flex-col
 			p.text_explanation Some text explaining signature requirement for make operation valid by accept it from all users.
 			input(type="password" placeholder="Password").pass
 			a(href="operation_history.html").block_operation
 				button(type='submit').btn_approve Approve
+		div.block_owners.mr_t40
+			h5.main_title Confirmations
+		div.title.title_border
+			div.flex-row.mr_l10 Signature info
+			div.flex-row-reverse.mr_t-20_mr_r20
+				div Status
+		div.table_users.table-operations
+			div.mr_b40
+				div.flex-col.mr_l10
+					.flex-row
+						div.title User:
+						div.mr_l20.mr-t2 Deploy Key
+					.flex-row
+						div.title Hesh:
+						div.mr_l20.mr-t2 0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08
+				div.flex-row-reverse.mr_t-40_mr_r20
+					div OK
+			div.mr_b40
+				div.flex-col.mr_l10
+					.flex-row
+						div.title User:
+						div.mr_l20.mr-t2 Ivan Ivanov
+					.flex-row
+						div.title Hesh:
+						div.mr_l20.mr-t2 0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08
+				div.flex-row-reverse.mr_t-40_mr_r20
+					div OK
+			div.mr_b40
+				div.flex-col.mr_l10
+					.flex-row
+						div.title User:
+						div.mr_l20.mr-t2 Test Testov
+					.flex-row
+						div.title Hesh:
+						div.mr_l20.mr-t2 0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08
+				div.flex-row-reverse.mr_t-40_mr_r20
+					div OK
+			div.mr_b40
+				div.flex-col.mr_l10
+					.flex-row
+						div.title User:
+						div.mr_l20.mr-t2 Test Testovich
+					.flex-row
+						div.title Hesh:
+						div.mr_l20.mr-t2 0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08
+				div.flex-row-reverse.mr_t-40_mr_r20
+					div OK
+			div.mr_b40
+				div.flex-col.mr_l10
+					.flex-row
+						div.title User:
+						div.mr_l20.mr-t2 Rita Kazahova
+					.flex-row
+						div.title Hesh:
+						div.mr_l20.mr-t2 0xf8w9w98hefw9hf3298h2928fh3298hf382909f10a01h2r1h89ef8h18f0182f08
+				div.flex-row-reverse.mr_t-40_mr_r20
+					div OK
+
 	//- div.chat_trigger
 // content ends

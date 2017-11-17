@@ -9,6 +9,7 @@
     <script src="js/min/jquery-3.1.1.min.js" defer></script>
     <script src="js/min/clipboard.min.js" defer></script>
     <script src="js/script.js" defer></script>
+    <script src="js/jquery.easydropdown.min.js" defer></script>
   </head>
   <body class="general_wrapper">
     <!-- menu left begins-->
@@ -98,7 +99,7 @@
             <div class="single_owner single_width t9" id="select_user">
               <div class="owner_name">Select user</div>
             </div>
-            <select class="list_owners">
+            <select class="dropdown" id="list_owners">
               <option value="1">Andrey Zamovskiy</option>
               <option value="2">Oleh Vasylenko</option>
               <option value="3">Anton Simernia</option>
@@ -115,7 +116,7 @@
           <div class="bttn_copy clickable" data-clipboard-target="#code"></div>
         </div>
         <div class="panel_bttn block_dash">
-          <button class="btn_invite button-wave" type="submit">Send ETH from cold storage</button>
+          <button class="btn_invite bttn_close" type="submit"> Send ETH from cold storage</button>
         </div>
         <h1 class="main_title">Cold Storage Balance</h1>
         <div class="tab_users active">
@@ -123,45 +124,45 @@
             <ul class="row_title">
               <li class="cell_email">Symbol</li>
               <li class="cell_name">Quantity</li>
-              <li class="cell_active txt_r">Name</li>
+              <li class="cell_active txt_r" style="width:20%;">Name</li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>ETH</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>ETH</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.4675825200000</span></li>
               <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Ethereum</span></li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>GMT</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>GMT</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.4678908980000</span></li>
-              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>GMTInCorporation Obligations</span></li>
+              <li class="cell_active txt_r"><span class="mob_title">Name</span><span>GMTInCorporation</span></li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>FND</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>FND</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.46759080000</span></li>
               <li class="cell_active txt_r"><span class="mob_title">Name</span><span>SomeFund</span></li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>NX3</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>NX3</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.469075000</span></li>
               <li class="cell_active txt_r"><span class="mob_title">Name</span><span>NixoidCoin3</span></li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>AIM</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>AIM</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.46757590887000</span></li>
               <li class="cell_active txt_r"><span class="mob_title">Name</span><span>ArgonCoin</span></li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>AQUA</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>AQUA</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.46756789000</span></li>
               <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Auqa</span></li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>GDX</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>GDX</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.4698000</span></li>
               <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Gdax</span></li>
             </ul>
             <ul class="row_content">
-              <li class="cell_email"><span class="mob_title">Symbol</span><span>GHS</span></li>
+              <li class="cell_email" style="padding:25px 15px;"><span class="mob_title">Symbol</span><span>GHS</span></li>
               <li class="cell_name"><span class="mob_title">Quantity</span><span>0.754509000000</span></li>
               <li class="cell_active txt_r"><span class="mob_title">Name</span><span>Gigahashes</span></li>
             </ul>
@@ -169,10 +170,10 @@
         </div>
       </div>
       <div class="modal" id="myModal">
-        <div class="modal-content login_modal">
+        <div class="modal-content remAdd_modal">
           <div class="close_container"><span class="close"></span></div>
           <h1 class="main_title pd-l15">Add/remove owner</h1>
-          <div class="forgot_pass_text">Lorem Ipsum Lorem IpsumLorem</div>
+          <div class="remAdd-title">Lorem Ipsum Lorem IpsumLorem Lorem Ipsum Lorem IpsumLorem Lorem Ipsum Lorem IpsumLorem</div>
           <div class="panel_bttn block_users"><a class="btn_send_invite mr-10a" href="operation_complete_f.html">Add/remove</a></div>
         </div>
       </div>

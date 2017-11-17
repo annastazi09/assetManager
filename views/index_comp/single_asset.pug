@@ -36,7 +36,7 @@ main(data-page='assets')
 		div.block_pass.flex-col.mr_b250
 			div.flex-row.mr-t30
 				div.single_field.flex-col.asset_select
-					select.custom-select
+					select.dropdown(style="display:block;width:300px")
 						option(value="one") Reissue asset
 						option(value="two") Send
 						option(value="three") Send to ICAP
@@ -52,7 +52,7 @@ main(data-page='assets')
 					div.text_explanation.six Operation_006 Lorem Ipsum Lorem Ipsum Lorem IpsumLorem Ipsum Lorem Ipsum Lorem Ipsum
 					.block_operation
 						div.mr_t-30.btn_approve#myBtn Proceed
-	#myModal.modal(style="padding-top: 5%")
+	.myModal.modal(style="padding-top: 5%")
 		.modal-content.assets_modal
 			div.close_container
 				span.close
@@ -72,6 +72,12 @@ main(data-page='assets')
 					span(style="display:none").input_error Lorem ipsum
 					label Amount
 					div.single_modal_text Lorem ipsum Lorem ipsum Lorem ipsum
+				div.group
+					input(type="text" required)
+					span.highlight
+					span.bar
+					span(style="display:none").input_error Lorem ipsum
+					label Your comment
 			div.panel_bttn.block_users
 				button(type='submit').btn_send_invite.mr-10a Continue
 

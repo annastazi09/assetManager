@@ -39,7 +39,7 @@ main(data-page='dashboard')
 					div.owner_name.add_icon &nbsp;Add owner
 				div.single_owner.single_width.t9#select_user
 					div.owner_name Select user
-				select.list_owners
+				select#list_owners.dropdown
 					option(value="1") Andrey Zamovskiy
 					option(value="2") Oleh Vasylenko
 					option(value="3") Anton Simernia
@@ -52,17 +52,17 @@ main(data-page='dashboard')
 			div(data-clipboard-target="#code").bttn_copy.clickable
 		div.panel_bttn.block_dash
 
-				button(type='submit').btn_invite.button-wave Send ETH from cold storage
+				button(type='submit').btn_invite.bttn_close  Send ETH from cold storage
 		h1.main_title Cold Storage Balance
 		div.tab_users.active
 			div.table_users
 				ul.row_title
 					li.cell_email Symbol
 					li.cell_name Quantity
-					li.cell_active.txt_r Name
+					li.cell_active.txt_r(style="width:20%") Name
 				-for (var i =0; i< 8; i++)
 					ul.row_content
-						li.cell_email
+						li.cell_email(style="padding:25px 15px")
 							span.mob_title Symbol
 							span= storage_symbol[i]
 						li.cell_name
@@ -72,10 +72,10 @@ main(data-page='dashboard')
 							span.mob_title Name
 							span= storage_name[i]
 	#myModal.modal
-		.modal-content.login_modal
+		.modal-content.remAdd_modal
 			div.close_container
 				span.close
 			h1.main_title.pd-l15 Add/remove owner
-			div.forgot_pass_text Lorem Ipsum Lorem IpsumLorem
+			div.remAdd-title Lorem Ipsum Lorem IpsumLorem Lorem Ipsum Lorem IpsumLorem Lorem Ipsum Lorem IpsumLorem
 			div.panel_bttn.block_users
 				a(href="operation_complete_f.html").btn_send_invite.mr-10a Add/remove

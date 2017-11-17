@@ -177,7 +177,7 @@ $('.cell_remove i').on('click', function() {
 
 
 //assets select
-$(".custom-select").change(function() {
+$(".asset_select .dropdown").change(function() {
     $(this).find("option:selected").each(function() {
         var optionValue = $(this).attr("value");
         if (optionValue) {
@@ -199,23 +199,22 @@ $("#edit").on('click', function() {
         $("#add_owner, .bttn_close").show();
     } else {
         $("#edit").text("Edit").css('color', '#969898');
-        $("#add_owner, .bttn_close, .list_owners, #select_user").hide();
+        $("#add_owner, .bttn_close, .dropdown, #select_user").hide();
     }
 
 });
 
 
 $("#add_owner").on('click', function() {
-    var modal = $('myModal');
     $(this).hide();
-    $('.list_owners, #select_user').show();
+    $('.dropdown, #select_user').show();
     $('.modal-content').hide();
     var selectvalue = $('.list_owners').val();
     var modal = $('#myModal');
-    var content = $('.modal-content.login_modal');
+    var content = $('.modal-content.remAdd_modal');
     var close = $('.close_container .close');
-    $('.list_owners').on('change', function() {
-        if ($('.list_owners').val() !== selectvalue) {
+    $('.dropdown').on('change', function() {
+        if ($('.dropdown').val() !== selectvalue) {
             modal.show();
             close.show();
             content.show();
