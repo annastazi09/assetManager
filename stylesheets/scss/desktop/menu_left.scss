@@ -101,7 +101,7 @@ $pad_l: 64px;
                 >.item-wrap {
                     font-family: Ubuntu-Light;
                     font-weight: normal;
-                    color: #969898;
+                    color: #fff;
                     &:hover {
                         color: #fff;
                         ;
@@ -281,6 +281,7 @@ $pad_l: 64px;
         .icon-icon-dashboard {
             background: url('../images/menu_icons/dashboard_icon_active.svg') 0 0 no-repeat;
         }
+        a {color:#fff}
     }
 }
 
@@ -296,6 +297,8 @@ $pad_l: 64px;
         .icon-icon-history {
             background: url('../images/menu_icons/history_active.svg') 0 0 no-repeat;
         }
+
+        a {color:#fff}
     }
 }
 
@@ -311,6 +314,8 @@ $pad_l: 64px;
         .icon-icon-manage {
             background: url('../images/menu_icons/manage_users_icon_active.svg') 0 0 no-repeat;
         }
+
+        a {color:#fff}
     }
 }
 
@@ -326,6 +331,8 @@ $pad_l: 64px;
         .icon-icon-new-asset {
             background: url('../images/menu_icons/new_asset_icon_active.svg') 0 0 no-repeat;
         }
+
+        a {color:#fff}
     }
 }
 
@@ -341,6 +348,8 @@ $pad_l: 64px;
         .icon-icon-profile {
             background: url('../images/menu_icons/profile_icon_active.svg') 0 0 no-repeat;
         }
+
+        a {color:#fff}
     }
 }
 
@@ -358,5 +367,7 @@ $pad_l: 64px;
         .icon-icon-logout {
             background: url('../images/menu_icons/logout_active.svg') 0 0 no-repeat;
         }
+
+        a {color:#fff}
     }
 }

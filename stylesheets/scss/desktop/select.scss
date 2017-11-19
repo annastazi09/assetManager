@@ -38,6 +38,7 @@
 
 .dropdown.open{
 	z-index: 2;
+	border-radius:20px 20px 0 0;
 }
 
 .dropdown:hover{
@@ -58,6 +59,7 @@
 	border: 6px solid transparent;
 	border-top: 8px solid rgb(228, 37, 32);;
 }
+
 
 .dropdown.open .carat{
 	margin-top: -10px;
@@ -148,7 +150,8 @@
 .dropdown.open div{
 	opacity: 1;
     z-index: 2;
-    border-radius: 10px;
+	border-radius: 0 0 10px 10px;
+	border-top:none;
 }
 
 /* FADE OVERLAY FOR SCROLLING LISTS */

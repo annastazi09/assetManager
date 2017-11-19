@@ -9,22 +9,21 @@ function setCurrentMarkOnMenuItem() {
     switch (page) {
         case 'dashboard':
             $('[data-menu-item=' + page + ']').addClass('current');
-            $('[data-menu-item="organization_group"]').addClass('current');
             break;
         case 'users':
             $('[data-menu-item=' + page + ']').addClass('current');
-            $('[data-menu-item="organization_group"]').addClass('current');
             break;
         case 'operation_history':
             $('[data-menu-item=' + page + ']').addClass('current');
             break;
         case 'assets':
             $('[data-menu-item=' + page + ']').addClass('current');
-            $('[data-menu-item="assets_group"]').addClass('current');
             break;
         case 'new_asset':
             $('[data-menu-item=' + page + ']').addClass('current');
-            $('[data-menu-item="assets_group"]').addClass('current');
+            break;
+        case 'edit_profile':
+            $('[data-menu-item=' + page + ']').addClass('current');
             break;
     }
 }
@@ -56,9 +55,9 @@ $('.menu_lvl_1').on('click', function() {
         $(this).addClass('active');
 
         var inner_list = $(this).find('>ul');
-        var current_inner_list_height = menu_items_height[+$(inner_list).attr('data-inner-menu')];
+      //  var current_inner_list_height = menu_items_height[+$(inner_list).attr('data-inner-menu')];
 
-        inner_list.css('height', current_inner_list_height);
+        //inner_list.css('height', current_inner_list_height);
 
     } else {
         resetActiveMenuItems.call($(this))
@@ -68,13 +67,13 @@ $('.menu_lvl_1').on('click', function() {
 
 /* Set all heights of non-active inner ul elements to 0 */
 
-$('.menu_lvl_1:not(.current) >ul').css('height', '0px');
+//$('.menu_lvl_1:not(.current) >ul').css('height', '0px');
 
 
 
 function resetActiveMenuItems() {
     $(this).parent().find('.active:not(.current)').removeClass('active');
-    $(this).parent().find('.menu_lvl_1:not(.current) >ul').css('height', '0px');
+    //$(this).parent().find('.menu_lvl_1:not(.current) >ul').css('height', '0px');
 }
 /* < Menu items */
 
@@ -208,7 +207,7 @@ $("#edit").on('click', function() {
 $("#add_owner").on('click', function() {
     $(this).hide();
     $('.dropdown, #select_user').show();
-    $('.modal-content').hide();
+    $('#myModal').hide();
     var selectvalue = $('.list_owners').val();
     var modal = $('#myModal');
     var content = $('.modal-content.remAdd_modal');
@@ -226,7 +225,7 @@ $("#add_owner").on('click', function() {
     })
 });
 ///AJAX ADD DELETE OWNERS
-$("#remAdd").click(function(e) {
+$("#remAdd").on('click',function(e) {
     e.preventDefault();
     $.ajax({
         type: "POST",
@@ -244,8 +243,22 @@ $("#remAdd").click(function(e) {
     });
 })
 
+$(".block_dash #ethBtn").on('click',function() {
+    var Ethmodal = document.getElementById('EthModal');
+    var ethBtn = document.getElementById('ethBtn');
+    var span = document.getElementsByClassName("close_container")[1];
+
+    Ethmodal.style.display = "block";
+
+    span.onclick = function() {
+        Ethmodal.style.display = "none";
+    }
+
+});
+
+
 //Pop up window
-(function() {
+(function () {
     var modal = document.getElementById('myModal');
     var btn = document.querySelector('#myBtn , .bttn_close');
     var span = document.getElementsByClassName("close_container")[0];
@@ -264,4 +277,4 @@ $("#remAdd").click(function(e) {
         }
     }
 
-}());
+})();

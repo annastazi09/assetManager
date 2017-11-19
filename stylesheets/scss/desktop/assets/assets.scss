@@ -223,7 +223,7 @@
 .asset_flex_block {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 30%;
     margin-right: 30px;
     padding-top: 20px;
     margin-top: 20px;
@@ -238,7 +238,7 @@
 }
 
 .overflow-block {
-    width: 200px;
+    width: 150px;
     overflow: hidden;
     display: inline-block;
     text-overflow: ellipsis;

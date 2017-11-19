@@ -558,7 +558,7 @@ body {
     .menu_left nav li.current > .item-wrap {
       font-family: Ubuntu-Light;
       font-weight: normal;
-      color: #969898; }
+      color: #fff; }
       .menu_left nav li.active > a:hover,
       .menu_left nav li.active > .item-wrap:hover, .menu_left nav li.current > a:hover,
       .menu_left nav li.current > .item-wrap:hover {
@@ -728,6 +728,9 @@ body {
 .item-wrap:hover .icon-icon-dashboard, .item-wrap:active .icon-icon-dashboard {
   background: url("../images/menu_icons/dashboard_icon_active.svg") 0 0 no-repeat; }
 
+.item-wrap:hover a, .item-wrap:active a {
+  color: #fff; }
+
 .item-wrap .icon-icon-history {
   background: url("../images/menu_icons/history.svg") 0 0 no-repeat;
   display: inline-block;
@@ -736,6 +739,9 @@ body {
 
 .item-wrap:hover .icon-icon-history, .item-wrap:active .icon-icon-history {
   background: url("../images/menu_icons/history_active.svg") 0 0 no-repeat; }
+
+.item-wrap:hover a, .item-wrap:active a {
+  color: #fff; }
 
 .item-wrap .icon-icon-manage {
   background: url("../images/menu_icons/manage_users_icon.svg") 0 0 no-repeat;
@@ -746,6 +752,9 @@ body {
 .item-wrap:hover .icon-icon-manage, .item-wrap:active .icon-icon-manage {
   background: url("../images/menu_icons/manage_users_icon_active.svg") 0 0 no-repeat; }
 
+.item-wrap:hover a, .item-wrap:active a {
+  color: #fff; }
+
 .item-wrap .icon-icon-new-asset {
   background: url("../images/menu_icons/new_asset_icon.svg") 0 0 no-repeat;
   display: inline-block;
@@ -755,6 +764,9 @@ body {
 .item-wrap:hover .icon-icon-new-asset, .item-wrap:active .icon-icon-new-asset {
   background: url("../images/menu_icons/new_asset_icon_active.svg") 0 0 no-repeat; }
 
+.item-wrap:hover a, .item-wrap:active a {
+  color: #fff; }
+
 .item-wrap .icon-icon-profile {
   background: url("../images/menu_icons/profile_icon.svg") 0 0 no-repeat;
   display: inline-block;
@@ -763,6 +775,9 @@ body {
 
 .item-wrap:hover .icon-icon-profile, .item-wrap:active .icon-icon-profile {
   background: url("../images/menu_icons/profile_icon_active.svg") 0 0 no-repeat; }
+
+.item-wrap:hover a, .item-wrap:active a {
+  color: #fff; }
 
 .item-wrap {
   display: -webkit-box;
@@ -778,6 +793,8 @@ body {
     height: 18px; }
   .item-wrap:hover .icon-icon-logout, .item-wrap:active .icon-icon-logout {
     background: url("../images/menu_icons/logout_active.svg") 0 0 no-repeat; }
+  .item-wrap:hover a, .item-wrap:active a {
+    color: #fff; }
 
 main {
   background-color: #fbfbfb;
@@ -954,7 +971,7 @@ main {
           main .main_info .block_name .panel_bttn .bttn_edit:before,
           main .main_info .block_signatures .panel_bttn .bttn_edit:before {
             width: 40px;
-            height: 18.5px;
+            height: 19px;
             z-index: 1;
             margin-left: 93px;
             margin-top: -42px;
@@ -1560,6 +1577,7 @@ main {
     main .block_assets .btn_send_invite {
       margin: 5px 20px;
       border-radius: 30px;
+      cursor: pointer;
       width: 204px;
       font-size: 18px !important;
       height: 44px;
@@ -2132,7 +2150,7 @@ main {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    width: 33%;
+    width: 30%;
     margin-right: 30px;
     padding-top: 20px;
     margin-top: 20px;
@@ -2141,7 +2159,7 @@ main {
     color: red;
     cursor: pointer; }
   main .overflow-block {
-    width: 200px;
+    width: 150px;
     overflow: hidden;
     display: inline-block;
     text-overflow: ellipsis;
@@ -2499,14 +2517,16 @@ main {
         -ms-flex-direction: row-reverse;
             flex-direction: row-reverse; }
   main .flex_block_row100 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    width: 100%; }
+    width: 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
   main .flex_block_col35 {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2666,7 +2686,7 @@ main {
   margin-top: -25px; }
 
 .mr_b40 {
-  margin-bottom: 40px; }
+  margin-bottom: 40px !important; }
 
 .mr_t160 {
   margin-top: 160px; }
@@ -2724,6 +2744,18 @@ main {
 
 .mr_t-30 {
   margin-top: -30px !important; }
+
+.w20 {
+  width: 20% !important; }
+
+.pd25-15 {
+  padding: 25px 15px !important; }
+
+.mr-b445 {
+  margin-bottom: 445px !important; }
+
+.pd-t5 {
+  padding-top: 5% !important; }
 
 .modal {
   display: none;
@@ -2783,8 +2815,12 @@ main {
   width: 37% !important; }
 
 .remAdd_modal {
-  width: 26.5% !important;
+  width: 30% !important;
   left: 43% !important; }
+
+.eth_modal {
+  width: 40% !important;
+  left: 40% !important; }
 
 .modal_inputs {
   display: -webkit-box !important;
@@ -2976,7 +3012,8 @@ input:focus ~ .highlight {
       user-select: none; }
 
 .dropdown.open {
-  z-index: 2; }
+  z-index: 2;
+  border-radius: 20px 20px 0 0; }
 
 /* CARAT */
 .dropdown .carat {
@@ -3060,7 +3097,8 @@ input:focus ~ .highlight {
 .dropdown.open div {
   opacity: 1;
   z-index: 2;
-  border-radius: 10px; }
+  border-radius: 0 0 10px 10px;
+  border-top: none; }
 
 /* FADE OVERLAY FOR SCROLLING LISTS */
 .dropdown.scrollable div::after {

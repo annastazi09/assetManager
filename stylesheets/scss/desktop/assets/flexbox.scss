@@ -14,9 +14,10 @@
 }
 
 .flex_block_row100 {
-    display:flex;
+    display:inline-flex;
     flex-direction:row;
     width:100%;
+    flex-wrap: wrap;
 }
 
 .flex_block_col35 {
