@@ -823,7 +823,7 @@ main {
   main .main_title {
     height: 80px;
     line-height: 80px;
-    font-size: 34px;
+    font-size: 32px;
     font-family: Ubuntu-Light; }
     @media screen and (max-width: 969px) {
       main .main_title {
@@ -2159,11 +2159,15 @@ main {
     color: red;
     cursor: pointer; }
   main .overflow-block {
-    width: 150px;
+    width: 120px;
     overflow: hidden;
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap; }
+  main .newAsset input {
+    width: 110% !important; }
+  main .newAsset .bar {
+    width: 110% !important; }
   main[data-page='new_asset'] .bttn_return {
     padding-left: 57px; }
     @media screen and (max-width: 750px) {

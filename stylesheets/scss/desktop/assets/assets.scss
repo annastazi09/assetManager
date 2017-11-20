@@ -238,11 +238,21 @@
 }
 
 .overflow-block {
-    width: 150px;
+    width: 120px;
     overflow: hidden;
     display: inline-block;
     text-overflow: ellipsis;
     white-space: nowrap;
+}
+
+.newAsset {
+    input {
+        width: 110% !important;
+    }
+
+    .bar {
+        width: 110% !important;
+    }
 }
 
 @import 'form_asset.scss';
